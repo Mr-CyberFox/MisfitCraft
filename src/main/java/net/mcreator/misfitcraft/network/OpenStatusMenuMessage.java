@@ -15,23 +15,23 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
-import net.mcreator.misfitcraft.procedures.RaceGUIOpenProcedure;
+import net.mcreator.misfitcraft.procedures.StatusMenuOpenProcedure;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
 @EventBusSubscriber
-public record RaceGUIOpenKeyMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<RaceGUIOpenKeyMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MisfitcraftMod.MODID, "key_race_gui_open_key"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, RaceGUIOpenKeyMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, RaceGUIOpenKeyMessage message) -> {
+public record OpenStatusMenuMessage(int eventType, int pressedms) implements CustomPacketPayload {
+	public static final Type<OpenStatusMenuMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MisfitcraftMod.MODID, "key_open_status_menu"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, OpenStatusMenuMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, OpenStatusMenuMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);
-	}, (RegistryFriendlyByteBuf buffer) -> new RaceGUIOpenKeyMessage(buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new OpenStatusMenuMessage(buffer.readInt(), buffer.readInt()));
 
 	@Override
-	public Type<RaceGUIOpenKeyMessage> type() {
+	public Type<OpenStatusMenuMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final RaceGUIOpenKeyMessage message, final IPayloadContext context) {
+	public static void handleData(final OpenStatusMenuMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
 				pressAction(context.player(), message.eventType, message.pressedms);
@@ -52,12 +52,12 @@ public record RaceGUIOpenKeyMessage(int eventType, int pressedms) implements Cus
 			return;
 		if (type == 0) {
 
-			RaceGUIOpenProcedure.execute(world, x, y, z, entity);
+			StatusMenuOpenProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MisfitcraftMod.addNetworkMessage(RaceGUIOpenKeyMessage.TYPE, RaceGUIOpenKeyMessage.STREAM_CODEC, RaceGUIOpenKeyMessage::handleData);
+		MisfitcraftMod.addNetworkMessage(OpenStatusMenuMessage.TYPE, OpenStatusMenuMessage.STREAM_CODEC, OpenStatusMenuMessage::handleData);
 	}
 }
