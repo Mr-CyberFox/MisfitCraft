@@ -38,5 +38,8 @@
   "gui.misfitcraft.race_gui_draconid.button_empty": "\u003c",
   "gui.misfitcraft.race_gui_draconid.label_summoning_magic": "Summoning Magic",
   "gui.misfitcraft.race_gui_draconid.label_magic_power_10002000": "Magic Power: 600-800",
-  "gui.misfitcraft.race_gui_draconid.button_select": "Select"
+  "gui.misfitcraft.race_gui_draconid.button_select": "Select",
+  "attribute.misfitcraft.mana_timer": "Mana Timer",
+  "key.misfitcraft.magic_test_button": "Magic Test Button",
+  "attribute.misfitcraft.max_magic_power": "Max Magic Power"
 }
