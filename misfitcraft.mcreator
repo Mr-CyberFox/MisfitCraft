@@ -270,12 +270,12 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
