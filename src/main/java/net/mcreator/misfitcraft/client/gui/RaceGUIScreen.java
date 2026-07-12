@@ -26,6 +26,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private Button button_empty;
 	private Button button_empty1;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/race_gui.png");
+	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("misfitcraft:textures/screens/c793bd3e-ff10-4cc7-a739-4efe362cf637.png");
 
 	public RaceGUIScreen(RaceGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -56,6 +57,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(SPRITE_0, this.leftPos + 122, this.topPos + 9, 0, 0, 32, 32, 32, 32);
 		RenderSystem.disableBlend();
 	}
 
