@@ -8,13 +8,17 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.misfitcraft.client.gui.RaceGUISpiritScreen;
 import net.mcreator.misfitcraft.client.gui.RaceGUIScreen;
+import net.mcreator.misfitcraft.client.gui.RaceGUIHumanScreen;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class MisfitcraftModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(MisfitcraftModMenus.RACE_GUI.get(), RaceGUIScreen::new);
+		event.register(MisfitcraftModMenus.RACE_GUI_HUMAN.get(), RaceGUIHumanScreen::new);
+		event.register(MisfitcraftModMenus.RACE_GUI_SPIRIT.get(), RaceGUISpiritScreen::new);
 	}
 
 	public interface ScreenAccessor {
