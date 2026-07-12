@@ -1,22 +1,5 @@
 package net.mcreator.misfitcraft.client.gui;
 
-import net.neoforged.neoforge.network.PacketDistributor;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
-import net.mcreator.misfitcraft.network.RaceGUIButtonMessage;
-import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implements MisfitcraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
@@ -26,6 +9,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private Button button_empty;
 	private Button button_empty1;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/race_gui.png");
+	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("misfitcraft:textures/screens/c793bd3e-ff10-4cc7-a739-4efe362cf637.png");
 
 	public RaceGUIScreen(RaceGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -56,6 +40,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(SPRITE_0, this.leftPos + 122, this.topPos + 9, 0, 0, 32, 32, 32, 32);
 		RenderSystem.disableBlend();
 	}
 
