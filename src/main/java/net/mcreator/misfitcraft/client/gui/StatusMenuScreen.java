@@ -1,20 +1,5 @@
 package net.mcreator.misfitcraft.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.GuiGraphics;
-
-import net.mcreator.misfitcraft.world.inventory.StatusMenuMenu;
-import net.mcreator.misfitcraft.procedures.PlayermodelProcedure;
-import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> implements MisfitcraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
@@ -43,7 +28,7 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		if (PlayermodelProcedure.execute(entity) instanceof LivingEntity livingEntity) {
-			MisfitcraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 35, this.topPos + 60, 40, 0f, 0, livingEntity);
+			MisfitcraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 33, this.topPos + 120, 40, 0f, 0, livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
