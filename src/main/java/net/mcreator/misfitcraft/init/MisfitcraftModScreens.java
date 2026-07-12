@@ -17,8 +17,8 @@ import net.mcreator.misfitcraft.client.gui.RaceGUIDraconidScreen;
 public class MisfitcraftModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
-		event.register(MisfitcraftModMenus.RACE_GUI_HUMAN.get(), RaceGUIHumanScreen::new);
 		event.register(MisfitcraftModMenus.RACE_GUI.get(), RaceGUIScreen::new);
+		event.register(MisfitcraftModMenus.RACE_GUI_HUMAN.get(), RaceGUIHumanScreen::new);
 		event.register(MisfitcraftModMenus.RACE_GUI_SPIRIT.get(), RaceGUISpiritScreen::new);
 		event.register(MisfitcraftModMenus.RACE_GUI_DRACONID.get(), RaceGUIDraconidScreen::new);
 	}

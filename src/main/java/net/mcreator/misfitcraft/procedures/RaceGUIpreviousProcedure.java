@@ -75,7 +75,7 @@ public class RaceGUIpreviousProcedure {
 							_ent.openMenu(new MenuProvider() {
 								@Override
 								public Component getDisplayName() {
-									return Component.literal("RaceGUI");
+									return Component.literal("RaceGUISpirit");
 								}
 
 								@Override
@@ -85,7 +85,7 @@ public class RaceGUIpreviousProcedure {
 
 								@Override
 								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new RaceGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+									return new RaceGUISpiritMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 								}
 							}, _bpos);
 						}
