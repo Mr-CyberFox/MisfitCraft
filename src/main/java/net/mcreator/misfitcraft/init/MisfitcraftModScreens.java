@@ -16,7 +16,7 @@ import net.mcreator.misfitcraft.client.gui.RaceGUIHumanScreen;
 public class MisfitcraftModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
-		event.register(MisfitcraftModMenus.RACE_GUI_DEMON.get(), RaceGUIScreen::new);
+		event.register(MisfitcraftModMenus.RACE_GUI.get(), RaceGUIScreen::new);
 		event.register(MisfitcraftModMenus.RACE_GUI_HUMAN.get(), RaceGUIHumanScreen::new);
 		event.register(MisfitcraftModMenus.RACE_GUI_SPIRIT.get(), RaceGUISpiritScreen::new);
 	}

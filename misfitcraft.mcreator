@@ -49,14 +49,15 @@
       "type": "gui",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "race_gui_demon",
+      "registry_name": "race_gui",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
         ]
-      }
+      },
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIHuman",
@@ -69,7 +70,8 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
         ]
-      }
+      },
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIprevious",
@@ -103,7 +105,8 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
-      }
+      },
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUInext",
@@ -137,7 +140,8 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
-      }
+      },
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUISpirit",
@@ -150,7 +154,8 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java"
         ]
-      }
+      },
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIselect",
@@ -168,7 +173,8 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
         ]
-      }
+      },
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIOpenKey",
@@ -180,7 +186,8 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIOpenKeyMessage.java"
         ]
-      }
+      },
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIOpen",
@@ -214,7 +221,8 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
         ]
-      }
+      },
+      "path": "~/GUI"
     }
   ],
   "variable_elements": [],
@@ -227,14 +235,6 @@
       "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
       "gui.misfitcraft.magic_power_overlay.label_100100": "100/100",
       "key.misfitcraft.open_magic_display": "Open Magic Display",
-      "gui.misfitcraft.race_gui_demon.button_empty1": "\u003e",
-      "gui.misfitcraft.race_gui_demon.label_difficulty_easy": "Difficulty: Easy",
-      "gui.misfitcraft.race_gui_demon.button_empty": "\u003c",
-      "gui.misfitcraft.race_gui_demon.label_demon": "Demon",
-      "gui.misfitcraft.race_gui_demon.label_magic_power_10002000": "Magic Power: 1000-2000",
-      "gui.misfitcraft.race_gui_demon.button_select": "Select",
-      "gui.misfitcraft.race_gui_demon.label_strength_high_stats": "Strength: High Stats",
-      "gui.misfitcraft.race_gui_demon.label_weakness_holy_magic": "Weakness: Holy Magic",
       "attribute.misfitcraft.source_points": "Source Points",
       "gui.misfitcraft.race_gui_human.button_select": "Select",
       "gui.misfitcraft.race_gui_human.label_magic_power_10002000": "Magic Power: 400-500",
@@ -253,7 +253,15 @@
       "gui.misfitcraft.race_gui_spirit.label_difficulty_easy": "Difficulty: Medium",
       "gui.misfitcraft.race_gui_spirit.label_spirit_magic": " Spirit Magic",
       "gui.misfitcraft.race_gui_spirit.label_strength_high_stats": "Strength: Medium Stats",
-      "key.misfitcraft.race_gui_open_key": "Race GUI Open Key"
+      "key.misfitcraft.race_gui_open_key": "Race GUI Open Key",
+      "gui.misfitcraft.race_gui.label_strength_high_stats": "Strength: High Stats",
+      "gui.misfitcraft.race_gui.label_demon": "Demon",
+      "gui.misfitcraft.race_gui.label_difficulty_easy": "Difficulty: Easy",
+      "gui.misfitcraft.race_gui.label_magic_power_10002000": "Magic Power: 1000-2000",
+      "gui.misfitcraft.race_gui.button_select": "Select",
+      "gui.misfitcraft.race_gui.button_empty1": "\u003e",
+      "gui.misfitcraft.race_gui.button_empty": "\u003c",
+      "gui.misfitcraft.race_gui.label_weakness_holy_magic": "Weakness: Holy Magic"
     }
   },
   "metadata": {
@@ -270,7 +278,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "GUI",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "misfitcraft",

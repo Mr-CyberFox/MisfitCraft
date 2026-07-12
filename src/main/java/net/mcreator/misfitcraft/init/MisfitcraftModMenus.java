@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class MisfitcraftModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, MisfitcraftMod.MODID);
-	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUIMenu>> RACE_GUI_DEMON = REGISTRY.register("race_gui_demon", () -> IMenuTypeExtension.create(RaceGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUIMenu>> RACE_GUI = REGISTRY.register("race_gui", () -> IMenuTypeExtension.create(RaceGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUIHumanMenu>> RACE_GUI_HUMAN = REGISTRY.register("race_gui_human", () -> IMenuTypeExtension.create(RaceGUIHumanMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUISpiritMenu>> RACE_GUI_SPIRIT = REGISTRY.register("race_gui_spirit", () -> IMenuTypeExtension.create(RaceGUISpiritMenu::new));
 

@@ -25,7 +25,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private Button button_select;
 	private Button button_empty;
 	private Button button_empty1;
-	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/race_gui_demon.png");
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/race_gui.png");
 
 	public RaceGUIScreen(RaceGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -70,17 +70,17 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_demon.label_demon"), 24, 16, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_demon.label_strength_high_stats"), 24, 97, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_demon.label_weakness_holy_magic"), 24, 124, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_demon.label_difficulty_easy"), 24, 43, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_demon.label_magic_power_10002000"), 24, 70, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_demon"), 24, 16, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_strength_high_stats"), 24, 97, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_weakness_holy_magic"), 24, 124, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_difficulty_easy"), 24, 43, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_magic_power_10002000"), 24, 70, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_select = Button.builder(Component.translatable("gui.misfitcraft.race_gui_demon.button_select"), e -> {
+		button_select = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_select"), e -> {
 			int x = RaceGUIScreen.this.x;
 			int y = RaceGUIScreen.this.y;
 			if (true) {
@@ -89,10 +89,10 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		}).bounds(this.leftPos + 59, this.topPos + 172, 55, 20).build();
 		this.addRenderableWidget(button_select);
-		button_empty = Button.builder(Component.translatable("gui.misfitcraft.race_gui_demon.button_empty"), e -> {
+		button_empty = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_empty"), e -> {
 		}).bounds(this.leftPos + -26, this.topPos + 70, 18, 20).build();
 		this.addRenderableWidget(button_empty);
-		button_empty1 = Button.builder(Component.translatable("gui.misfitcraft.race_gui_demon.button_empty1"), e -> {
+		button_empty1 = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_empty1"), e -> {
 		}).bounds(this.leftPos + 186, this.topPos + 70, 18, 20).build();
 		this.addRenderableWidget(button_empty1);
 	}

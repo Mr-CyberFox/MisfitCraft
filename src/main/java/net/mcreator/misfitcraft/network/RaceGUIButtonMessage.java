@@ -20,7 +20,7 @@ import net.mcreator.misfitcraft.MisfitcraftMod;
 
 @EventBusSubscriber
 public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
-	public static final Type<RaceGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MisfitcraftMod.MODID, "race_gui_demon_buttons"));
+	public static final Type<RaceGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MisfitcraftMod.MODID, "race_gui_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, RaceGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, RaceGUIButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
