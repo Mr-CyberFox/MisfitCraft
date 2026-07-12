@@ -225,6 +225,18 @@
         ]
       },
       "path": "~/GUI"
+    },
+    {
+      "name": "Ggdf",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ggdf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/Ggdf.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
