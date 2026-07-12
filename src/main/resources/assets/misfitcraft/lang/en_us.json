@@ -27,5 +27,7 @@
   "gui.misfitcraft.race_gui_human.button_empty": "\u003c",
   "gui.misfitcraft.race_gui_human.label_strength_high_stats": "Strength: Holy Magic",
   "gui.misfitcraft.race_gui_human.label_weakness_holy_magic": "Weakness: Weak Stats",
-  "gui.misfitcraft.race_gui_human.button_empty1": "\u003e"
+  "gui.misfitcraft.race_gui_human.button_empty1": "\u003e",
+  "attribute.misfitcraft.source_points": "Source Points",
+  "key.misfitcraft.race_gui_open_key": "Race GUI Open Key"
 }
