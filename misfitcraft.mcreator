@@ -45,7 +45,7 @@
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIHuman",
@@ -60,7 +60,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIprevious",
@@ -95,7 +95,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUInext",
@@ -130,7 +130,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUISpirit",
@@ -145,7 +145,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIselect",
@@ -164,7 +164,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIOpen",
@@ -199,12 +199,12 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIDraconid",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_draconid",
       "metadata": {
@@ -214,7 +214,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "MagicPowerStatOverlay",
@@ -310,6 +310,20 @@
       "path": "~/Magic Power System"
     },
     {
+      "name": "StatusMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "status_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/StatusMenuMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/StatusMenuScreen.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
+    },
+    {
       "name": "Playermodel",
       "type": "procedure",
       "compiles": true,
@@ -325,20 +339,6 @@
         "return_type": "entity",
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/PlayermodelProcedure.java"
-        ]
-      },
-      "path": "~/GUI/Status Menu"
-    },
-    {
-      "name": "StatusMenu",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "status_menu",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/StatusMenuMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/StatusMenuScreen.java"
         ]
       },
       "path": "~/GUI/Status Menu"
@@ -455,13 +455,12 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
