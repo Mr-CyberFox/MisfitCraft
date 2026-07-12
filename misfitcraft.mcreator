@@ -52,9 +52,9 @@
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -77,7 +77,7 @@
     {
       "name": "RaceGUIprevious",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gu_iprevious",
       "metadata": {
@@ -410,12 +410,12 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
     ]
   },
   "foldersRoot": {
