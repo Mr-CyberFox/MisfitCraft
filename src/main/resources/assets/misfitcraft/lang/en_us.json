@@ -41,6 +41,5 @@
   "gui.misfitcraft.race_gui_draconid.button_select": "Select",
   "attribute.misfitcraft.mana_timer": "Mana Timer",
   "key.misfitcraft.magic_test_button": "Magic Test Button",
-  "attribute.misfitcraft.max_magic_power": "Max Magic Power",
-  "key.misfitcraft.open_status_menu": "Open Status Menu"
+  "attribute.misfitcraft.max_magic_power": "Max Magic Power"
 }

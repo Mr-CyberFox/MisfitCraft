@@ -204,7 +204,7 @@
     {
       "name": "RaceGUIDraconid",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_draconid",
       "metadata": {
@@ -390,6 +390,17 @@
         ]
       },
       "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "Race",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GUI/Races"
     }
   ],
   "variable_elements": [
@@ -447,21 +458,19 @@
       "gui.misfitcraft.race_gui_draconid.button_select": "Select",
       "attribute.misfitcraft.mana_timer": "Mana Timer",
       "key.misfitcraft.magic_test_button": "Magic Test Button",
-      "attribute.misfitcraft.max_magic_power": "Max Magic Power",
-      "key.misfitcraft.open_status_menu": "Open Status Menu"
+      "attribute.misfitcraft.max_magic_power": "Max Magic Power"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
