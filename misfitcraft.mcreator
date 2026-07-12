@@ -227,18 +227,6 @@
       "path": "~/GUI"
     },
     {
-      "name": "Ggdf",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "ggdf",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/Ggdf.java"
-        ]
-      }
-    },
-    {
       "name": "RaceGUIDraconid",
       "type": "gui",
       "compiles": true,
