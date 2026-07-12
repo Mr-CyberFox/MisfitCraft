@@ -206,7 +206,7 @@
     {
       "name": "RaceGUIDraconid",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_draconid",
       "metadata": {
@@ -321,6 +321,88 @@
         "files": []
       },
       "path": "~/GUI/Races"
+    },
+    {
+      "name": "StatusMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "status_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/StatusMenuMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/StatusMenuScreen.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "Playermodel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playermodel",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/PlayermodelProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "StatusMenuOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "status_menu_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/StatusMenuOpenProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "OpenStatusMenu",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_status_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/OpenStatusMenuMessage.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
     }
   ],
   "variable_elements": [
@@ -378,8 +460,7 @@
       "gui.misfitcraft.race_gui_draconid.button_select": "Select",
       "attribute.misfitcraft.mana_timer": "Mana Timer",
       "key.misfitcraft.magic_test_button": "Magic Test Button",
-      "attribute.misfitcraft.max_magic_power": "Max Magic Power",
-      "attribute.misfitcraft.race": "Race"
+      "attribute.misfitcraft.max_magic_power": "Max Magic Power"
     }
   },
   "metadata": {

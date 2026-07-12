@@ -1,0 +1,12 @@
+{
+  "_fv": 85,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "B",
+    "keyBindingName": "Open Status Menu",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "StatusMenuOpen"
+    }
+  }
+}

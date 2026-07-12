@@ -15,6 +15,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcreator.misfitcraft.network.OpenStatusMenuMessage;
 import net.mcreator.misfitcraft.network.MagicTestButtonMessage;
 
 @EventBusSubscriber(Dist.CLIENT)
@@ -32,10 +33,24 @@ public class MisfitcraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping OPEN_STATUS_MENU = new KeyMapping("key.misfitcraft.open_status_menu", GLFW.GLFW_KEY_B, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new OpenStatusMenuMessage(0, 0));
+				OpenStatusMenuMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(MAGIC_TEST_BUTTON);
+		event.register(OPEN_STATUS_MENU);
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)
@@ -44,6 +59,7 @@ public class MisfitcraftModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				MAGIC_TEST_BUTTON.consumeClick();
+				OPEN_STATUS_MENU.consumeClick();
 			}
 		}
 	}
