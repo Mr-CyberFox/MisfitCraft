@@ -148,15 +148,15 @@
         "data": {
           "name": "label_spirit_magic",
           "text": {
-            "fixedValue": " Spirit Magic"
+            "fixedValue": "Spirit Magic"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 197,
-          "y": 147,
+          "x": 200,
+          "y": 148,
           "locked": false
         }
       }

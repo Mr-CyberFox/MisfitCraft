@@ -75,7 +75,7 @@ public class RaceGUIDraconidScreen extends AbstractContainerScreen<RaceGUIDracon
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_draconid.label_weakness_holy_magic"), 24, 124, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_draconid.label_difficulty_easy"), 24, 43, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_draconid.label_magic_power_10002000"), 24, 70, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_draconid.label_summoning_magic"), 75, 110, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_draconid.label_summoning_magic"), 74, 111, -12829636, false);
 	}
 
 	@Override

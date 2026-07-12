@@ -152,9 +152,9 @@
       "registry_name": "race_gui_spirit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -241,14 +241,14 @@
     {
       "name": "RaceGUIDraconid",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_draconid",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -279,7 +279,7 @@
       "gui.misfitcraft.race_gui_spirit.button_empty1": "\u003e",
       "gui.misfitcraft.race_gui_spirit.button_empty": "\u003c",
       "gui.misfitcraft.race_gui_spirit.label_difficulty_easy": "Difficulty: Medium",
-      "gui.misfitcraft.race_gui_spirit.label_spirit_magic": " Spirit Magic",
+      "gui.misfitcraft.race_gui_spirit.label_spirit_magic": "Spirit Magic",
       "gui.misfitcraft.race_gui_spirit.label_strength_high_stats": "Strength: Medium Stats",
       "gui.misfitcraft.race_gui_human.button_select": "Select",
       "gui.misfitcraft.race_gui_human.label_magic_power_10002000": "Magic Power: 400-500",
@@ -306,12 +306,12 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
     ]
   },
   "foldersRoot": {
