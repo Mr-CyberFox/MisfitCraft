@@ -27,7 +27,7 @@ public class RaceGUIpreviousProcedure {
 				_ent.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("RaceGUIHuman");
+						return Component.literal("RaceGUISpirit");
 					}
 
 					@Override
@@ -37,7 +37,7 @@ public class RaceGUIpreviousProcedure {
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new RaceGUIHumanMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new RaceGUISpiritMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}
@@ -48,7 +48,7 @@ public class RaceGUIpreviousProcedure {
 					_ent.openMenu(new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return Component.literal("RaceGUISpirit");
+							return Component.literal("RaceGUI");
 						}
 
 						@Override
@@ -58,7 +58,7 @@ public class RaceGUIpreviousProcedure {
 
 						@Override
 						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-							return new RaceGUISpiritMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+							return new RaceGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 						}
 					}, _bpos);
 				}
@@ -69,7 +69,7 @@ public class RaceGUIpreviousProcedure {
 						_ent.openMenu(new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
-								return Component.literal("RaceGUI");
+								return Component.literal("RaceGUIHuman");
 							}
 
 							@Override
@@ -79,7 +79,7 @@ public class RaceGUIpreviousProcedure {
 
 							@Override
 							public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-								return new RaceGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+								return new RaceGUIHumanMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 							}
 						}, _bpos);
 					}
