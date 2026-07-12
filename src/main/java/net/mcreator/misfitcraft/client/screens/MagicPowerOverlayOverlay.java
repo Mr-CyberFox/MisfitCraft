@@ -13,6 +13,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.misfitcraft.procedures.MagicPowerStatOverlayProcedure;
+
 @EventBusSubscriber(Dist.CLIENT)
 public class MagicPowerOverlayOverlay {
 	@SubscribeEvent(priority = EventPriority.HIGHEST)
@@ -31,8 +33,10 @@ public class MagicPowerOverlayOverlay {
 			z = entity.getZ();
 		}
 		if (true) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.misfitcraft.magic_power_overlay.label_magic_power"), w / 2 + -200, h / 2 + -105, -1, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.misfitcraft.magic_power_overlay.label_100100"), w / 2 + -200, h / 2 + -91, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.misfitcraft.magic_power_overlay.label_magic_power"), 6, 8, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					MagicPowerStatOverlayProcedure.execute(entity), 6, 26, -1, false);
 		}
 	}
 }

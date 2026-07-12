@@ -8,7 +8,8 @@
       "registry_name": "magic_power",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Magic Power System"
     },
     {
       "name": "MagicPowerOverlay",
@@ -20,7 +21,8 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/client/screens/MagicPowerOverlayOverlay.java"
         ]
-      }
+      },
+      "path": "~/Magic Power System"
     },
     {
       "name": "OpenMagicDisplay",
@@ -45,34 +47,127 @@
       }
     },
     {
-      "name": "Test",
-      "type": "overlay",
+      "name": "MaxMagicPower",
+      "type": "attribute",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "test",
+      "registry_name": "max_magic_power",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MagicPowerStatOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_power_stat_overlay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/MagicPowerStatOverlayProcedure.java"
+        ]
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MagicPowerRegen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_power_regen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/MagicPowerRegenProcedure.java"
+        ]
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MagicTest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/MagicTestProcedure.java"
+        ]
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MagicTestButton",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_test_button",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/screens/TestOverlay.java"
+          "src/main/java/net/mcreator/misfitcraft/network/MagicTestButtonMessage.java"
         ]
-      }
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "ManaTimer",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_timer",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Power System"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "MagicPower",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "100"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "attribute.misfitcraft.magic_power": "Magic Power",
       "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
-      "gui.misfitcraft.magic_power_overlay.label_100100": "100/100",
-      "key.misfitcraft.open_magic_display": "Open Magic Display"
+      "gui.misfitcraft.magic_power_overlay.label_100100": "",
+      "key.misfitcraft.open_magic_display": "Open Magic Display",
+      "attribute.misfitcraft.source_points": "Source Points",
+      "attribute.misfitcraft.magic_power": "Magic Power",
+      "attribute.misfitcraft.max_magic_power": "Max Magic Power",
+      "key.misfitcraft.magic_test_button": "Magic Test Button",
+      "attribute.misfitcraft.mana_timer": "Mana Timer"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
+      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
@@ -80,7 +175,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Magic Power System",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "misfitcraft",

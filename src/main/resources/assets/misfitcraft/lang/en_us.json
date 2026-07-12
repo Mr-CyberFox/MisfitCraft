@@ -1,6 +1,10 @@
 {
-  "attribute.misfitcraft.magic_power": "Magic Power",
   "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
-  "gui.misfitcraft.magic_power_overlay.label_100100": "100/100",
-  "key.misfitcraft.open_magic_display": "Open Magic Display"
+  "gui.misfitcraft.magic_power_overlay.label_100100": "",
+  "key.misfitcraft.open_magic_display": "Open Magic Display",
+  "attribute.misfitcraft.source_points": "Source Points",
+  "attribute.misfitcraft.magic_power": "Magic Power",
+  "attribute.misfitcraft.max_magic_power": "Max Magic Power",
+  "key.misfitcraft.magic_test_button": "Magic Test Button",
+  "attribute.misfitcraft.mana_timer": "Mana Timer"
 }
