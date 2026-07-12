@@ -36,7 +36,7 @@
   "gui.misfitcraft.race_gui_draconid.label_difficulty_easy": "Difficulty: Medium",
   "gui.misfitcraft.race_gui_draconid.button_empty1": "\u003e",
   "gui.misfitcraft.race_gui_draconid.button_empty": "\u003c",
+  "gui.misfitcraft.race_gui_draconid.label_summoning_magic": "Summoning Magic",
   "gui.misfitcraft.race_gui_draconid.label_magic_power_10002000": "Magic Power: 600-800",
-  "gui.misfitcraft.race_gui_draconid.button_select": "Select",
-  "gui.misfitcraft.race_gui_draconid.label_summoning_magic": "Summoning Magic"
+  "gui.misfitcraft.race_gui_draconid.button_select": "Select"
 }
