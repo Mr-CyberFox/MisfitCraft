@@ -33,7 +33,7 @@
           "text": "<",
           "isUndecorated": false,
           "onClick": {
-            "name": "RaceGUISpiritprevious"
+            "name": "RaceGUIprevious"
           },
           "width": 18,
           "height": 20,
@@ -49,7 +49,7 @@
           "text": ">",
           "isUndecorated": false,
           "onClick": {
-            "name": "RaceGUISpiritnext"
+            "name": "RaceGUInext"
           },
           "width": 18,
           "height": 20,

@@ -77,7 +77,7 @@
     {
       "name": "RaceGUIprevious",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gu_iprevious",
       "metadata": {
@@ -225,146 +225,6 @@
         ]
       },
       "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUISpiritnext",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_spiritnext",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUISpiritnextProcedure.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUISpiritprevious",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_spiritprevious",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUISpiritpreviousProcedure.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUIHumannext",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_humannext",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIHumannextProcedure.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUIHumanprevious",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_humanprevious",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIHumanpreviousProcedure.java"
-        ]
-      },
-      "path": "~/GUI"
     }
   ],
   "variable_elements": [],
@@ -410,12 +270,12 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
     ]
   },
   "foldersRoot": {
