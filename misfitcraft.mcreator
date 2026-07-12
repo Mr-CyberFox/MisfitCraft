@@ -32,7 +32,8 @@
       "registry_name": "source_points",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Source Points"
     },
     {
       "name": "RaceGUI",
@@ -42,9 +43,9 @@
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -57,8 +58,8 @@
       "registry_name": "race_gui_human",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
         ]
       },
@@ -142,9 +143,9 @@
       "registry_name": "race_gui_spirit",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -211,9 +212,9 @@
       "registry_name": "race_gui_draconid",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -403,6 +404,40 @@
         ]
       },
       "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "MaxSourcePoints",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_source_points",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Source Points"
+    },
+    {
+      "name": "SourcePointDeath",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "source_point_death",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/SourcePointDeathProcedure.java"
+        ]
+      },
+      "path": "~/Source Points"
     }
   ],
   "variable_elements": [
@@ -462,7 +497,8 @@
       "key.misfitcraft.magic_test_button": "Magic Test Button",
       "attribute.misfitcraft.max_magic_power": "Max Magic Power",
       "attribute.misfitcraft.race": "Race",
-      "key.misfitcraft.open_status_menu": "Open Status Menu"
+      "key.misfitcraft.open_status_menu": "Open Status Menu",
+      "attribute.misfitcraft.max_source_points": "Max Source Points"
     }
   },
   "metadata": {
@@ -500,6 +536,10 @@
       },
       {
         "name": "Magic Power System",
+        "children": []
+      },
+      {
+        "name": "Source Points",
         "children": []
       }
     ]
