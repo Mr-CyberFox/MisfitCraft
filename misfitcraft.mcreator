@@ -62,7 +62,7 @@
     {
       "name": "RaceGUIHuman",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_human",
       "metadata": {
@@ -112,7 +112,7 @@
     {
       "name": "RaceGUInext",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gu_inext",
       "metadata": {
@@ -147,7 +147,7 @@
     {
       "name": "RaceGUISpirit",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_spirit",
       "metadata": {
@@ -181,7 +181,7 @@
     {
       "name": "RaceGUIOpenKey",
       "type": "keybind",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_open_key",
       "metadata": {
@@ -194,7 +194,7 @@
     {
       "name": "RaceGUIOpen",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_open",
       "metadata": {
