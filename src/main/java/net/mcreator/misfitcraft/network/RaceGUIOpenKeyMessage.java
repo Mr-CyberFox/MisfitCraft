@@ -20,11 +20,29 @@ public record RaceGUIOpenKeyMessage(int eventType, int pressedms) implements Cus
 	public static void handleData(final RaceGUIOpenKeyMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
+				pressAction(context.player(), message.eventType, message.pressedms);
 			}).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
 				return null;
 			});
 		}
+	}
+
+	public static void pressAction(Player entity, int type, int pressedms) {
+		Level world = entity.level();
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+
+		// security measure to prevent arbitrary chunk generation
+		if (!world.getChunkSource().hasChunk(SectionPos.blockToSectionCoord(x), SectionPos.blockToSectionCoord(z)))
+			return;
+
+		if (type == 0) {
+
+			RaceGUIOpenProcedure.execute(world, x, y, z, entity);
+		}
+
 	}
 
 	@SubscribeEvent

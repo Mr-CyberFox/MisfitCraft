@@ -60,7 +60,7 @@
     {
       "name": "RaceGUIHuman",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_human",
       "metadata": {
@@ -73,7 +73,7 @@
     {
       "name": "RaceGUIprevious",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gu_iprevious",
       "metadata": {
@@ -107,7 +107,7 @@
     {
       "name": "RaceGUInext",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gu_inext",
       "metadata": {
@@ -155,7 +155,7 @@
     {
       "name": "RaceGUIselect",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gu_iselect",
       "metadata": {
@@ -173,7 +173,7 @@
     {
       "name": "RaceGUIOpenKey",
       "type": "keybind",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_open_key",
       "metadata": {
@@ -185,7 +185,7 @@
     {
       "name": "RaceGUIOpen",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_open",
       "metadata": {
@@ -284,17 +284,22 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "GUI",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "misfitcraft",
