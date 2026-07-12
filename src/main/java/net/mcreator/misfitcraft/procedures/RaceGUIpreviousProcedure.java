@@ -14,6 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.misfitcraft.world.inventory.RaceGUISpiritMenu;
 import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
 import net.mcreator.misfitcraft.world.inventory.RaceGUIHumanMenu;
+import net.mcreator.misfitcraft.world.inventory.RaceGUIDraconidMenu;
 
 import io.netty.buffer.Unpooled;
 
@@ -27,7 +28,7 @@ public class RaceGUIpreviousProcedure {
 				_ent.openMenu(new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return Component.literal("RaceGUISpirit");
+						return Component.literal("RaceGUIDraconid");
 					}
 
 					@Override
@@ -37,7 +38,7 @@ public class RaceGUIpreviousProcedure {
 
 					@Override
 					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new RaceGUISpiritMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						return new RaceGUIDraconidMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 					}
 				}, _bpos);
 			}
@@ -82,6 +83,28 @@ public class RaceGUIpreviousProcedure {
 								return new RaceGUIHumanMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 							}
 						}, _bpos);
+					}
+				} else {
+					if (entity instanceof Player _plr6 && _plr6.containerMenu instanceof RaceGUIDraconidMenu) {
+						if (entity instanceof ServerPlayer _ent) {
+							BlockPos _bpos = BlockPos.containing(x, y, z);
+							_ent.openMenu(new MenuProvider() {
+								@Override
+								public Component getDisplayName() {
+									return Component.literal("RaceGUI");
+								}
+
+								@Override
+								public boolean shouldTriggerClientSideContainerClosingOnOpen() {
+									return false;
+								}
+
+								@Override
+								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+									return new RaceGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+								}
+							}, _bpos);
+						}
 					}
 				}
 			}

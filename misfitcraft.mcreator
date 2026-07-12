@@ -237,6 +237,21 @@
           "src/main/java/net/mcreator/misfitcraft/Ggdf.java"
         ]
       }
+    },
+    {
+      "name": "RaceGUIDraconid",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_draconid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java"
+        ]
+      },
+      "path": "~/GUI"
     }
   ],
   "variable_elements": [],
