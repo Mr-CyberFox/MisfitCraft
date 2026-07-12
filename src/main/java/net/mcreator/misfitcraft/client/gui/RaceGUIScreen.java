@@ -90,9 +90,21 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		}).bounds(this.leftPos + 59, this.topPos + 172, 55, 20).build();
 		this.addRenderableWidget(button_select);
 		button_empty = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_empty"), e -> {
+			int x = RaceGUIScreen.this.x;
+			int y = RaceGUIScreen.this.y;
+			if (true) {
+				PacketDistributor.sendToServer(new RaceGUIButtonMessage(1, x, y, z));
+				RaceGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}).bounds(this.leftPos + -26, this.topPos + 70, 18, 20).build();
 		this.addRenderableWidget(button_empty);
 		button_empty1 = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_empty1"), e -> {
+			int x = RaceGUIScreen.this.x;
+			int y = RaceGUIScreen.this.y;
+			if (true) {
+				PacketDistributor.sendToServer(new RaceGUIButtonMessage(2, x, y, z));
+				RaceGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		}).bounds(this.leftPos + 186, this.topPos + 70, 18, 20).build();
 		this.addRenderableWidget(button_empty1);
 	}

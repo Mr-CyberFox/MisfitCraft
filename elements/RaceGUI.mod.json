@@ -32,6 +32,9 @@
           "name": "button_empty",
           "text": "<",
           "isUndecorated": false,
+          "onClick": {
+            "name": "RaceGUIprevious"
+          },
           "width": 18,
           "height": 20,
           "x": 100,
@@ -45,6 +48,9 @@
           "name": "button_empty1",
           "text": ">",
           "isUndecorated": false,
+          "onClick": {
+            "name": "RaceGUInext"
+          },
           "width": 18,
           "height": 20,
           "x": 312,

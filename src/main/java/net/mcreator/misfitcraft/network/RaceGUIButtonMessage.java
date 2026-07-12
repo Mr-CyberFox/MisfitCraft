@@ -16,6 +16,8 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
 import net.mcreator.misfitcraft.procedures.RaceGUIselectProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUIpreviousProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUInextProcedure;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
 @EventBusSubscriber
@@ -50,6 +52,14 @@ public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements
 		if (buttonID == 0) {
 
 			RaceGUIselectProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			RaceGUInextProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
