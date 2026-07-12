@@ -1,9 +1,6 @@
 package net.mcreator.misfitcraft.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.misfitcraft.init.MisfitcraftModAttributes;
+import net.neoforged.bus.api.Event;
 
 public class MagicTestProcedure {
 	public static void execute(Entity entity) {

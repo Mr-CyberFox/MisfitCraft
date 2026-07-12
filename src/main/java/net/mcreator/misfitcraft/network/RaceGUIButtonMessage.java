@@ -1,0 +1,55 @@
+package net.mcreator.misfitcraft.network;
+
+@EventBusSubscriber
+public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+
+	public static final Type<RaceGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MisfitcraftMod.MODID, "race_gui_buttons"));
+
+	public static final StreamCodec<RegistryFriendlyByteBuf, RaceGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, RaceGUIButtonMessage message) -> {
+		buffer.writeInt(message.buttonID);
+		buffer.writeInt(message.x);
+		buffer.writeInt(message.y);
+		buffer.writeInt(message.z);
+	}, (RegistryFriendlyByteBuf buffer) -> new RaceGUIButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+
+	@Override
+	public Type<RaceGUIButtonMessage> type() {
+		return TYPE;
+	}
+
+	public static void handleData(final RaceGUIButtonMessage message, final IPayloadContext context) {
+		if (context.flow() == PacketFlow.SERVERBOUND) {
+			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
+				context.connection().disconnect(Component.literal(e.getMessage()));
+				return null;
+			});
+		}
+	}
+
+	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
+		Level world = entity.level();
+
+		// security measure to prevent arbitrary chunk generation
+		if (!world.getChunkSource().hasChunk(SectionPos.blockToSectionCoord(x), SectionPos.blockToSectionCoord(z)))
+			return;
+
+		if (buttonID == 0) {
+
+			RaceGUIselectProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			RaceGUInextProcedure.execute(world, x, y, z, entity);
+		}
+	}
+
+	@SubscribeEvent
+	public static void registerMessage(FMLCommonSetupEvent event) {
+		MisfitcraftMod.addNetworkMessage(RaceGUIButtonMessage.TYPE, RaceGUIButtonMessage.STREAM_CODEC, RaceGUIButtonMessage::handleData);
+	}
+
+}

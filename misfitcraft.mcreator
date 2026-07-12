@@ -8,8 +8,7 @@
       "registry_name": "magic_power",
       "metadata": {
         "files": []
-      },
-      "path": "~/Magic Power System"
+      }
     },
     {
       "name": "MagicPowerOverlay",
@@ -21,8 +20,7 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/client/screens/MagicPowerOverlayOverlay.java"
         ]
-      },
-      "path": "~/Magic Power System"
+      }
     },
     {
       "name": "OpenMagicDisplay",
@@ -47,17 +45,6 @@
       }
     },
     {
-      "name": "MaxMagicPower",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "max_magic_power",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Magic Power System"
-    },
-    {
       "name": "MagicPowerStatOverlay",
       "type": "procedure",
       "compiles": true,
@@ -74,6 +61,41 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/MagicPowerStatOverlayProcedure.java"
         ]
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "ManaTimer",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_timer",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MagicTestButton",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_test_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/MagicTestButtonMessage.java"
+        ]
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MaxMagicPower",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_magic_power",
+      "metadata": {
+        "files": []
       },
       "path": "~/Magic Power System"
     },
@@ -116,28 +138,213 @@
       "path": "~/Magic Power System"
     },
     {
-      "name": "MagicTestButton",
+      "name": "RaceGUIselect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gu_iselect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RaceGUIOpenKey",
       "type": "keybind",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "magic_test_button",
+      "registry_name": "race_gui_open_key",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/network/MagicTestButtonMessage.java"
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIOpenKeyMessage.java"
         ]
       },
-      "path": "~/Magic Power System"
+      "path": "~/GUI"
     },
     {
-      "name": "ManaTimer",
-      "type": "attribute",
+      "name": "Ggdf",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ggdf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/Ggdf.java"
+        ]
+      }
+    },
+    {
+      "name": "RaceGUIOpen",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mana_timer",
+      "registry_name": "race_gui_open",
       "metadata": {
-        "files": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
+        ]
       },
-      "path": "~/Magic Power System"
+      "path": "~/GUI"
+    },
+    {
+      "name": "RaceGUIHuman",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_human",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RaceGUIprevious",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gu_iprevious",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RaceGUInext",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gu_inext",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RaceGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RaceGUISpirit",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_spirit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RaceGUIDraconid",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_draconid",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
     }
   ],
   "variable_elements": [
@@ -167,7 +374,6 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
-      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
@@ -176,6 +382,10 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "GUI",
+        "children": []
+      },
       {
         "name": "Magic Power System",
         "children": []
