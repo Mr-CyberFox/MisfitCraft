@@ -59,7 +59,7 @@
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIHuman",
@@ -74,7 +74,7 @@
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIprevious",
@@ -159,7 +159,7 @@
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIselect",
@@ -176,19 +176,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUIOpenKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_open_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIOpenKeyMessage.java"
         ]
       },
       "path": "~/GUI"
@@ -241,7 +228,7 @@
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Races"
     },
     {
       "name": "MagicPowerStatOverlay",
@@ -389,7 +376,6 @@
       "gui.misfitcraft.race_gui_spirit.label_difficulty_easy": "Difficulty: Medium",
       "gui.misfitcraft.race_gui_spirit.label_spirit_magic": " Spirit Magic",
       "gui.misfitcraft.race_gui_spirit.label_strength_high_stats": "Strength: Medium Stats",
-      "key.misfitcraft.race_gui_open_key": "Race GUI Open Key",
       "attribute.misfitcraft.mana_timer": "Mana Timer",
       "key.misfitcraft.magic_test_button": "Magic Test Button",
       "attribute.misfitcraft.max_magic_power": "Max Magic Power"
@@ -413,7 +399,12 @@
     "children": [
       {
         "name": "GUI",
-        "children": []
+        "children": [
+          {
+            "name": "Races",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Magic Power System",
