@@ -16,8 +16,8 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
 import net.mcreator.misfitcraft.procedures.RaceGUIselectProcedure;
-import net.mcreator.misfitcraft.procedures.RaceGUIHumanpreviousProcedure;
-import net.mcreator.misfitcraft.procedures.RaceGUIHumannextProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUIpreviousProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUInextProcedure;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
 @EventBusSubscriber
@@ -55,11 +55,11 @@ public record RaceGUIHumanButtonMessage(int buttonID, int x, int y, int z) imple
 		}
 		if (buttonID == 1) {
 
-			RaceGUIHumanpreviousProcedure.execute(world, x, y, z, entity);
+			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 
-			RaceGUIHumannextProcedure.execute(world, x, y, z, entity);
+			RaceGUInextProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

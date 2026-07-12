@@ -68,43 +68,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUIprevious",
-      "type": "procedure",
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "race_gu_iprevious",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -152,9 +117,9 @@
       "registry_name": "race_gui_spirit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -227,11 +192,11 @@
       "path": "~/GUI"
     },
     {
-      "name": "RaceGUISpiritnext",
+      "name": "RaceGUIprevious",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "race_gui_spiritnext",
+      "registry_name": "race_gu_iprevious",
       "metadata": {
         "dependencies": [
           {
@@ -256,112 +221,7 @@
           }
         ],
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUISpiritnextProcedure.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUISpiritprevious",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_spiritprevious",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUISpiritpreviousProcedure.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUIHumannext",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_humannext",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIHumannextProcedure.java"
-        ]
-      },
-      "path": "~/GUI"
-    },
-    {
-      "name": "RaceGUIHumanprevious",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_humanprevious",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIHumanpreviousProcedure.java"
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
       },
       "path": "~/GUI"
