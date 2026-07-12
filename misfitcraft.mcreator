@@ -43,18 +43,6 @@
       "metadata": {
         "files": []
       }
-    },
-    {
-      "name": "Test",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/screens/TestOverlay.java"
-        ]
-      }
     }
   ],
   "variable_elements": [],
@@ -73,8 +61,8 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/pack.mcmeta"
     ]
   },
