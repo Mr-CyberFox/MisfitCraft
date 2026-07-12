@@ -57,9 +57,9 @@
       "registry_name": "race_gui_human",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -142,9 +142,9 @@
       "registry_name": "race_gui_spirit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -206,14 +206,14 @@
     {
       "name": "RaceGUIDraconid",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_draconid",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -310,6 +310,17 @@
         ]
       },
       "path": "~/Magic Power System"
+    },
+    {
+      "name": "Race",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GUI/Races"
     }
   ],
   "variable_elements": [
@@ -367,7 +378,8 @@
       "gui.misfitcraft.race_gui_draconid.button_select": "Select",
       "attribute.misfitcraft.mana_timer": "Mana Timer",
       "key.misfitcraft.magic_test_button": "Magic Test Button",
-      "attribute.misfitcraft.max_magic_power": "Max Magic Power"
+      "attribute.misfitcraft.max_magic_power": "Max Magic Power",
+      "attribute.misfitcraft.race": "Race"
     }
   },
   "metadata": {
