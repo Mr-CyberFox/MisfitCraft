@@ -2,7 +2,7 @@ package net.mcreator.misfitcraft.procedures;
 
 import net.neoforged.bus.api.Event;
 
-public class RaceGUIpreviousProcedure {
+public class RaceGUIOpenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -11,7 +11,7 @@ public class RaceGUIpreviousProcedure {
 			_ent.openMenu(new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("RaceGUISpirit");
+					return Component.literal("RaceGUI");
 				}
 
 				@Override
@@ -21,7 +21,7 @@ public class RaceGUIpreviousProcedure {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new RaceGUISpiritMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+					return new RaceGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
 				}
 			}, _bpos);
 		}

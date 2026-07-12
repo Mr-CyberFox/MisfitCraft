@@ -16,6 +16,9 @@
           "name": "button_select",
           "text": "Select",
           "isUndecorated": false,
+          "onClick": {
+            "name": "RaceGUIselect"
+          },
           "width": 55,
           "height": 20,
           "x": 185,

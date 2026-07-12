@@ -1,5 +1,7 @@
 package net.mcreator.misfitcraft.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -10,6 +12,7 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
+import net.mcreator.misfitcraft.network.RaceGUIButtonMessage;
 import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -78,6 +81,12 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	public void init() {
 		super.init();
 		button_select = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_select"), e -> {
+			int x = RaceGUIScreen.this.x;
+			int y = RaceGUIScreen.this.y;
+			if (true) {
+				PacketDistributor.sendToServer(new RaceGUIButtonMessage(0, x, y, z));
+				RaceGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + 59, this.topPos + 172, 55, 20).build();
 		this.addRenderableWidget(button_select);
 		button_empty = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_empty"), e -> {
