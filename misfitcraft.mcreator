@@ -1,14 +1,28 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "MagicPower",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_power",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "attribute.misfitcraft.magic_power": "Magic Power"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
