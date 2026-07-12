@@ -49,14 +49,14 @@
     {
       "name": "RaceGUI",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -64,13 +64,13 @@
     {
       "name": "RaceGUIHuman",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_human",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
         ]
       },
@@ -149,7 +149,7 @@
     {
       "name": "RaceGUISpirit",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_spirit",
       "metadata": {
@@ -236,9 +236,9 @@
       "registry_name": "race_gui_draconid",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -379,19 +379,32 @@
       "gui.misfitcraft.race_gui.button_select": "Select",
       "gui.misfitcraft.race_gui.button_empty1": "\u003e",
       "gui.misfitcraft.race_gui.button_empty": "\u003c",
-      "gui.misfitcraft.race_gui.label_weakness_holy_magic": "Weakness: Holy Magic"
+      "gui.misfitcraft.race_gui.label_weakness_holy_magic": "Weakness: Holy Magic",
+      "gui.misfitcraft.race_gui_spirit.label_weakness_holy_magic": "Weakness: Spiritosis",
+      "gui.misfitcraft.race_gui_spirit.label_magic_power_10002000": "Magic Power: 700-1000",
+      "gui.misfitcraft.race_gui_spirit.button_select": "Select",
+      "gui.misfitcraft.race_gui_spirit.label_demon": "Spirit",
+      "gui.misfitcraft.race_gui_spirit.button_empty1": "\u003e",
+      "gui.misfitcraft.race_gui_spirit.button_empty": "\u003c",
+      "gui.misfitcraft.race_gui_spirit.label_difficulty_easy": "Difficulty: Medium",
+      "gui.misfitcraft.race_gui_spirit.label_spirit_magic": " Spirit Magic",
+      "gui.misfitcraft.race_gui_spirit.label_strength_high_stats": "Strength: Medium Stats",
+      "key.misfitcraft.race_gui_open_key": "Race GUI Open Key",
+      "attribute.misfitcraft.mana_timer": "Mana Timer",
+      "key.misfitcraft.magic_test_button": "Magic Test Button",
+      "attribute.misfitcraft.max_magic_power": "Max Magic Power"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
     ]
   },
