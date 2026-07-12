@@ -8,7 +8,8 @@
       "registry_name": "magic_power",
       "metadata": {
         "files": []
-      }
+      },
+      "path": "~/Magic Power System"
     },
     {
       "name": "MagicPowerOverlay",
@@ -20,7 +21,8 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/client/screens/MagicPowerOverlayOverlay.java"
         ]
-      }
+      },
+      "path": "~/Magic Power System"
     },
     {
       "name": "SourcePoints",
