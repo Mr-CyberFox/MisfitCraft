@@ -43,7 +43,7 @@ public class RaceGUIMenu extends AbstractContainerMenu implements MisfitcraftMod
 	private BlockEntity boundBlockEntity = null;
 
 	public RaceGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MisfitcraftModMenus.RACE_GUI.get(), id);
+		super(MisfitcraftModMenus.RACE_GUI_DEMON.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
 		this.internal = new ItemStackHandler(0);
