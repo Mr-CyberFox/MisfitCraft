@@ -29,6 +29,9 @@
           "name": "button_empty",
           "text": "<",
           "isUndecorated": false,
+          "onClick": {
+            "name": "RaceGUISpiritprevious"
+          },
           "width": 18,
           "height": 20,
           "x": 100,

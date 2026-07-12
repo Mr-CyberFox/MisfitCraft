@@ -15,26 +15,26 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
-import net.mcreator.misfitcraft.procedures.RaceGUISpiritpreviousProcedure;
-import net.mcreator.misfitcraft.procedures.RaceGUISpiritnextProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUIHumanpreviousProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUIHumannextProcedure;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
 @EventBusSubscriber
-public record RaceGUISpiritButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
-	public static final Type<RaceGUISpiritButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MisfitcraftMod.MODID, "race_gui_spirit_buttons"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, RaceGUISpiritButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, RaceGUISpiritButtonMessage message) -> {
+public record RaceGUIHumanButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+	public static final Type<RaceGUIHumanButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MisfitcraftMod.MODID, "race_gui_human_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, RaceGUIHumanButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, RaceGUIHumanButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
-	}, (RegistryFriendlyByteBuf buffer) -> new RaceGUISpiritButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new RaceGUIHumanButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 
 	@Override
-	public Type<RaceGUISpiritButtonMessage> type() {
+	public Type<RaceGUIHumanButtonMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final RaceGUISpiritButtonMessage message, final IPayloadContext context) {
+	public static void handleData(final RaceGUIHumanButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
@@ -50,16 +50,16 @@ public record RaceGUISpiritButtonMessage(int buttonID, int x, int y, int z) impl
 			return;
 		if (buttonID == 1) {
 
-			RaceGUISpiritpreviousProcedure.execute(world, x, y, z, entity);
+			RaceGUIHumanpreviousProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 
-			RaceGUISpiritnextProcedure.execute(world, x, y, z, entity);
+			RaceGUIHumannextProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MisfitcraftMod.addNetworkMessage(RaceGUISpiritButtonMessage.TYPE, RaceGUISpiritButtonMessage.STREAM_CODEC, RaceGUISpiritButtonMessage::handleData);
+		MisfitcraftMod.addNetworkMessage(RaceGUIHumanButtonMessage.TYPE, RaceGUIHumanButtonMessage.STREAM_CODEC, RaceGUIHumanButtonMessage::handleData);
 	}
 }
