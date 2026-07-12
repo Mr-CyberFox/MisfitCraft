@@ -77,7 +77,7 @@
     {
       "name": "RaceGUIprevious",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gu_iprevious",
       "metadata": {
