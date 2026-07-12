@@ -204,7 +204,7 @@
     {
       "name": "RaceGUIDraconid",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_draconid",
       "metadata": {
@@ -455,12 +455,13 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
     ]
   },
   "foldersRoot": {
