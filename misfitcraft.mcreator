@@ -43,6 +43,18 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Test",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/screens/TestOverlay.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -54,8 +66,7 @@
       "attribute.misfitcraft.magic_power": "Magic Power",
       "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
       "gui.misfitcraft.magic_power_overlay.label_100100": "100/100",
-      "key.misfitcraft.open_magic_display": "Open Magic Display",
-      "attribute.misfitcraft.source_points": "Source Points"
+      "key.misfitcraft.open_magic_display": "Open Magic Display"
     }
   },
   "metadata": {
