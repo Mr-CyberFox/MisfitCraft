@@ -10,5 +10,6 @@
   "gui.misfitcraft.race_gui.button_select": "Select",
   "gui.misfitcraft.race_gui.button_empty1": "\u003e",
   "gui.misfitcraft.race_gui.button_empty": "\u003c",
-  "gui.misfitcraft.race_gui.label_weakness_holy_magic": "Weakness: Holy Magic"
+  "gui.misfitcraft.race_gui.label_weakness_holy_magic": "Weakness: Holy Magic",
+  "key.misfitcraft.race_gui_open_key": "Race GUI Open Key"
 }

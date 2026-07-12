@@ -53,7 +53,72 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "RaceGUIselect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gu_iselect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "RaceGUIOpenKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_open_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIOpenKeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "RaceGUIOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
         ]
       }
     }
@@ -75,7 +140,8 @@
       "gui.misfitcraft.race_gui.button_select": "Select",
       "gui.misfitcraft.race_gui.button_empty1": "\u003e",
       "gui.misfitcraft.race_gui.button_empty": "\u003c",
-      "gui.misfitcraft.race_gui.label_weakness_holy_magic": "Weakness: Holy Magic"
+      "gui.misfitcraft.race_gui.label_weakness_holy_magic": "Weakness: Holy Magic",
+      "key.misfitcraft.race_gui_open_key": "Race GUI Open Key"
     }
   },
   "metadata": {
