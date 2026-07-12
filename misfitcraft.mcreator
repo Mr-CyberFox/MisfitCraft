@@ -52,9 +52,9 @@
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -62,14 +62,14 @@
     {
       "name": "RaceGUIHuman",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_human",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -112,7 +112,7 @@
     {
       "name": "RaceGUInext",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gu_inext",
       "metadata": {
@@ -147,14 +147,14 @@
     {
       "name": "RaceGUISpirit",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_spirit",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -181,7 +181,7 @@
     {
       "name": "RaceGUIOpenKey",
       "type": "keybind",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_open_key",
       "metadata": {
@@ -194,7 +194,7 @@
     {
       "name": "RaceGUIOpen",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_open",
       "metadata": {
@@ -410,12 +410,12 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
