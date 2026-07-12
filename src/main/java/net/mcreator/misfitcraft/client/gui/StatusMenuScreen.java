@@ -43,7 +43,7 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		if (PlayermodelProcedure.execute(entity) instanceof LivingEntity livingEntity) {
-			MisfitcraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 33, this.topPos + 120, 40, 0f, 0, livingEntity);
+			MisfitcraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 35, this.topPos + 60, 40, 0f, 0, livingEntity);
 		}
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
