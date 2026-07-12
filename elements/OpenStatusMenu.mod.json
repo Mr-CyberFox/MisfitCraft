@@ -4,7 +4,7 @@
   "definition": {
     "triggerKey": "B",
     "keyBindingName": "Open Status Menu",
-    "keyBindingCategoryKey": "misc",
+    "keyBindingCategoryKey": "ui",
     "onKeyPressed": {
       "name": "StatusMenuOpen"
     }
