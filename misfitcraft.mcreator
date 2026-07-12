@@ -9,6 +9,18 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "MagicPowerOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_power_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/screens/MagicPowerOverlayOverlay.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -17,14 +29,16 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "attribute.misfitcraft.magic_power": "Magic Power"
+      "attribute.misfitcraft.magic_power": "Magic Power",
+      "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
+      "gui.misfitcraft.magic_power_overlay.label_100100": "100/100"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/pack.mcmeta"
     ]
   },

@@ -1,3 +1,5 @@
 {
-  "attribute.misfitcraft.magic_power": "Magic Power"
+  "attribute.misfitcraft.magic_power": "Magic Power",
+  "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
+  "gui.misfitcraft.magic_power_overlay.label_100100": "100/100"
 }
