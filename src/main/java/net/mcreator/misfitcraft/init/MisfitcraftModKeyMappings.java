@@ -16,7 +16,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.misfitcraft.network.RaceGUIOpenKeyMessage;
-import net.mcreator.misfitcraft.network.MagicTestButtonMessage;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class MisfitcraftModKeyMappings {
@@ -34,25 +33,11 @@ public class MisfitcraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping MAGIC_TEST_BUTTON = new KeyMapping("key.misfitcraft.magic_test_button", GLFW.GLFW_KEY_X, "key.categories.misc") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new MagicTestButtonMessage(0, 0));
-				MagicTestButtonMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(OPEN_MAGIC_DISPLAY);
 		event.register(RACE_GUI_OPEN_KEY);
-		event.register(MAGIC_TEST_BUTTON);
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)
@@ -61,7 +46,6 @@ public class MisfitcraftModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				RACE_GUI_OPEN_KEY.consumeClick();
-				MAGIC_TEST_BUTTON.consumeClick();
 			}
 		}
 	}
