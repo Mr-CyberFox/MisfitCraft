@@ -1,22 +1,6 @@
 package net.mcreator.misfitcraft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.misfitcraft.world.inventory.RaceGUISpiritMenu;
-import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
-import net.mcreator.misfitcraft.world.inventory.RaceGUIHumanMenu;
-import net.mcreator.misfitcraft.world.inventory.RaceGUIDraconidMenu;
-
-import io.netty.buffer.Unpooled;
+import net.neoforged.bus.api.Event;
 
 public class RaceGUIpreviousProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

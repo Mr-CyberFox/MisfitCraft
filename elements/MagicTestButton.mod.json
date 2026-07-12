@@ -1,0 +1,12 @@
+{
+  "_fv": 85,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Magic Test Button",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "MagicTest"
+    }
+  }
+}
