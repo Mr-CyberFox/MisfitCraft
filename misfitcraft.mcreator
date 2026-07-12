@@ -49,7 +49,7 @@
     {
       "name": "RaceGUI",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui",
       "metadata": {
@@ -59,12 +59,12 @@
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIHuman",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_human",
       "metadata": {
@@ -74,7 +74,7 @@
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIprevious",
@@ -149,17 +149,17 @@
     {
       "name": "RaceGUISpirit",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_spirit",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java"
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIselect",
@@ -228,7 +228,7 @@
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "MagicPowerStatOverlay",
