@@ -42,6 +42,9 @@
           "name": "button_empty1",
           "text": ">",
           "isUndecorated": false,
+          "onClick": {
+            "name": "RaceGUISpiritnext"
+          },
           "width": 18,
           "height": 20,
           "x": 312,
