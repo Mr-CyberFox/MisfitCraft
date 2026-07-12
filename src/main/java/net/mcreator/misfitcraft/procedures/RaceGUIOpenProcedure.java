@@ -1,5 +1,10 @@
 package net.mcreator.misfitcraft.procedures;
 
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
+
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -13,10 +18,22 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
 
+import javax.annotation.Nullable;
+
 import io.netty.buffer.Unpooled;
 
+@EventBusSubscriber
 public class RaceGUIOpenProcedure {
+	@SubscribeEvent
+	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+	}
+
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
+	}
+
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof ServerPlayer _ent) {
