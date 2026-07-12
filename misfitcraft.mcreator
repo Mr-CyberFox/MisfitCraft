@@ -45,7 +45,7 @@
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIHuman",
@@ -60,7 +60,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIprevious",
@@ -95,7 +95,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Race GUI Components"
     },
     {
       "name": "RaceGUInext",
@@ -130,7 +130,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Race GUI Components"
     },
     {
       "name": "RaceGUISpirit",
@@ -145,7 +145,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIselect",
@@ -164,7 +164,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Race GUI Components"
     },
     {
       "name": "RaceGUIOpen",
@@ -199,7 +199,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Race GUI Components"
     },
     {
       "name": "RaceGUIDraconid",
@@ -214,7 +214,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/GUI/Races"
     },
     {
       "name": "MagicPowerStatOverlay",
@@ -459,7 +459,7 @@
       "attribute.misfitcraft.mana_timer": "Mana Timer",
       "key.misfitcraft.magic_test_button": "Magic Test Button",
       "attribute.misfitcraft.max_magic_power": "Max Magic Power",
-      "key.misfitcraft.open_status_menu": "Open Status Menu",
+      "key.misfitcraft.open_status_menu": "Status Menu",
       "attribute.misfitcraft.race": "Race"
     }
   },
