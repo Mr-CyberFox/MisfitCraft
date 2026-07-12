@@ -227,21 +227,9 @@
       "path": "~/GUI"
     },
     {
-      "name": "Ggdf",
-      "type": "code",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "ggdf",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/Ggdf.java"
-        ]
-      }
-    },
-    {
       "name": "RaceGUIDraconid",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "race_gui_draconid",
       "metadata": {
@@ -252,9 +240,109 @@
         ]
       },
       "path": "~/GUI"
+    },
+    {
+      "name": "MagicPowerStatOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_power_stat_overlay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/MagicPowerStatOverlayProcedure.java"
+        ]
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "ManaTimer",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_timer",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MagicTestButton",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_test_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/MagicTestButtonMessage.java"
+        ]
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MaxMagicPower",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_magic_power",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MagicPowerRegen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_power_regen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/MagicPowerRegenProcedure.java"
+        ]
+      },
+      "path": "~/Magic Power System"
+    },
+    {
+      "name": "MagicTest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_test",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/MagicTestProcedure.java"
+        ]
+      },
+      "path": "~/Magic Power System"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "MagicPower",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "100"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
@@ -306,12 +394,12 @@
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
@@ -319,6 +407,10 @@
     "children": [
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Magic Power System",
         "children": []
       }
     ]

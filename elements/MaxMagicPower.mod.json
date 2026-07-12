@@ -2,7 +2,7 @@
   "_fv": 85,
   "_type": "attribute",
   "definition": {
-    "name": "Magic Power",
+    "name": "Max Magic Power",
     "minValue": 0.0,
     "maxValue": 1.0E9,
     "defaultValue": 100.0,

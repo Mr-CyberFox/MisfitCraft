@@ -16,27 +16,28 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "anchorPoint": "CENTER",
-          "x": 13,
-          "y": 15,
+          "anchorPoint": "TOP_LEFT",
+          "x": 6,
+          "y": 8,
           "locked": false
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_100100",
+          "name": "label_proc_magic_power_stat_overlay",
           "text": {
-            "fixedValue": "100/100"
+            "fixedValue": "",
+            "name": "MagicPowerStatOverlay"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
           "hasShadow": false,
-          "anchorPoint": "CENTER",
-          "x": 13,
-          "y": 29,
+          "anchorPoint": "TOP_LEFT",
+          "x": 6,
+          "y": 26,
           "locked": false
         }
       }
@@ -48,7 +49,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }
