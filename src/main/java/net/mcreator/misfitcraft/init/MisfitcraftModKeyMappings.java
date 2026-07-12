@@ -19,7 +19,6 @@ import net.mcreator.misfitcraft.network.MagicTestButtonMessage;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class MisfitcraftModKeyMappings {
-	public static final KeyMapping OPEN_MAGIC_DISPLAY = new KeyMapping("key.misfitcraft.open_magic_display", GLFW.GLFW_KEY_O, "key.categories.misc");
 	public static final KeyMapping MAGIC_TEST_BUTTON = new KeyMapping("key.misfitcraft.magic_test_button", GLFW.GLFW_KEY_X, "key.categories.misc") {
 		private boolean isDownOld = false;
 
@@ -36,7 +35,6 @@ public class MisfitcraftModKeyMappings {
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
-		event.register(OPEN_MAGIC_DISPLAY);
 		event.register(MAGIC_TEST_BUTTON);
 	}
 
