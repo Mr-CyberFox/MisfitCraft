@@ -8,8 +8,7 @@
       "registry_name": "magic_power",
       "metadata": {
         "files": []
-      },
-      "path": "~/Magic Power System"
+      }
     },
     {
       "name": "MagicPowerOverlay",
@@ -21,8 +20,7 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/client/screens/MagicPowerOverlayOverlay.java"
         ]
-      },
-      "path": "~/Magic Power System"
+      }
     },
     {
       "name": "SourcePoints",
@@ -32,8 +30,7 @@
       "registry_name": "source_points",
       "metadata": {
         "files": []
-      },
-      "path": "~/Source Points"
+      }
     },
     {
       "name": "RaceGUI",
@@ -48,7 +45,7 @@
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIHuman",
@@ -58,12 +55,12 @@
       "registry_name": "race_gui_human",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIprevious",
@@ -98,7 +95,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUInext",
@@ -133,7 +130,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUISpirit",
@@ -143,12 +140,12 @@
       "registry_name": "race_gui_spirit",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIselect",
@@ -167,7 +164,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIOpen",
@@ -202,7 +199,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIDraconid",
@@ -213,11 +210,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java"
+          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "MagicPowerStatOverlay",
@@ -313,17 +310,6 @@
       "path": "~/Magic Power System"
     },
     {
-      "name": "Race",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GUI/Races"
-    },
-    {
       "name": "StatusMenu",
       "type": "gui",
       "compiles": true,
@@ -406,15 +392,15 @@
       "path": "~/GUI/Status Menu"
     },
     {
-      "name": "MaxSourcePoints",
+      "name": "Race",
       "type": "attribute",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "max_source_points",
+      "registry_name": "race",
       "metadata": {
         "files": []
       },
-      "path": "~/Source Points"
+      "path": "~/GUI/Races"
     },
     {
       "name": "SourcePointDeath",
@@ -436,6 +422,17 @@
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/SourcePointDeathProcedure.java"
         ]
+      },
+      "path": "~/Source Points"
+    },
+    {
+      "name": "MaxSourcePoints",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_source_points",
+      "metadata": {
+        "files": []
       },
       "path": "~/Source Points"
     }
@@ -496,26 +493,25 @@
       "attribute.misfitcraft.mana_timer": "Mana Timer",
       "key.misfitcraft.magic_test_button": "Magic Test Button",
       "attribute.misfitcraft.max_magic_power": "Max Magic Power",
-      "attribute.misfitcraft.race": "Race",
       "key.misfitcraft.open_status_menu": "Status Menu",
+      "attribute.misfitcraft.race": "Race",
+      "attribute.misfitcraft.max_source_points": "Max Source Points",
       "gui.misfitcraft.race_gui.label_select": "Select",
       "gui.misfitcraft.status_menu.label_magic_power": "Magic Power:",
       "gui.misfitcraft.status_menu.label_race": "Race:",
-      "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage",
-      "gui.misfitcraft.status_menu.label_source_points": "Source Points:",
-      "attribute.misfitcraft.max_source_points": "Max Source Points"
+      "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
     ]
   },
