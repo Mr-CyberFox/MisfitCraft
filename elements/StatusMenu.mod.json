@@ -133,24 +133,6 @@
           "y": 62,
           "locked": false
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_race_overlay",
-          "text": {
-            "fixedValue": "",
-            "name": "RaceOverlay"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 222,
-          "y": 62,
-          "locked": false
-        }
       }
     ],
     "gridSettings": {

@@ -49,6 +49,5 @@
   "gui.misfitcraft.status_menu.label_race": "Race:",
   "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage",
   "gui.misfitcraft.status_menu.label_source_points": "Source Points:",
-  "attribute.misfitcraft.max_source_points": "Max Source Points",
-  "attribute.misfitcraft.race_navigation": "Race Navigation"
+  "attribute.misfitcraft.max_source_points": "Max Source Points"
 }

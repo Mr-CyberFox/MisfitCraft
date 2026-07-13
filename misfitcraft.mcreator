@@ -438,77 +438,6 @@
         ]
       },
       "path": "~/Source Points"
-    },
-    {
-      "name": "RaceOverlay",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_overlay",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/RaceOverlayProcedure.java"
-        ]
-      },
-      "path": "~/GUI/Races"
-    },
-    {
-      "name": "RaceNavigation",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_navigation",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/GUI/Races"
-    },
-    {
-      "name": "Playername",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "playername",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/PlayernameProcedure.java"
-        ]
-      },
-      "path": "~/GUI/Status Menu"
-    },
-    {
-      "name": "SourcePointsStatOverlay",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "source_points_stat_overlay",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/SourcePointsStatOverlayProcedure.java"
-        ]
-      },
-      "path": "~/Source Points"
     }
   ],
   "variable_elements": [
@@ -574,8 +503,7 @@
       "gui.misfitcraft.status_menu.label_race": "Race:",
       "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage",
       "gui.misfitcraft.status_menu.label_source_points": "Source Points:",
-      "attribute.misfitcraft.max_source_points": "Max Source Points",
-      "attribute.misfitcraft.race_navigation": "Race Navigation"
+      "attribute.misfitcraft.max_source_points": "Max Source Points"
     }
   },
   "metadata": {

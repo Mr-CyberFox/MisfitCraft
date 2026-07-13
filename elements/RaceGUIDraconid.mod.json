@@ -97,7 +97,7 @@
         "data": {
           "name": "label_weakness_holy_magic",
           "text": {
-            "fixedValue": "Weakness: Weak Magic"
+            "fixedValue": "Weakness: None"
           },
           "color": {
             "value": -12829636,
