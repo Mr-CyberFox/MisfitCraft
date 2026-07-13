@@ -15,9 +15,19 @@
         "data": {
           "image": "racescreen.png",
           "use1Xscale": false,
-          "x": 123,
-          "y": 53,
+          "x": 125,
+          "y": 57,
           "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "guisplit.png",
+          "use1Xscale": false,
+          "x": 130,
+          "y": 77,
+          "locked": false
         }
       },
       {
@@ -25,8 +35,8 @@
         "data": {
           "image": "racescreensprite.png",
           "use1Xscale": false,
-          "x": 277,
-          "y": 39,
+          "x": 275,
+          "y": 45,
           "locked": true
         }
       },
@@ -35,9 +45,9 @@
         "data": {
           "image": "c793bd3e-ff10-4cc7-a739-4efe362cf637.png",
           "use1Xscale": false,
-          "x": 279,
-          "y": 41,
-          "locked": true
+          "x": 277,
+          "y": 47,
+          "locked": false
         }
       },
       {
@@ -49,8 +59,8 @@
           "onClick": {
             "name": "RaceGUIselect"
           },
-          "x": 189,
-          "y": 177,
+          "x": 190,
+          "y": 179,
           "locked": true
         }
       },
@@ -63,8 +73,8 @@
           "onClick": {
             "name": "RaceGUInext"
           },
-          "x": 245,
-          "y": 163,
+          "x": 246,
+          "y": 165,
           "locked": true
         }
       },
@@ -77,17 +87,85 @@
           "onClick": {
             "name": "RaceGUIprevious"
           },
-          "x": 132,
-          "y": 163,
+          "x": 134,
+          "y": 165,
           "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_demon",
+          "text": {
+            "fixedValue": "Demon"
+          },
+          "color": {
+            "value": -65485,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 72,
+          "y": 61,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_human",
+          "text": {
+            "fixedValue": "Human"
+          },
+          "color": {
+            "value": -13382401,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 72,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_spirit",
+          "text": {
+            "fixedValue": "Spirit"
+          },
+          "color": {
+            "value": -13382656,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 72,
+          "y": 85,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_draconid",
+          "text": {
+            "fixedValue": "Draconid"
+          },
+          "color": {
+            "value": -3355648,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 72,
+          "y": 97,
+          "locked": false
         }
       }
     ],
     "gridSettings": {
       "sx": 16,
       "sy": 16,
-      "ox": 24,
-      "oy": 1,
+      "ox": 51,
+      "oy": 24,
       "snapOnGrid": true
     }
   }

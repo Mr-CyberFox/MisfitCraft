@@ -28,8 +28,9 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private ImageButton imagebutton_backbutton;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/race_gui.png");
 	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("misfitcraft:textures/screens/racescreen.png");
-	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("misfitcraft:textures/screens/racescreensprite.png");
-	private static final ResourceLocation IMAGE_2 = ResourceLocation.parse("misfitcraft:textures/screens/c793bd3e-ff10-4cc7-a739-4efe362cf637.png");
+	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
+	private static final ResourceLocation IMAGE_2 = ResourceLocation.parse("misfitcraft:textures/screens/racescreensprite.png");
+	private static final ResourceLocation IMAGE_3 = ResourceLocation.parse("misfitcraft:textures/screens/c793bd3e-ff10-4cc7-a739-4efe362cf637.png");
 
 	public RaceGUIScreen(RaceGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -60,9 +61,10 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(IMAGE_0, this.leftPos + -5, this.topPos + -4, 0, 0, 179, 132, 179, 132);
-		guiGraphics.blit(IMAGE_1, this.leftPos + 149, this.topPos + -18, 0, 0, 36, 36, 36, 36);
-		guiGraphics.blit(IMAGE_2, this.leftPos + 151, this.topPos + -16, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(IMAGE_0, this.leftPos + -3, this.topPos + 0, 0, 0, 178, 132, 178, 132);
+		guiGraphics.blit(IMAGE_1, this.leftPos + 2, this.topPos + 20, 0, 0, 168, 3, 168, 3);
+		guiGraphics.blit(IMAGE_2, this.leftPos + 147, this.topPos + -12, 0, 0, 36, 36, 36, 36);
+		guiGraphics.blit(IMAGE_3, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
 		RenderSystem.disableBlend();
 	}
 
@@ -77,12 +79,16 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_demon"), -56, 4, -65485, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_human"), -56, 16, -13382401, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), -56, 28, -13382656, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), -56, 40, -3355648, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_raceselect = new ImageButton(this.leftPos + 61, this.topPos + 120, 48, 17,
+		imagebutton_raceselect = new ImageButton(this.leftPos + 62, this.topPos + 122, 48, 17,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/raceselect.png"), ResourceLocation.parse("misfitcraft:textures/screens/raceselecthover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
@@ -97,7 +103,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		};
 		this.addRenderableWidget(imagebutton_raceselect);
-		imagebutton_nextbutton = new ImageButton(this.leftPos + 117, this.topPos + 106, 48, 16,
+		imagebutton_nextbutton = new ImageButton(this.leftPos + 118, this.topPos + 108, 48, 16,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/nextbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/nextbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
@@ -112,7 +118,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		};
 		this.addRenderableWidget(imagebutton_nextbutton);
-		imagebutton_backbutton = new ImageButton(this.leftPos + 4, this.topPos + 106, 48, 16,
+		imagebutton_backbutton = new ImageButton(this.leftPos + 6, this.topPos + 108, 48, 16,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/backbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/backbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
