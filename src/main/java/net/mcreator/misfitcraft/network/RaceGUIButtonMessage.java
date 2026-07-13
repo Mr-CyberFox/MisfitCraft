@@ -51,7 +51,7 @@ public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements
 			return;
 		if (buttonID == 0) {
 
-			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
+			RaceGUIselectProcedure.execute(entity);
 		}
 		if (buttonID == 1) {
 
@@ -59,7 +59,7 @@ public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements
 		}
 		if (buttonID == 2) {
 
-			RaceGUIselectProcedure.execute(entity);
+			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

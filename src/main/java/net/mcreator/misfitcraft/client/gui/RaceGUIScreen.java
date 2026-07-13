@@ -10,7 +10,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
@@ -24,9 +23,9 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
-	private Button button_empty;
-	private Button button_empty1;
 	private ImageButton imagebutton_raceselect;
+	private ImageButton imagebutton_nextbutton;
+	private ImageButton imagebutton_backbutton;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/race_gui.png");
 	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("misfitcraft:textures/screens/racescreen.png");
 	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("misfitcraft:textures/screens/racescreensprite.png");
@@ -78,32 +77,43 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_select"), 70, 122, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		button_empty = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_empty"), e -> {
-			int x = RaceGUIScreen.this.x;
-			int y = RaceGUIScreen.this.y;
-			if (true) {
-				PacketDistributor.sendToServer(new RaceGUIButtonMessage(0, x, y, z));
-				RaceGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}).bounds(this.leftPos + -28, this.topPos + 50, 18, 20).build();
-		this.addRenderableWidget(button_empty);
-		button_empty1 = Button.builder(Component.translatable("gui.misfitcraft.race_gui.button_empty1"), e -> {
-			int x = RaceGUIScreen.this.x;
-			int y = RaceGUIScreen.this.y;
-			if (true) {
-				PacketDistributor.sendToServer(new RaceGUIButtonMessage(1, x, y, z));
-				RaceGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		}).bounds(this.leftPos + 184, this.topPos + 50, 18, 20).build();
-		this.addRenderableWidget(button_empty1);
-		imagebutton_raceselect = new ImageButton(this.leftPos + 62, this.topPos + 120, 48, 16,
+		imagebutton_raceselect = new ImageButton(this.leftPos + 61, this.topPos + 120, 48, 17,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/raceselect.png"), ResourceLocation.parse("misfitcraft:textures/screens/raceselecthover.png")), e -> {
+					int x = RaceGUIScreen.this.x;
+					int y = RaceGUIScreen.this.y;
+					if (true) {
+						PacketDistributor.sendToServer(new RaceGUIButtonMessage(0, x, y, z));
+						RaceGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		this.addRenderableWidget(imagebutton_raceselect);
+		imagebutton_nextbutton = new ImageButton(this.leftPos + 117, this.topPos + 106, 48, 16,
+				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/nextbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/nextbuttonhover.png")), e -> {
+					int x = RaceGUIScreen.this.x;
+					int y = RaceGUIScreen.this.y;
+					if (true) {
+						PacketDistributor.sendToServer(new RaceGUIButtonMessage(1, x, y, z));
+						RaceGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
+			}
+		};
+		this.addRenderableWidget(imagebutton_nextbutton);
+		imagebutton_backbutton = new ImageButton(this.leftPos + 4, this.topPos + 106, 48, 16,
+				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/backbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/backbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
 					if (true) {
@@ -116,6 +126,6 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		this.addRenderableWidget(imagebutton_raceselect);
+		this.addRenderableWidget(imagebutton_backbutton);
 	}
 }
