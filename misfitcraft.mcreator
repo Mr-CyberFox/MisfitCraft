@@ -57,7 +57,28 @@
       "locked_code": false,
       "registry_name": "race_gu_iprevious",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
@@ -71,7 +92,28 @@
       "locked_code": false,
       "registry_name": "race_gu_inext",
       "metadata": {
-        "dependencies": [],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
@@ -362,6 +404,46 @@
         "files": []
       },
       "path": "~/GUI/Races"
+    },
+    {
+      "name": "AharthernDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aharthern_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/block/AharthernDimensionPortalBlock.java",
+          "src/main/resources/assets/misfitcraft/models/block/aharthern_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/misfitcraft/item/AharthernDimensionItem.java",
+          "src/main/resources/data/misfitcraft/dimension/aharthern_dimension.json",
+          "src/main/resources/assets/misfitcraft/models/block/aharthern_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/misfitcraft/world/dimension/AharthernDimensionDimension.java",
+          "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionPortalShape.java",
+          "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionTeleporter.java",
+          "src/main/resources/data/misfitcraft/dimension_type/aharthern_dimension.json",
+          "src/main/resources/assets/misfitcraft/blockstates/aharthern_dimension_portal.json",
+          "src/main/resources/assets/misfitcraft/models/item/aharthern_dimension.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "AharthernForest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aharthern_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/aharthern_forest_tree.json",
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/aharthern_forest_tree.json",
+          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
+          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
+          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestLeaveDecorator.java"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
     }
   ],
   "variable_elements": [
@@ -373,7 +455,11 @@
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
@@ -404,8 +490,7 @@
       "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage",
       "gui.misfitcraft.race_gui.label_human": "Human",
       "gui.misfitcraft.race_gui.label_spirit": "Spirit",
-      "gui.misfitcraft.race_gui.label_draconid": "Draconid",
-      "attribute.misfitcraft.race_navigation": "Race Navigation"
+      "gui.misfitcraft.race_gui.label_draconid": "Draconid"
     }
   },
   "metadata": {
@@ -424,6 +509,10 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "Biomes and Dimensions",
+        "children": []
+      },
       {
         "name": "GUI",
         "children": [

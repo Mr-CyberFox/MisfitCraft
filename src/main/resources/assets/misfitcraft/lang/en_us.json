@@ -26,6 +26,5 @@
   "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage",
   "gui.misfitcraft.race_gui.label_human": "Human",
   "gui.misfitcraft.race_gui.label_spirit": "Spirit",
-  "gui.misfitcraft.race_gui.label_draconid": "Draconid",
-  "attribute.misfitcraft.race_navigation": "Race Navigation"
+  "gui.misfitcraft.race_gui.label_draconid": "Draconid"
 }
