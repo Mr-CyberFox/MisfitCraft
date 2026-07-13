@@ -568,12 +568,14 @@
       "key.misfitcraft.magic_test_button": "Magic Test Button",
       "attribute.misfitcraft.max_magic_power": "Max Magic Power",
       "attribute.misfitcraft.race": "Race",
-      "key.misfitcraft.open_status_menu": "Open Status Menu",
+      "key.misfitcraft.open_status_menu": "Status Menu",
       "gui.misfitcraft.race_gui.label_select": "Select",
       "gui.misfitcraft.status_menu.label_magic_power": "Magic Power:",
       "gui.misfitcraft.status_menu.label_race": "Race:",
       "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage",
-      "gui.misfitcraft.status_menu.label_source_points": "Source Points:"
+      "gui.misfitcraft.status_menu.label_source_points": "Source Points:",
+      "attribute.misfitcraft.max_source_points": "Max Source Points",
+      "attribute.misfitcraft.race_navigation": "Race Navigation"
     }
   },
   "metadata": {

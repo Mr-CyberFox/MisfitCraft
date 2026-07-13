@@ -1,6 +1,9 @@
 package net.mcreator.misfitcraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.misfitcraft.init.MisfitcraftModAttributes;
 
 public class RaceOverlayProcedure {
 	public static String execute(Entity entity) {
