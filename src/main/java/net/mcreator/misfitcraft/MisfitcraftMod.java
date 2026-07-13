@@ -19,7 +19,10 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.misfitcraft.network.MisfitcraftModVariables;
+import net.mcreator.misfitcraft.init.MisfitcraftModTabs;
 import net.mcreator.misfitcraft.init.MisfitcraftModMenus;
+import net.mcreator.misfitcraft.init.MisfitcraftModItems;
+import net.mcreator.misfitcraft.init.MisfitcraftModBlocks;
 import net.mcreator.misfitcraft.init.MisfitcraftModAttributes;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -42,6 +45,9 @@ public class MisfitcraftMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		MisfitcraftModBlocks.REGISTRY.register(modEventBus);
+		MisfitcraftModItems.REGISTRY.register(modEventBus);
+		MisfitcraftModTabs.REGISTRY.register(modEventBus);
 		MisfitcraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		MisfitcraftModMenus.REGISTRY.register(modEventBus);
 		MisfitcraftModAttributes.REGISTRY.register(modEventBus);

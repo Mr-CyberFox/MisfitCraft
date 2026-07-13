@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "misfitcraft:block/aharthern_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "misfitcraft:block/aharthern_dimension_portal_ns"
+    }
+  }
+}
