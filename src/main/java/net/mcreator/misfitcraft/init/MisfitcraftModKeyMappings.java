@@ -33,7 +33,7 @@ public class MisfitcraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping OPEN_STATUS_MENU = new KeyMapping("key.misfitcraft.open_status_menu", GLFW.GLFW_KEY_B, "key.categories.ui") {
+	public static final KeyMapping OPEN_STATUS_MENU = new KeyMapping("key.misfitcraft.open_status_menu", GLFW.GLFW_KEY_B, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override
