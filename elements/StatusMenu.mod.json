@@ -3,8 +3,8 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
-    "height": 166,
+    "width": 206,
+    "height": 135,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -18,9 +18,137 @@
           },
           "scale": 40,
           "rotationX": 0,
-          "followMouseMovement": false,
-          "x": 149,
-          "y": 150,
+          "followMouseMovement": true,
+          "x": 141,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_playername",
+          "text": {
+            "fixedValue": "",
+            "name": "Playername"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 123,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_magic_power_stat_overlay",
+          "text": {
+            "fixedValue": "",
+            "name": "MagicPowerStatOverlay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 195,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_power",
+          "text": {
+            "fixedValue": "Magic Power:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 195,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "c793bd3e-ff10-4cc7-a739-4efe362cf637.png",
+          "spritesCount": 2,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 123,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "c793bd3e-ff10-4cc7-a739-4efe362cf637.png",
+          "spritesCount": 2,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 150,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_next_stage",
+          "text": {
+            "fixedValue": "EP until next Stage"
+          },
+          "width": 63,
+          "height": 18,
+          "x": 123,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_race",
+          "text": {
+            "fixedValue": "Race:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 195,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_race_overlay",
+          "text": {
+            "fixedValue": "",
+            "name": "RaceOverlay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 222,
+          "y": 62,
           "locked": false
         }
       }
@@ -30,7 +158,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

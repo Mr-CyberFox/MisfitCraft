@@ -51,15 +51,15 @@ public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements
 			return;
 		if (buttonID == 0) {
 
-			RaceGUIselectProcedure.execute(entity);
+			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
+			RaceGUInextProcedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 
-			RaceGUInextProcedure.execute(world, x, y, z, entity);
+			RaceGUIselectProcedure.execute(entity);
 		}
 	}
 

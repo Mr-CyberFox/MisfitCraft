@@ -25,6 +25,7 @@ public class MisfitcraftModAttributes {
 	public static final DeferredHolder<Attribute, Attribute> MAX_MAGIC_POWER = REGISTRY.register("max_magic_power", () -> new RangedAttribute("attribute.misfitcraft.max_magic_power", 100, 0, 1000000000).setSyncable(true));
 	public static final DeferredHolder<Attribute, Attribute> RACE = REGISTRY.register("race", () -> new RangedAttribute("attribute.misfitcraft.race", 0, 0, 4).setSyncable(true));
 	public static final DeferredHolder<Attribute, Attribute> MAX_SOURCE_POINTS = REGISTRY.register("max_source_points", () -> new RangedAttribute("attribute.misfitcraft.max_source_points", 20, 0, 10000).setSyncable(true));
+	public static final DeferredHolder<Attribute, Attribute> RACE_NAVIGATION = REGISTRY.register("race_navigation", () -> new RangedAttribute("attribute.misfitcraft.race_navigation", 0, 0, 3).setSyncable(true));
 
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
@@ -34,5 +35,6 @@ public class MisfitcraftModAttributes {
 		event.getTypes().forEach(entity -> event.add(entity, MAX_MAGIC_POWER));
 		event.add(EntityType.PLAYER, RACE);
 		event.getTypes().forEach(entity -> event.add(entity, MAX_SOURCE_POINTS));
+		event.add(EntityType.PLAYER, RACE_NAVIGATION);
 	}
 }
