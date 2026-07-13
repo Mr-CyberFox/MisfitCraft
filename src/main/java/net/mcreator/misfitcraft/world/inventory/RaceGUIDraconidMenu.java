@@ -26,7 +26,7 @@ public class RaceGUIDraconidMenu extends AbstractContainerMenu implements Misfit
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 9)
+			if (!this.containsKey(key) && this.size() >= 10)
 				return null;
 			return super.put(key, value);
 		}
