@@ -1,5 +1,22 @@
 package net.mcreator.misfitcraft.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.misfitcraft.world.inventory.RaceGUISpiritMenu;
+import net.mcreator.misfitcraft.network.RaceGUISpiritButtonMessage;
+import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+
 public class RaceGUISpiritScreen extends AbstractContainerScreen<RaceGUISpiritMenu> implements MisfitcraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
@@ -58,7 +75,6 @@ public class RaceGUISpiritScreen extends AbstractContainerScreen<RaceGUISpiritMe
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_spirit.label_weakness_holy_magic"), 24, 124, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_spirit.label_difficulty_easy"), 24, 43, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_spirit.label_magic_power_10002000"), 24, 70, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui_spirit.label_spirit_magic"), 74, 111, -12829636, false);
 	}
 
 	@Override

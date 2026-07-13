@@ -80,7 +80,7 @@
         "data": {
           "name": "label_strength_high_stats",
           "text": {
-            "fixedValue": "Strength: Medium Stats"
+            "fixedValue": "Strength: Spirit Magic"
           },
           "color": {
             "value": -12829636,
@@ -140,23 +140,6 @@
           "hasShadow": false,
           "x": 150,
           "y": 107,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_spirit_magic",
-          "text": {
-            "fixedValue": "Spirit Magic"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 200,
-          "y": 148,
           "locked": false
         }
       }

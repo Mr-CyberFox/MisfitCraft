@@ -19,7 +19,7 @@
   "gui.misfitcraft.race_gui_spirit.button_empty": "\u003c",
   "gui.misfitcraft.race_gui_spirit.label_difficulty_easy": "Difficulty: Medium",
   "gui.misfitcraft.race_gui_spirit.label_spirit_magic": "Spirit Magic",
-  "gui.misfitcraft.race_gui_spirit.label_strength_high_stats": "Strength: Medium Stats",
+  "gui.misfitcraft.race_gui_spirit.label_strength_high_stats": "Strength: Spirit Magic",
   "gui.misfitcraft.race_gui_human.button_select": "Select",
   "gui.misfitcraft.race_gui_human.label_magic_power_10002000": "Magic Power: 400-500",
   "gui.misfitcraft.race_gui_human.label_demon": "Human",
@@ -31,7 +31,7 @@
   "attribute.misfitcraft.source_points": "Source Points",
   "key.misfitcraft.race_gui_open_key": "Race GUI Open Key",
   "gui.misfitcraft.race_gui_draconid.label_strength_high_stats": "Strength: Dragon Art",
-  "gui.misfitcraft.race_gui_draconid.label_weakness_holy_magic": "Weakness: Weak Magic",
+  "gui.misfitcraft.race_gui_draconid.label_weakness_holy_magic": "Weakness: None",
   "gui.misfitcraft.race_gui_draconid.label_demon": "Draconid",
   "gui.misfitcraft.race_gui_draconid.label_difficulty_easy": "Difficulty: Medium",
   "gui.misfitcraft.race_gui_draconid.button_empty1": "\u003e",
@@ -44,5 +44,9 @@
   "attribute.misfitcraft.max_magic_power": "Max Magic Power",
   "key.misfitcraft.open_status_menu": "Status Menu",
   "attribute.misfitcraft.race": "Race",
-  "attribute.misfitcraft.max_source_points": "Max Source Points"
+  "attribute.misfitcraft.max_source_points": "Max Source Points",
+  "gui.misfitcraft.race_gui.label_select": "Select",
+  "gui.misfitcraft.status_menu.label_magic_power": "Magic Power:",
+  "gui.misfitcraft.status_menu.label_race": "Race:",
+  "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage"
 }
