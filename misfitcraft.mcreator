@@ -51,49 +51,13 @@
       "path": "~/GUI/Races"
     },
     {
-      "name": "RaceGUIHuman",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_human",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIHumanButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIHumanMenu.java"
-        ]
-      },
-      "path": "~/GUI/Races"
-    },
-    {
       "name": "RaceGUIprevious",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
       "registry_name": "race_gu_iprevious",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
+        "dependencies": [],
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
@@ -107,48 +71,12 @@
       "locked_code": false,
       "registry_name": "race_gu_inext",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
+        "dependencies": [],
         "files": [
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
       },
       "path": "~/GUI/Race GUI Components"
-    },
-    {
-      "name": "RaceGUISpirit",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_spirit",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUISpiritMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUISpiritButtonMessage.java"
-        ]
-      },
-      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIselect",
@@ -203,21 +131,6 @@
         ]
       },
       "path": "~/GUI/Race GUI Components"
-    },
-    {
-      "name": "RaceGUIDraconid",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "race_gui_draconid",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIDraconidMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/network/RaceGUIDraconidButtonMessage.java"
-        ]
-      },
-      "path": "~/GUI/Races"
     },
     {
       "name": "MagicPowerStatOverlay",
@@ -438,6 +351,17 @@
         "files": []
       },
       "path": "~/Source Points"
+    },
+    {
+      "name": "RaceNavigation",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_navigation",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/GUI/Races"
     }
   ],
   "variable_elements": [
@@ -465,34 +389,9 @@
       "gui.misfitcraft.race_gui.button_empty1": "\u003e",
       "gui.misfitcraft.race_gui.button_empty": "\u003c",
       "gui.misfitcraft.race_gui.label_weakness_holy_magic": "Weakness: Holy Magic",
-      "gui.misfitcraft.race_gui_spirit.label_weakness_holy_magic": "Weakness: Spiritosis",
-      "gui.misfitcraft.race_gui_spirit.label_magic_power_10002000": "Magic Power: 500-700",
-      "gui.misfitcraft.race_gui_spirit.button_select": "Select",
-      "gui.misfitcraft.race_gui_spirit.label_demon": "Spirit",
-      "gui.misfitcraft.race_gui_spirit.button_empty1": "\u003e",
-      "gui.misfitcraft.race_gui_spirit.button_empty": "\u003c",
-      "gui.misfitcraft.race_gui_spirit.label_difficulty_easy": "Difficulty: Medium",
       "gui.misfitcraft.race_gui_spirit.label_spirit_magic": "Spirit Magic",
-      "gui.misfitcraft.race_gui_spirit.label_strength_high_stats": "Strength: Spirit Magic",
-      "gui.misfitcraft.race_gui_human.button_select": "Select",
-      "gui.misfitcraft.race_gui_human.label_magic_power_10002000": "Magic Power: 100-200",
-      "gui.misfitcraft.race_gui_human.label_demon": "Human",
-      "gui.misfitcraft.race_gui_human.label_difficulty_easy": "Difficulty: Hard",
-      "gui.misfitcraft.race_gui_human.button_empty": "\u003c",
-      "gui.misfitcraft.race_gui_human.label_strength_high_stats": "Strength: Holy Magic",
-      "gui.misfitcraft.race_gui_human.label_weakness_holy_magic": "Weakness: Weak Stats",
-      "gui.misfitcraft.race_gui_human.button_empty1": "\u003e",
       "attribute.misfitcraft.source_points": "Source Points",
       "key.misfitcraft.race_gui_open_key": "Race GUI Open Key",
-      "gui.misfitcraft.race_gui_draconid.label_strength_high_stats": "Strength: Dragon Art",
-      "gui.misfitcraft.race_gui_draconid.label_weakness_holy_magic": "Weakness: None",
-      "gui.misfitcraft.race_gui_draconid.label_demon": "Draconid",
-      "gui.misfitcraft.race_gui_draconid.label_difficulty_easy": "Difficulty: Medium",
-      "gui.misfitcraft.race_gui_draconid.button_empty1": "\u003e",
-      "gui.misfitcraft.race_gui_draconid.button_empty": "\u003c",
-      "gui.misfitcraft.race_gui_draconid.label_summoning_magic": "Summoning Magic",
-      "gui.misfitcraft.race_gui_draconid.label_magic_power_10002000": "Magic Power: 600-800",
-      "gui.misfitcraft.race_gui_draconid.button_select": "Select",
       "attribute.misfitcraft.mana_timer": "Mana Timer",
       "key.misfitcraft.magic_test_button": "Magic Test Button",
       "attribute.misfitcraft.max_magic_power": "Max Magic Power",
@@ -505,7 +404,8 @@
       "gui.misfitcraft.status_menu.tooltip_next_stage": "EP until next Stage",
       "gui.misfitcraft.race_gui.label_human": "Human",
       "gui.misfitcraft.race_gui.label_spirit": "Spirit",
-      "gui.misfitcraft.race_gui.label_draconid": "Draconid"
+      "gui.misfitcraft.race_gui.label_draconid": "Draconid",
+      "attribute.misfitcraft.race_navigation": "Race Navigation"
     }
   },
   "metadata": {

@@ -16,19 +16,13 @@ import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.client.gui.StatusMenuScreen;
-import net.mcreator.misfitcraft.client.gui.RaceGUISpiritScreen;
 import net.mcreator.misfitcraft.client.gui.RaceGUIScreen;
-import net.mcreator.misfitcraft.client.gui.RaceGUIHumanScreen;
-import net.mcreator.misfitcraft.client.gui.RaceGUIDraconidScreen;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class MisfitcraftModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(MisfitcraftModMenus.RACE_GUI.get(), RaceGUIScreen::new);
-		event.register(MisfitcraftModMenus.RACE_GUI_HUMAN.get(), RaceGUIHumanScreen::new);
-		event.register(MisfitcraftModMenus.RACE_GUI_SPIRIT.get(), RaceGUISpiritScreen::new);
-		event.register(MisfitcraftModMenus.RACE_GUI_DRACONID.get(), RaceGUIDraconidScreen::new);
 		event.register(MisfitcraftModMenus.STATUS_MENU.get(), StatusMenuScreen::new);
 	}
 

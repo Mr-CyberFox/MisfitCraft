@@ -22,8 +22,6 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/status_menu.png");
-	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("misfitcraft:textures/screens/c793bd3e-ff10-4cc7-a739-4efe362cf637.png");
-	private static final ResourceLocation SPRITE_1 = ResourceLocation.parse("misfitcraft:textures/screens/c793bd3e-ff10-4cc7-a739-4efe362cf637.png");
 
 	public StatusMenuScreen(StatusMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -64,8 +62,6 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(SPRITE_0, this.leftPos + 12, this.topPos + 99, 0, 0, 32, 16, 32, 32);
-		guiGraphics.blit(SPRITE_1, this.leftPos + 39, this.topPos + 99, 0, 0, 32, 16, 32, 32);
 		RenderSystem.disableBlend();
 	}
 

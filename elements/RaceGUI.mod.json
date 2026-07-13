@@ -27,7 +27,7 @@
           "use1Xscale": false,
           "x": 130,
           "y": 77,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -38,16 +38,6 @@
           "x": 275,
           "y": 45,
           "locked": true
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "c793bd3e-ff10-4cc7-a739-4efe362cf637.png",
-          "use1Xscale": false,
-          "x": 277,
-          "y": 47,
-          "locked": false
         }
       },
       {
@@ -93,6 +83,46 @@
         }
       },
       {
+        "type": "image",
+        "data": {
+          "image": "draconidsymbol.png",
+          "use1Xscale": true,
+          "x": 277,
+          "y": 47,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "humansymbol.png",
+          "use1Xscale": true,
+          "x": 277,
+          "y": 47,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spiritsymbol.png",
+          "use1Xscale": true,
+          "x": 277,
+          "y": 47,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "demonsymbol.png",
+          "use1Xscale": true,
+          "x": 277,
+          "y": 47,
+          "locked": true
+        }
+      },
+      {
         "type": "label",
         "data": {
           "name": "label_demon",
@@ -100,7 +130,7 @@
             "fixedValue": "Demon"
           },
           "color": {
-            "value": -65485,
+            "value": -52225,
             "falpha": 0.0
           },
           "hasShadow": false,
@@ -117,7 +147,7 @@
             "fixedValue": "Human"
           },
           "color": {
-            "value": -13382401,
+            "value": -256,
             "falpha": 0.0
           },
           "hasShadow": false,
@@ -134,7 +164,7 @@
             "fixedValue": "Spirit"
           },
           "color": {
-            "value": -13382656,
+            "value": -16711681,
             "falpha": 0.0
           },
           "hasShadow": false,
@@ -151,7 +181,7 @@
             "fixedValue": "Draconid"
           },
           "color": {
-            "value": -3355648,
+            "value": -65485,
             "falpha": 0.0
           },
           "hasShadow": false,
@@ -166,7 +196,7 @@
       "sy": 16,
       "ox": 51,
       "oy": 24,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

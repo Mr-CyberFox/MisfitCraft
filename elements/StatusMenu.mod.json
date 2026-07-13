@@ -78,32 +78,6 @@
         }
       },
       {
-        "type": "sprite",
-        "data": {
-          "sprite": "c793bd3e-ff10-4cc7-a739-4efe362cf637.png",
-          "spritesCount": 2,
-          "spriteIndex": {
-            "fixedValue": 0.0
-          },
-          "x": 123,
-          "y": 152,
-          "locked": false
-        }
-      },
-      {
-        "type": "sprite",
-        "data": {
-          "sprite": "c793bd3e-ff10-4cc7-a739-4efe362cf637.png",
-          "spritesCount": 2,
-          "spriteIndex": {
-            "fixedValue": 0.0
-          },
-          "x": 150,
-          "y": 152,
-          "locked": false
-        }
-      },
-      {
         "type": "tooltip",
         "data": {
           "name": "tooltip_next_stage",

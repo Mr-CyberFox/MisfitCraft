@@ -30,7 +30,10 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("misfitcraft:textures/screens/racescreen.png");
 	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
 	private static final ResourceLocation IMAGE_2 = ResourceLocation.parse("misfitcraft:textures/screens/racescreensprite.png");
-	private static final ResourceLocation IMAGE_3 = ResourceLocation.parse("misfitcraft:textures/screens/c793bd3e-ff10-4cc7-a739-4efe362cf637.png");
+	private static final ResourceLocation IMAGE_3 = ResourceLocation.parse("misfitcraft:textures/screens/draconidsymbol.png");
+	private static final ResourceLocation IMAGE_4 = ResourceLocation.parse("misfitcraft:textures/screens/humansymbol.png");
+	private static final ResourceLocation IMAGE_5 = ResourceLocation.parse("misfitcraft:textures/screens/spiritsymbol.png");
+	private static final ResourceLocation IMAGE_6 = ResourceLocation.parse("misfitcraft:textures/screens/demonsymbol.png");
 
 	public RaceGUIScreen(RaceGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -65,6 +68,9 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		guiGraphics.blit(IMAGE_1, this.leftPos + 2, this.topPos + 20, 0, 0, 168, 3, 168, 3);
 		guiGraphics.blit(IMAGE_2, this.leftPos + 147, this.topPos + -12, 0, 0, 36, 36, 36, 36);
 		guiGraphics.blit(IMAGE_3, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(IMAGE_4, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(IMAGE_5, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+		guiGraphics.blit(IMAGE_6, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
 		RenderSystem.disableBlend();
 	}
 
@@ -79,10 +85,10 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_demon"), -56, 4, -65485, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_human"), -56, 16, -13382401, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), -56, 28, -13382656, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), -56, 40, -3355648, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_demon"), -56, 4, -52225, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_human"), -56, 16, -256, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), -56, 28, -16711681, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), -56, 40, -65485, false);
 	}
 
 	@Override

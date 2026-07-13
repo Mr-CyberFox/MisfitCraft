@@ -55,11 +55,11 @@ public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements
 		}
 		if (buttonID == 1) {
 
-			RaceGUInextProcedure.execute(world, x, y, z, entity);
+			RaceGUInextProcedure.execute();
 		}
 		if (buttonID == 2) {
 
-			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
+			RaceGUIpreviousProcedure.execute();
 		}
 	}
 

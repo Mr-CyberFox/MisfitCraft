@@ -16,10 +16,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.misfitcraft.world.inventory.StatusMenuMenu;
-import net.mcreator.misfitcraft.world.inventory.RaceGUISpiritMenu;
 import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
-import net.mcreator.misfitcraft.world.inventory.RaceGUIHumanMenu;
-import net.mcreator.misfitcraft.world.inventory.RaceGUIDraconidMenu;
 import net.mcreator.misfitcraft.network.MenuStateUpdateMessage;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
@@ -28,9 +25,6 @@ import java.util.Map;
 public class MisfitcraftModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, MisfitcraftMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUIMenu>> RACE_GUI = REGISTRY.register("race_gui", () -> IMenuTypeExtension.create(RaceGUIMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUIHumanMenu>> RACE_GUI_HUMAN = REGISTRY.register("race_gui_human", () -> IMenuTypeExtension.create(RaceGUIHumanMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUISpiritMenu>> RACE_GUI_SPIRIT = REGISTRY.register("race_gui_spirit", () -> IMenuTypeExtension.create(RaceGUISpiritMenu::new));
-	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUIDraconidMenu>> RACE_GUI_DRACONID = REGISTRY.register("race_gui_draconid", () -> IMenuTypeExtension.create(RaceGUIDraconidMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<StatusMenuMenu>> STATUS_MENU = REGISTRY.register("status_menu", () -> IMenuTypeExtension.create(StatusMenuMenu::new));
 
 	public interface MenuAccessor {
