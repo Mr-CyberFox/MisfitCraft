@@ -142,6 +142,19 @@
           "y": 107,
           "locked": false
         }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "gemini_generated_image_p7t2y6p7t2y6p7t2.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 248,
+          "y": 47,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
