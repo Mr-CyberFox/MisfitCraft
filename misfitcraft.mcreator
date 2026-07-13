@@ -14,7 +14,7 @@
     {
       "name": "MagicPowerOverlay",
       "type": "overlay",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "magic_power_overlay",
       "metadata": {
@@ -38,7 +38,7 @@
     {
       "name": "RaceGUI",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui",
       "metadata": {
@@ -53,7 +53,7 @@
     {
       "name": "RaceGUIHuman",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_human",
       "metadata": {
@@ -138,7 +138,7 @@
     {
       "name": "RaceGUISpirit",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_spirit",
       "metadata": {
@@ -207,7 +207,7 @@
     {
       "name": "RaceGUIDraconid",
       "type": "gui",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "race_gui_draconid",
       "metadata": {
