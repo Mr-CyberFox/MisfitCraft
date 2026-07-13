@@ -1,6 +1,6 @@
 package net.mcreator.misfitcraft.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.neoforged.bus.api.Event;
 
 public class PlayernameProcedure {
 	public static String execute(Entity entity) {
