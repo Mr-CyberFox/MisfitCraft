@@ -10,8 +10,6 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.world.inventory.StatusMenuMenu;
-import net.mcreator.misfitcraft.procedures.RaceOverlayProcedure;
-import net.mcreator.misfitcraft.procedures.PlayernameProcedure;
 import net.mcreator.misfitcraft.procedures.PlayermodelProcedure;
 import net.mcreator.misfitcraft.procedures.MagicPowerStatOverlayProcedure;
 import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
@@ -82,11 +80,11 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, PlayernameProcedure.execute(entity), 12, 9, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_proc_playername"), 12, 9, -12829636, false);
 		guiGraphics.drawString(this.font, MagicPowerStatOverlayProcedure.execute(entity), 84, 54, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_magic_power"), 84, 45, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_race"), 84, 9, -12829636, false);
-		guiGraphics.drawString(this.font, RaceOverlayProcedure.execute(entity), 111, 9, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_proc_race_overlay"), 111, 9, -12829636, false);
 	}
 
 	@Override
