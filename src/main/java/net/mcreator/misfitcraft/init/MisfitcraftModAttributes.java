@@ -29,10 +29,10 @@ public class MisfitcraftModAttributes {
 	@SubscribeEvent
 	public static void addAttributes(EntityAttributeModificationEvent event) {
 		event.getTypes().forEach(entity -> event.add(entity, MAGIC_POWER));
-		event.getTypes().forEach(entity -> event.add(entity, SOURCE_POINTS));
+		event.add(EntityType.PLAYER, SOURCE_POINTS);
 		event.add(EntityType.PLAYER, MANA_TIMER);
 		event.getTypes().forEach(entity -> event.add(entity, MAX_MAGIC_POWER));
 		event.add(EntityType.PLAYER, RACE);
-		event.getTypes().forEach(entity -> event.add(entity, MAX_SOURCE_POINTS));
+		event.add(EntityType.PLAYER, MAX_SOURCE_POINTS);
 	}
 }
