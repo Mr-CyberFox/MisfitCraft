@@ -1,19 +1,6 @@
 package net.mcreator.misfitcraft.procedures;
 
-import net.neoforged.neoforge.event.tick.EntityTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-
-import net.mcreator.misfitcraft.init.MisfitcraftModAttributes;
-
-import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class SourcePointDeathProcedure {

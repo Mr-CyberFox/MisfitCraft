@@ -28,7 +28,10 @@ public class MagicPowerStatOverlayProcedure {
 			return "";
 		String MP = "";
 		double MP1 = 0;
-		return (entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER) ? _livingEntity0.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue() : 0) + "" + (" / "
-				+ (entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER) ? _livingEntity1.getAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER).getBaseValue() : 0));
+		return Math.round(entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER) ? _livingEntity0.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue() : 0)
+				+ " / "
+				+ Math.round(entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER)
+						? _livingEntity1.getAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER).getBaseValue()
+						: 0);
 	}
 }

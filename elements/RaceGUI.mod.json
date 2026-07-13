@@ -3,29 +3,13 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
-    "height": 166,
+    "width": 171,
+    "height": 127,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
-      {
-        "type": "button",
-        "data": {
-          "name": "button_select",
-          "text": "Select",
-          "isUndecorated": false,
-          "onClick": {
-            "name": "RaceGUIselect"
-          },
-          "width": 55,
-          "height": 20,
-          "x": 185,
-          "y": 209,
-          "locked": false
-        }
-      },
       {
         "type": "button",
         "data": {
@@ -59,110 +43,73 @@
         }
       },
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_demon",
-          "text": {
-            "fixedValue": "Demon"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 150,
+          "image": "racescreen.png",
+          "use1Xscale": false,
+          "x": 123,
           "y": 53,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "racescreensprite.png",
+          "use1Xscale": false,
+          "x": 277,
+          "y": 39,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "c793bd3e-ff10-4cc7-a739-4efe362cf637.png",
+          "use1Xscale": false,
+          "x": 279,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_raceselect",
+          "image": "raceselect.png",
+          "hoveredImage": "raceselecthover.png",
+          "onClick": {
+            "name": "RaceGUIselect"
+          },
+          "x": 190,
+          "y": 177,
           "locked": false
         }
       },
       {
         "type": "label",
         "data": {
-          "name": "label_strength_high_stats",
+          "name": "label_select",
           "text": {
-            "fixedValue": "Strength: High Stats"
+            "fixedValue": "Select"
           },
           "color": {
-            "value": -12829636,
+            "value": -1,
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 150,
-          "y": 134,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_weakness_holy_magic",
-          "text": {
-            "fixedValue": "Weakness: Holy Magic"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 150,
-          "y": 161,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_difficulty_easy",
-          "text": {
-            "fixedValue": "Difficulty: Easy"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 150,
-          "y": 80,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_magic_power_10002000",
-          "text": {
-            "fixedValue": "Magic Power: 1000-2000"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 150,
-          "y": 107,
-          "locked": false
-        }
-      },
-      {
-        "type": "sprite",
-        "data": {
-          "sprite": "c793bd3e-ff10-4cc7-a739-4efe362cf637.png",
-          "spritesCount": 1,
-          "spriteIndex": {
-            "fixedValue": 0.0
-          },
-          "x": 248,
-          "y": 46,
+          "x": 198,
+          "y": 179,
           "locked": false
         }
       }
     ],
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
-      "ox": 11,
-      "oy": 15,
-      "snapOnGrid": false
+      "sx": 16,
+      "sy": 16,
+      "ox": 27,
+      "oy": 5,
+      "snapOnGrid": true
     }
   }
 }
