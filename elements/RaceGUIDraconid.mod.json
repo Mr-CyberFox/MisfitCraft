@@ -159,6 +159,19 @@
           "y": 148,
           "locked": false
         }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "9e404d6b-4889-489a-adf6-c57637478912.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 250,
+          "y": 44,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

@@ -1,5 +1,22 @@
 package net.mcreator.misfitcraft.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.misfitcraft.world.inventory.RaceGUIDraconidMenu;
+import net.mcreator.misfitcraft.network.RaceGUIDraconidButtonMessage;
+import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+
 public class RaceGUIDraconidScreen extends AbstractContainerScreen<RaceGUIDraconidMenu> implements MisfitcraftModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
@@ -9,6 +26,7 @@ public class RaceGUIDraconidScreen extends AbstractContainerScreen<RaceGUIDracon
 	private Button button_empty;
 	private Button button_empty1;
 	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/race_gui_draconid.png");
+	private static final ResourceLocation SPRITE_0 = ResourceLocation.parse("misfitcraft:textures/screens/9e404d6b-4889-489a-adf6-c57637478912.png");
 
 	public RaceGUIDraconidScreen(RaceGUIDraconidMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -39,6 +57,7 @@ public class RaceGUIDraconidScreen extends AbstractContainerScreen<RaceGUIDracon
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(SPRITE_0, this.leftPos + 124, this.topPos + 7, 0, 0, 32, 32, 32, 32);
 		RenderSystem.disableBlend();
 	}
 
