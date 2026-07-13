@@ -43,5 +43,6 @@
   "key.misfitcraft.magic_test_button": "Magic Test Button",
   "attribute.misfitcraft.max_magic_power": "Max Magic Power",
   "key.misfitcraft.open_status_menu": "Status Menu",
-  "attribute.misfitcraft.race": "Race"
+  "attribute.misfitcraft.race": "Race",
+  "attribute.misfitcraft.max_source_points": "Max Source Points"
 }
