@@ -1,28 +1,10 @@
 package net.mcreator.misfitcraft.network;
 
-import net.neoforged.neoforge.network.handling.IPayloadContext;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
-import net.minecraft.network.protocol.PacketFlow;
-import net.minecraft.network.codec.StreamCodec;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.core.SectionPos;
-
-import net.mcreator.misfitcraft.procedures.RaceGUIselectProcedure;
-import net.mcreator.misfitcraft.procedures.RaceGUIpreviousProcedure;
-import net.mcreator.misfitcraft.procedures.RaceGUInextProcedure;
-import net.mcreator.misfitcraft.MisfitcraftMod;
-
 @EventBusSubscriber
 public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
+
 	public static final Type<RaceGUIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MisfitcraftMod.MODID, "race_gui_buttons"));
+
 	public static final StreamCodec<RegistryFriendlyByteBuf, RaceGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, RaceGUIButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
@@ -46,20 +28,22 @@ public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
+
 		// security measure to prevent arbitrary chunk generation
 		if (!world.getChunkSource().hasChunk(SectionPos.blockToSectionCoord(x), SectionPos.blockToSectionCoord(z)))
 			return;
-		if (buttonID == 0) {
 
-			RaceGUIselectProcedure.execute(entity);
-		}
-		if (buttonID == 1) {
+		if (buttonID == 0) {
 
 			RaceGUIpreviousProcedure.execute(world, x, y, z, entity);
 		}
-		if (buttonID == 2) {
+		if (buttonID == 1) {
 
 			RaceGUInextProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 2) {
+
+			RaceGUIselectProcedure.execute(entity);
 		}
 	}
 
@@ -67,4 +51,5 @@ public record RaceGUIButtonMessage(int buttonID, int x, int y, int z) implements
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		MisfitcraftMod.addNetworkMessage(RaceGUIButtonMessage.TYPE, RaceGUIButtonMessage.STREAM_CODEC, RaceGUIButtonMessage::handleData);
 	}
+
 }

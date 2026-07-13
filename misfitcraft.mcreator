@@ -45,7 +45,7 @@
           "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIHuman",
@@ -60,7 +60,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIHumanScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIprevious",
@@ -95,7 +95,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUInext",
@@ -130,7 +130,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUISpirit",
@@ -145,7 +145,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUISpiritScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIselect",
@@ -164,7 +164,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIOpen",
@@ -199,7 +199,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI"
     },
     {
       "name": "RaceGUIDraconid",
@@ -214,7 +214,7 @@
           "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIDraconidScreen.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI"
     },
     {
       "name": "MagicPowerStatOverlay",
