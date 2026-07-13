@@ -58,6 +58,8 @@ public class RaceGUIOpenProcedure {
 					}
 				}, _bpos);
 			}
+			if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(MisfitcraftModAttributes.RACE_NAVIGATION))
+				_livingEntity2.getAttribute(MisfitcraftModAttributes.RACE_NAVIGATION).setBaseValue(0);
 		}
 	}
 }

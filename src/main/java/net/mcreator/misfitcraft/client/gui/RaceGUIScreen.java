@@ -13,6 +13,10 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
+import net.mcreator.misfitcraft.procedures.RaceGUISpiritProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUIHumanProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUIDraconidProcedure;
+import net.mcreator.misfitcraft.procedures.RaceGUIDemonProcedure;
 import net.mcreator.misfitcraft.network.RaceGUIButtonMessage;
 import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
 
@@ -31,8 +35,8 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
 	private static final ResourceLocation IMAGE_2 = ResourceLocation.parse("misfitcraft:textures/screens/racescreensprite.png");
 	private static final ResourceLocation IMAGE_3 = ResourceLocation.parse("misfitcraft:textures/screens/draconidsymbol.png");
-	private static final ResourceLocation IMAGE_4 = ResourceLocation.parse("misfitcraft:textures/screens/humansymbol.png");
-	private static final ResourceLocation IMAGE_5 = ResourceLocation.parse("misfitcraft:textures/screens/spiritsymbol.png");
+	private static final ResourceLocation IMAGE_4 = ResourceLocation.parse("misfitcraft:textures/screens/spiritsymbol.png");
+	private static final ResourceLocation IMAGE_5 = ResourceLocation.parse("misfitcraft:textures/screens/humansymbol.png");
 	private static final ResourceLocation IMAGE_6 = ResourceLocation.parse("misfitcraft:textures/screens/demonsymbol.png");
 
 	public RaceGUIScreen(RaceGUIMenu container, Inventory inventory, Component text) {
@@ -67,10 +71,18 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		guiGraphics.blit(IMAGE_0, this.leftPos + -3, this.topPos + 0, 0, 0, 178, 132, 178, 132);
 		guiGraphics.blit(IMAGE_1, this.leftPos + 2, this.topPos + 20, 0, 0, 168, 3, 168, 3);
 		guiGraphics.blit(IMAGE_2, this.leftPos + 147, this.topPos + -12, 0, 0, 36, 36, 36, 36);
-		guiGraphics.blit(IMAGE_3, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
-		guiGraphics.blit(IMAGE_4, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
-		guiGraphics.blit(IMAGE_5, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
-		guiGraphics.blit(IMAGE_6, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+		if (RaceGUIDraconidProcedure.execute(entity)) {
+			guiGraphics.blit(IMAGE_3, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+		}
+		if (RaceGUISpiritProcedure.execute(entity)) {
+			guiGraphics.blit(IMAGE_4, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+		}
+		if (RaceGUIHumanProcedure.execute(entity)) {
+			guiGraphics.blit(IMAGE_5, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+		}
+		if (RaceGUIDemonProcedure.execute(entity)) {
+			guiGraphics.blit(IMAGE_6, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+		}
 		RenderSystem.disableBlend();
 	}
 

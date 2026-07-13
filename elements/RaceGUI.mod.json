@@ -87,16 +87,9 @@
         "data": {
           "image": "draconidsymbol.png",
           "use1Xscale": true,
-          "x": 277,
-          "y": 47,
-          "locked": true
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "humansymbol.png",
-          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RaceGUIDraconid"
+          },
           "x": 277,
           "y": 47,
           "locked": true
@@ -107,6 +100,22 @@
         "data": {
           "image": "spiritsymbol.png",
           "use1Xscale": true,
+          "displayCondition": {
+            "name": "RaceGUISpirit"
+          },
+          "x": 277,
+          "y": 47,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "humansymbol.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RaceGUIHuman"
+          },
           "x": 277,
           "y": 47,
           "locked": true
@@ -117,6 +126,9 @@
         "data": {
           "image": "demonsymbol.png",
           "use1Xscale": true,
+          "displayCondition": {
+            "name": "RaceGUIDemon"
+          },
           "x": 277,
           "y": 47,
           "locked": true
