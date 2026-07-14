@@ -381,17 +381,17 @@
       "registry_name": "aharthern_dimension",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/block/AharthernDimensionPortalBlock.java",
-          "src/main/resources/assets/misfitcraft/models/block/aharthern_dimension_portal_ew.json",
-          "src/main/java/net/mcreator/misfitcraft/item/AharthernDimensionItem.java",
-          "src/main/resources/data/misfitcraft/dimension/aharthern_dimension.json",
-          "src/main/resources/assets/misfitcraft/models/block/aharthern_dimension_portal_ns.json",
-          "src/main/java/net/mcreator/misfitcraft/world/dimension/AharthernDimensionDimension.java",
+          "src/main/resources/assets/misfitcraft/models/item/aharthern_dimension.json",
           "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionPortalShape.java",
-          "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionTeleporter.java",
+          "src/main/java/net/mcreator/misfitcraft/item/AharthernDimensionItem.java",
           "src/main/resources/data/misfitcraft/dimension_type/aharthern_dimension.json",
-          "src/main/resources/assets/misfitcraft/blockstates/aharthern_dimension_portal.json",
-          "src/main/resources/assets/misfitcraft/models/item/aharthern_dimension.json"
+          "src/main/java/net/mcreator/misfitcraft/block/AharthernDimensionPortalBlock.java",
+          "src/main/java/net/mcreator/misfitcraft/world/dimension/AharthernDimensionDimension.java",
+          "src/main/resources/assets/misfitcraft/models/block/aharthern_dimension_portal_ew.json",
+          "src/main/resources/data/misfitcraft/dimension/aharthern_dimension.json",
+          "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionTeleporter.java",
+          "src/main/resources/assets/misfitcraft/models/block/aharthern_dimension_portal_ns.json",
+          "src/main/resources/assets/misfitcraft/blockstates/aharthern_dimension_portal.json"
         ]
       },
       "path": "~/Biomes and Dimensions"
@@ -404,10 +404,10 @@
       "registry_name": "aharthern_forest",
       "metadata": {
         "files": [
+          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
+          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
           "src/main/resources/data/misfitcraft/worldgen/placed_feature/aharthern_forest_tree.json",
           "src/main/resources/data/misfitcraft/worldgen/configured_feature/aharthern_forest_tree.json",
-          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
-          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
           "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestLeaveDecorator.java"
         ]
       },
@@ -549,16 +549,16 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
-      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg"
     ]
