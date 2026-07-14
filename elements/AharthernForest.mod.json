@@ -71,10 +71,10 @@
       "min": 0.2,
       "max": 0.9
     },
-    "treesPerChunk": 9,
-    "vanillaTreeType": "Big trees",
+    "treesPerChunk": 12,
+    "vanillaTreeType": "Mega spruce trees",
     "treeType": 1,
-    "minHeight": 11,
+    "minHeight": 15,
     "treeStem": {
       "value": "Blocks.LOG#0"
     },
@@ -93,7 +93,8 @@
       "FrozenTopLayer",
       "MeadowVegetation",
       "ForestGrass",
-      "SwampVegetation"
+      "SwampVegetation",
+      "ExtraEmeraldOre"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

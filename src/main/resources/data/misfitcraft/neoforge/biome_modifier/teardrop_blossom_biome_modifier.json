@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "misfitcraft:aharthern_forest",
+  "features": "misfitcraft:teardrop_blossom",
+  "step": "vegetal_decoration"
+}

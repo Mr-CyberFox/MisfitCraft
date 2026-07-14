@@ -492,6 +492,26 @@
         ]
       },
       "path": "~/GUI/Races"
+    },
+    {
+      "name": "TeardropBlossom",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teardrop_blossom",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/loot_table/blocks/teardrop_blossom.json",
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/teardrop_blossom.json",
+          "src/main/resources/assets/misfitcraft/models/item/teardrop_blossom.json",
+          "src/main/resources/data/misfitcraft/neoforge/biome_modifier/teardrop_blossom_biome_modifier.json",
+          "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json",
+          "src/main/java/net/mcreator/misfitcraft/block/TeardropBlossomBlock.java",
+          "src/main/resources/assets/misfitcraft/models/block/teardrop_blossom.json",
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/teardrop_blossom.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
     }
   ],
   "variable_elements": [
@@ -543,7 +563,8 @@
       "gui.misfitcraft.race_gui.label_draconid": "Draconid",
       "attribute.misfitcraft.race_navigation": "Race Navigation",
       "item.misfitcraft.aharthern_dimension": "Aharthern Dimension Portal Igniter",
-      "biome.misfitcraft.aharthern_forest": "Aharthern Forest"
+      "biome.misfitcraft.aharthern_forest": "Aharthern Forest",
+      "block.misfitcraft.teardrop_blossom": "Teardrop Blossom"
     }
   },
   "metadata": {

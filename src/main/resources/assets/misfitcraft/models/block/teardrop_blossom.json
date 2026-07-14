@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "misfitcraft:block/teardropblossom64x64",
+    "particle": "misfitcraft:block/teardropblossom64x64"
+  },
+  "render_type": "cutout"
+}

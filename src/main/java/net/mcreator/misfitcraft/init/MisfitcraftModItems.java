@@ -5,8 +5,11 @@ package net.mcreator.misfitcraft.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.misfitcraft.item.AharthernDimensionItem;
 import net.mcreator.misfitcraft.MisfitcraftMod;
@@ -14,9 +17,19 @@ import net.mcreator.misfitcraft.MisfitcraftMod;
 public class MisfitcraftModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(MisfitcraftMod.MODID);
 	public static final DeferredItem<Item> AHARTHERN_DIMENSION;
+	public static final DeferredItem<Item> TEARDROP_BLOSSOM;
 	static {
 		AHARTHERN_DIMENSION = REGISTRY.register("aharthern_dimension", AharthernDimensionItem::new);
+		TEARDROP_BLOSSOM = block(MisfitcraftModBlocks.TEARDROP_BLOSSOM);
 	}
+
 	// Start of user code block custom items
 	// End of user code block custom items
+	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
+		return block(block, new Item.Properties());
+	}
+
+	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), properties));
+	}
 }

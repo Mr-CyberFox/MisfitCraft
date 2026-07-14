@@ -22,6 +22,8 @@ public class MisfitcraftModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(MisfitcraftModItems.AHARTHERN_DIMENSION.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(MisfitcraftModBlocks.TEARDROP_BLOSSOM.get().asItem());
 		}
 	}
 }
