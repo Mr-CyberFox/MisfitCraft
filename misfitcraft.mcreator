@@ -67,7 +67,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI/Races/Race GUI Components"
     },
     {
       "name": "RaceGUInext",
@@ -86,7 +86,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI/Races/Race GUI Components"
     },
     {
       "name": "RaceGUIselect",
@@ -105,7 +105,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI/Races/Race GUI Components"
     },
     {
       "name": "RaceGUIOpen",
@@ -140,7 +140,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
         ]
       },
-      "path": "~/GUI/Race GUI Components"
+      "path": "~/GUI/Races/Race GUI Components"
     },
     {
       "name": "MagicPowerStatOverlay",
@@ -371,7 +371,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI/Races/Race GUI Navigation"
     },
     {
       "name": "AharthernDimension",
@@ -431,7 +431,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIDemonProcedure.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI/Races/Race GUI Navigation"
     },
     {
       "name": "RaceGUIHuman",
@@ -451,7 +451,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIHumanProcedure.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI/Races/Race GUI Navigation"
     },
     {
       "name": "RaceGUISpirit",
@@ -471,7 +471,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUISpiritProcedure.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI/Races/Race GUI Navigation"
     },
     {
       "name": "RaceGUIDraconid",
@@ -491,7 +491,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIDraconidProcedure.java"
         ]
       },
-      "path": "~/GUI/Races"
+      "path": "~/GUI/Races/Race GUI Navigation"
     },
     {
       "name": "TeardropBlossom",
@@ -697,7 +697,7 @@
     {
       "name": "KurslaSpell",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kursla_spell",
       "metadata": {
@@ -716,7 +716,7 @@
     {
       "name": "KurstSpell",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "kurst_spell",
       "metadata": {
@@ -735,7 +735,7 @@
     {
       "name": "LynelSpell",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "lynel_spell",
       "metadata": {
