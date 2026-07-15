@@ -65,7 +65,7 @@ public record CastGUIButtonMessage(int buttonID, int x, int y, int z) implements
 		}
 		if (buttonID == 4) {
 
-			SyricaSpellProcedure.execute(world, x, y, z, entity);
+			SyricaSpellProcedure.execute(world, entity);
 		}
 		if (buttonID == 5) {
 

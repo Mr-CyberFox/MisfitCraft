@@ -521,9 +521,9 @@
       "registry_name": "cast_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/network/CastGUIButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/CastGUIScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/CastGUIMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/CastGUIMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/network/CastGUIButtonMessage.java"
         ]
       },
       "path": "~/GUI/CastGUI"
@@ -665,18 +665,6 @@
             "type": "entity"
           },
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -770,16 +758,16 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg"
     ]
