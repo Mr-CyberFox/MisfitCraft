@@ -651,6 +651,60 @@
         ]
       },
       "path": "~/Spells"
+    },
+    {
+      "name": "SyricaSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "syrica_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/SyricaSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "GregaSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grega_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/GregaSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
     }
   ],
   "variable_elements": [
@@ -708,7 +762,9 @@
       "key.misfitcraft.cast_spell_key": "Cast Spell Key",
       "gui.misfitcraft.cast_gui.button_ent": "Ent",
       "gui.misfitcraft.cast_gui.button_enchel": "Enchel",
-      "gui.misfitcraft.cast_gui.button_ei_chael": "Ei Chael"
+      "gui.misfitcraft.cast_gui.button_ei_chael": "Ei Chael",
+      "gui.misfitcraft.cast_gui.button_syrica": "Syrica",
+      "gui.misfitcraft.cast_gui.button_grega": "Grega"
     }
   },
   "metadata": {

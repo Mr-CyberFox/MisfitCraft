@@ -73,6 +73,38 @@
           "y": 125,
           "locked": false
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_syrica",
+          "text": "Syrica",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SyricaSpell"
+          },
+          "width": 55,
+          "height": 20,
+          "x": 132,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_grega",
+          "text": "Grega",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GregaSpell"
+          },
+          "width": 50,
+          "height": 20,
+          "x": 132,
+          "y": 179,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {

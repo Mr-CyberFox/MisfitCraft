@@ -15,10 +15,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.SectionPos;
 
-import net.mcreator.misfitcraft.procedures.FlessSpellProcedure;
-import net.mcreator.misfitcraft.procedures.EntSpellProcedure;
-import net.mcreator.misfitcraft.procedures.EnchelSpellProcedure;
-import net.mcreator.misfitcraft.procedures.EiChaelSpellProcedure;
+import net.mcreator.misfitcraft.procedures.*;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
 @EventBusSubscriber
@@ -65,6 +62,14 @@ public record CastGUIButtonMessage(int buttonID, int x, int y, int z) implements
 		if (buttonID == 3) {
 
 			EiChaelSpellProcedure.execute(entity);
+		}
+		if (buttonID == 4) {
+
+			SyricaSpellProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 5) {
+
+			GregaSpellProcedure.execute(entity);
 		}
 	}
 

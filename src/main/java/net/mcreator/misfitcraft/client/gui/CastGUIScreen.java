@@ -25,6 +25,8 @@ public class CastGUIScreen extends AbstractContainerScreen<CastGUIMenu> implemen
 	private Button button_ent;
 	private Button button_enchel;
 	private Button button_ei_chael;
+	private Button button_syrica;
+	private Button button_grega;
 
 	public CastGUIScreen(CastGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -109,5 +111,23 @@ public class CastGUIScreen extends AbstractContainerScreen<CastGUIMenu> implemen
 			}
 		}).bounds(this.leftPos + 6, this.topPos + 88, 65, 20).build();
 		this.addRenderableWidget(button_ei_chael);
+		button_syrica = Button.builder(Component.translatable("gui.misfitcraft.cast_gui.button_syrica"), e -> {
+			int x = CastGUIScreen.this.x;
+			int y = CastGUIScreen.this.y;
+			if (true) {
+				PacketDistributor.sendToServer(new CastGUIButtonMessage(4, x, y, z));
+				CastGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
+		}).bounds(this.leftPos + 6, this.topPos + 115, 55, 20).build();
+		this.addRenderableWidget(button_syrica);
+		button_grega = Button.builder(Component.translatable("gui.misfitcraft.cast_gui.button_grega"), e -> {
+			int x = CastGUIScreen.this.x;
+			int y = CastGUIScreen.this.y;
+			if (true) {
+				PacketDistributor.sendToServer(new CastGUIButtonMessage(5, x, y, z));
+				CastGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
+			}
+		}).bounds(this.leftPos + 6, this.topPos + 142, 50, 20).build();
+		this.addRenderableWidget(button_grega);
 	}
 }

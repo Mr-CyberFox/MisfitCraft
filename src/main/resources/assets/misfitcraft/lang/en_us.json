@@ -35,5 +35,7 @@
   "key.misfitcraft.cast_spell_key": "Cast Spell Key",
   "gui.misfitcraft.cast_gui.button_ent": "Ent",
   "gui.misfitcraft.cast_gui.button_enchel": "Enchel",
-  "gui.misfitcraft.cast_gui.button_ei_chael": "Ei Chael"
+  "gui.misfitcraft.cast_gui.button_ei_chael": "Ei Chael",
+  "gui.misfitcraft.cast_gui.button_syrica": "Syrica",
+  "gui.misfitcraft.cast_gui.button_grega": "Grega"
 }
