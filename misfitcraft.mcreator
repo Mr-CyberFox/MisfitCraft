@@ -521,9 +521,9 @@
       "registry_name": "cast_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/CastGUIButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/CastGUIScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/CastGUIMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/network/CastGUIButtonMessage.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/CastGUIMenu.java"
         ]
       },
       "path": "~/GUI/CastGUI"
@@ -693,6 +693,44 @@
         ]
       },
       "path": "~/Spells"
+    },
+    {
+      "name": "KurslaSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kursla_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/KurslaSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "KurstSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kurst_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/KurstSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
     }
   ],
   "variable_elements": [
@@ -752,22 +790,24 @@
       "gui.misfitcraft.cast_gui.button_enchel": "Enchel",
       "gui.misfitcraft.cast_gui.button_ei_chael": "Ei Chael",
       "gui.misfitcraft.cast_gui.button_syrica": "Syrica",
-      "gui.misfitcraft.cast_gui.button_grega": "Grega"
+      "gui.misfitcraft.cast_gui.button_grega": "Grega",
+      "gui.misfitcraft.cast_gui.button_kursla": "Kursla",
+      "gui.misfitcraft.cast_gui.button_kurst": "Kurst"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
-      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg"
     ]
