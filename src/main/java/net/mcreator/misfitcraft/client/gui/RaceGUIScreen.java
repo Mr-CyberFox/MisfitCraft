@@ -38,6 +38,8 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private static final ResourceLocation IMAGE_4 = ResourceLocation.parse("misfitcraft:textures/screens/spiritsymbol.png");
 	private static final ResourceLocation IMAGE_5 = ResourceLocation.parse("misfitcraft:textures/screens/humansymbol.png");
 	private static final ResourceLocation IMAGE_6 = ResourceLocation.parse("misfitcraft:textures/screens/demonsymbol.png");
+	private static final ResourceLocation IMAGE_7 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
+	private static final ResourceLocation IMAGE_8 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
 
 	public RaceGUIScreen(RaceGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -83,6 +85,8 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		if (RaceGUIDemonProcedure.execute(entity)) {
 			guiGraphics.blit(IMAGE_6, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
 		}
+		guiGraphics.blit(IMAGE_7, this.leftPos + 2, this.topPos + 39, 0, 0, 168, 3, 168, 3);
+		guiGraphics.blit(IMAGE_8, this.leftPos + 2, this.topPos + 69, 0, 0, 168, 3, 168, 3);
 		RenderSystem.disableBlend();
 	}
 
@@ -97,10 +101,19 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_demon"), -56, 4, -52225, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_human"), -56, 16, -256, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), -56, 28, -16711681, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), -56, 40, -65485, false);
+		if (RaceGUIDemonProcedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_demon"), 61, 8, -52225, false);
+		if (RaceGUIHumanProcedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_human"), 61, 8, -256, false);
+		if (RaceGUISpiritProcedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), 61, 8, -16711681, false);
+		if (RaceGUIDraconidProcedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), 54, 8, -65485, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_difficulty_easy"), 6, 27, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_hp_50"), 6, 46, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_magic_power_mp_1000_2000"), 6, 58, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_strength_high_stats_demon_swor"), 6, 75, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_weakness_holy_magic"), 6, 88, -1, false);
 	}
 
 	@Override

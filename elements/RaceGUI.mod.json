@@ -146,8 +146,11 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 72,
-          "y": 61,
+          "displayCondition": {
+            "name": "RaceGUIDemon"
+          },
+          "x": 189,
+          "y": 65,
           "locked": false
         }
       },
@@ -163,8 +166,11 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 72,
-          "y": 73,
+          "displayCondition": {
+            "name": "RaceGUIHuman"
+          },
+          "x": 189,
+          "y": 65,
           "locked": false
         }
       },
@@ -180,8 +186,11 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 72,
-          "y": 85,
+          "displayCondition": {
+            "name": "RaceGUISpirit"
+          },
+          "x": 189,
+          "y": 65,
           "locked": false
         }
       },
@@ -197,8 +206,116 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 72,
-          "y": 97,
+          "displayCondition": {
+            "name": "RaceGUIDraconid"
+          },
+          "x": 182,
+          "y": 65,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "guisplit.png",
+          "use1Xscale": false,
+          "x": 130,
+          "y": 96,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_difficulty_easy",
+          "text": {
+            "fixedValue": "Difficulty: Easy"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 134,
+          "y": 84,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hp_50",
+          "text": {
+            "fixedValue": "Health: 50"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 134,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_magic_power_mp_1000_2000",
+          "text": {
+            "fixedValue": "Magic Power: 1.000 - 2.000"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 134,
+          "y": 115,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "guisplit.png",
+          "use1Xscale": false,
+          "x": 130,
+          "y": 126,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_strength_high_stats_demon_swor",
+          "text": {
+            "fixedValue": "Strength: High Stats"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 134,
+          "y": 132,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_weakness_holy_magic",
+          "text": {
+            "fixedValue": "Weakness: Holy Magic"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 134,
+          "y": 145,
           "locked": false
         }
       }
@@ -206,8 +323,8 @@
     "gridSettings": {
       "sx": 16,
       "sy": 16,
-      "ox": 51,
-      "oy": 24,
+      "ox": 42,
+      "oy": 33,
       "snapOnGrid": false
     }
   }
