@@ -29,7 +29,7 @@ public class RaceGUIselectProcedure {
 				if (entity instanceof LivingEntity _livingEntity8 && _livingEntity8.getAttributes().hasAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER))
 					_livingEntity8.getAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER).setBaseValue(Math.ceil(Mth.nextDouble(RandomSource.create(), 100, 200)));
 				if (entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(MisfitcraftModAttributes.RACE))
-					_livingEntity9.getAttribute(MisfitcraftModAttributes.RACE).setBaseValue(2);
+					_livingEntity9.getAttribute(MisfitcraftModAttributes.RACE).setBaseValue(5);
 				if (entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
 					_livingEntity10.getAttribute(Attributes.MAX_HEALTH).setBaseValue(20);
 				if (entity instanceof Player _player)
@@ -41,7 +41,7 @@ public class RaceGUIselectProcedure {
 					if (entity instanceof LivingEntity _livingEntity14 && _livingEntity14.getAttributes().hasAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER))
 						_livingEntity14.getAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER).setBaseValue(Math.ceil(Mth.nextDouble(RandomSource.create(), 500, 700)));
 					if (entity instanceof LivingEntity _livingEntity15 && _livingEntity15.getAttributes().hasAttribute(MisfitcraftModAttributes.RACE))
-						_livingEntity15.getAttribute(MisfitcraftModAttributes.RACE).setBaseValue(3);
+						_livingEntity15.getAttribute(MisfitcraftModAttributes.RACE).setBaseValue(9);
 					if (entity instanceof LivingEntity _livingEntity16 && _livingEntity16.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
 						_livingEntity16.getAttribute(Attributes.MAX_HEALTH).setBaseValue(35);
 					if (entity instanceof Player _player)
@@ -53,7 +53,7 @@ public class RaceGUIselectProcedure {
 						if (entity instanceof LivingEntity _livingEntity20 && _livingEntity20.getAttributes().hasAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER))
 							_livingEntity20.getAttribute(MisfitcraftModAttributes.MAX_MAGIC_POWER).setBaseValue(Math.ceil(Mth.nextDouble(RandomSource.create(), 600, 800)));
 						if (entity instanceof LivingEntity _livingEntity21 && _livingEntity21.getAttributes().hasAttribute(MisfitcraftModAttributes.RACE))
-							_livingEntity21.getAttribute(MisfitcraftModAttributes.RACE).setBaseValue(4);
+							_livingEntity21.getAttribute(MisfitcraftModAttributes.RACE).setBaseValue(12);
 						if (entity instanceof LivingEntity _livingEntity22 && _livingEntity22.getAttributes().hasAttribute(Attributes.MAX_HEALTH))
 							_livingEntity22.getAttribute(Attributes.MAX_HEALTH).setBaseValue(35);
 						if (entity instanceof Player _player)

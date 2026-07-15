@@ -10,6 +10,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.world.inventory.StatusMenuMenu;
+import net.mcreator.misfitcraft.procedures.RaceDisplayProcedure;
+import net.mcreator.misfitcraft.procedures.PlayernameProcedure;
 import net.mcreator.misfitcraft.procedures.PlayermodelProcedure;
 import net.mcreator.misfitcraft.procedures.MagicPowerStatOverlayProcedure;
 import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
@@ -44,7 +46,7 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		if (PlayermodelProcedure.execute(entity) instanceof LivingEntity livingEntity) {
-			MisfitcraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 40, this.topPos + 92, 40, 0f + (float) Math.atan((this.leftPos + 40 - mouseX) / 40.0), (float) Math.atan((this.topPos + 43 - mouseY) / 40.0),
+			MisfitcraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 40, this.topPos + 92, 35, 0f + (float) Math.atan((this.leftPos + 40 - mouseX) / 40.0), (float) Math.atan((this.topPos + 43 - mouseY) / 40.0),
 					livingEntity);
 		}
 		boolean customTooltipShown = false;
@@ -76,10 +78,11 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_proc_playername"), 12, 9, -12829636, false);
+		guiGraphics.drawString(this.font, PlayernameProcedure.execute(entity), 12, 9, -12829636, false);
 		guiGraphics.drawString(this.font, MagicPowerStatOverlayProcedure.execute(entity), 84, 54, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_magic_power"), 84, 45, -12829636, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_race"), 84, 9, -12829636, false);
+		guiGraphics.drawString(this.font, RaceDisplayProcedure.execute(entity), 84, 18, -12829636, false);
 	}
 
 	@Override

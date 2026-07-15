@@ -850,6 +850,46 @@
         ]
       },
       "path": "~/GUI/Races/Race GUI Navigation"
+    },
+    {
+      "name": "Playername",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playername",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/PlayernameProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "RaceDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
     }
   ],
   "variable_elements": [

@@ -16,7 +16,7 @@
           "entityModel": {
             "name": "Playermodel"
           },
-          "scale": 40,
+          "scale": 35,
           "rotationX": 0,
           "followMouseMovement": true,
           "x": 141,
@@ -105,6 +105,24 @@
           "hasShadow": false,
           "x": 195,
           "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_race_display",
+          "text": {
+            "fixedValue": "",
+            "name": "RaceDisplay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 195,
+          "y": 71,
           "locked": false
         }
       }
