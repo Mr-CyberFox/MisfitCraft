@@ -13,10 +13,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
-import net.mcreator.misfitcraft.procedures.RaceGUISpiritProcedure;
-import net.mcreator.misfitcraft.procedures.RaceGUIHumanProcedure;
-import net.mcreator.misfitcraft.procedures.RaceGUIDraconidProcedure;
-import net.mcreator.misfitcraft.procedures.RaceGUIDemonProcedure;
+import net.mcreator.misfitcraft.procedures.*;
 import net.mcreator.misfitcraft.network.RaceGUIButtonMessage;
 import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
 
@@ -109,11 +106,11 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), 61, 8, -16711681, false);
 		if (RaceGUIDraconidProcedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), 54, 8, -65485, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_difficulty_easy"), 6, 27, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_hp_50"), 6, 46, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_magic_power_mp_1000_2000"), 6, 58, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_strength_high_stats_demon_swor"), 6, 75, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_weakness_holy_magic"), 6, 88, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIDifficultyDisplayProcedure.execute(entity), 6, 27, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIHealthDisplayProcedure.execute(entity), 6, 46, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIMPDisplayProcedure.execute(entity), 6, 58, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIStrengthDisplayProcedure.execute(entity), 6, 75, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIWeaknessDisplayProcedure.execute(entity), 6, 88, -1, false);
 	}
 
 	@Override

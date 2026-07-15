@@ -151,7 +151,7 @@
           },
           "x": 189,
           "y": 65,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -171,7 +171,7 @@
           },
           "x": 189,
           "y": 65,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -191,7 +191,7 @@
           },
           "x": 189,
           "y": 65,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -211,7 +211,7 @@
           },
           "x": 182,
           "y": 65,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -221,7 +221,17 @@
           "use1Xscale": false,
           "x": 130,
           "y": 96,
-          "locked": false
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "guisplit.png",
+          "use1Xscale": false,
+          "x": 130,
+          "y": 126,
+          "locked": true
         }
       },
       {
@@ -229,7 +239,8 @@
         "data": {
           "name": "label_difficulty_easy",
           "text": {
-            "fixedValue": "Difficulty: Easy"
+            "fixedValue": "Difficulty: Easy",
+            "name": "RaceGUIDifficultyDisplay"
           },
           "color": {
             "value": -1,
@@ -246,7 +257,8 @@
         "data": {
           "name": "label_hp_50",
           "text": {
-            "fixedValue": "Health: 50"
+            "fixedValue": "Health: 50",
+            "name": "RaceGUIHealthDisplay"
           },
           "color": {
             "value": -1,
@@ -263,7 +275,8 @@
         "data": {
           "name": "label_magic_power_mp_1000_2000",
           "text": {
-            "fixedValue": "Magic Power: 1.000 - 2.000"
+            "fixedValue": "Magic Power: 1.000 - 2.000",
+            "name": "RaceGUIMPDisplay"
           },
           "color": {
             "value": -1,
@@ -276,21 +289,12 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "guisplit.png",
-          "use1Xscale": false,
-          "x": 130,
-          "y": 126,
-          "locked": false
-        }
-      },
-      {
         "type": "label",
         "data": {
           "name": "label_strength_high_stats_demon_swor",
           "text": {
-            "fixedValue": "Strength: High Stats"
+            "fixedValue": "Strength: High Stats",
+            "name": "RaceGUIStrengthDisplay"
           },
           "color": {
             "value": -1,
@@ -307,7 +311,8 @@
         "data": {
           "name": "label_weakness_holy_magic",
           "text": {
-            "fixedValue": "Weakness: Holy Magic"
+            "fixedValue": "Weakness: Holy Magic",
+            "name": "RaceGUIWeaknessDisplay"
           },
           "color": {
             "value": -1,

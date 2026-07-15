@@ -43,9 +43,9 @@
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -381,17 +381,17 @@
       "registry_name": "aharthern_dimension",
       "metadata": {
         "files": [
-          "src/main/resources/assets/misfitcraft/models/item/aharthern_dimension.json",
-          "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionPortalShape.java",
-          "src/main/java/net/mcreator/misfitcraft/item/AharthernDimensionItem.java",
-          "src/main/resources/data/misfitcraft/dimension_type/aharthern_dimension.json",
           "src/main/java/net/mcreator/misfitcraft/block/AharthernDimensionPortalBlock.java",
-          "src/main/java/net/mcreator/misfitcraft/world/dimension/AharthernDimensionDimension.java",
           "src/main/resources/assets/misfitcraft/models/block/aharthern_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/misfitcraft/item/AharthernDimensionItem.java",
           "src/main/resources/data/misfitcraft/dimension/aharthern_dimension.json",
-          "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionTeleporter.java",
           "src/main/resources/assets/misfitcraft/models/block/aharthern_dimension_portal_ns.json",
-          "src/main/resources/assets/misfitcraft/blockstates/aharthern_dimension_portal.json"
+          "src/main/java/net/mcreator/misfitcraft/world/dimension/AharthernDimensionDimension.java",
+          "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionPortalShape.java",
+          "src/main/java/net/mcreator/misfitcraft/world/teleporter/AharthernDimensionTeleporter.java",
+          "src/main/resources/data/misfitcraft/dimension_type/aharthern_dimension.json",
+          "src/main/resources/assets/misfitcraft/blockstates/aharthern_dimension_portal.json",
+          "src/main/resources/assets/misfitcraft/models/item/aharthern_dimension.json"
         ]
       },
       "path": "~/Biomes and Dimensions"
@@ -404,10 +404,10 @@
       "registry_name": "aharthern_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
-          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
           "src/main/resources/data/misfitcraft/worldgen/placed_feature/aharthern_forest_tree.json",
           "src/main/resources/data/misfitcraft/worldgen/configured_feature/aharthern_forest_tree.json",
+          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
+          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
           "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestLeaveDecorator.java"
         ]
       },
@@ -501,14 +501,14 @@
       "registry_name": "teardrop_blossom",
       "metadata": {
         "files": [
+          "src/main/resources/assets/misfitcraft/models/block/teardrop_blossom.json",
           "src/main/resources/data/misfitcraft/loot_table/blocks/teardrop_blossom.json",
-          "src/main/resources/data/misfitcraft/worldgen/placed_feature/teardrop_blossom.json",
           "src/main/resources/assets/misfitcraft/models/item/teardrop_blossom.json",
           "src/main/resources/data/misfitcraft/neoforge/biome_modifier/teardrop_blossom_biome_modifier.json",
-          "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json",
           "src/main/java/net/mcreator/misfitcraft/block/TeardropBlossomBlock.java",
-          "src/main/resources/assets/misfitcraft/models/block/teardrop_blossom.json",
-          "src/main/resources/data/misfitcraft/worldgen/configured_feature/teardrop_blossom.json"
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/teardrop_blossom.json",
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/teardrop_blossom.json",
+          "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json"
         ]
       },
       "path": "~/Biomes and Dimensions"
@@ -697,7 +697,7 @@
     {
       "name": "KurslaSpell",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "kursla_spell",
       "metadata": {
@@ -716,7 +716,7 @@
     {
       "name": "KurstSpell",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "kurst_spell",
       "metadata": {
@@ -735,7 +735,7 @@
     {
       "name": "LynelSpell",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "lynel_spell",
       "metadata": {
@@ -750,6 +750,106 @@
         ]
       },
       "path": "~/Spells"
+    },
+    {
+      "name": "RaceGUIHealthDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_health_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIHealthDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Races/Race GUI Navigation"
+    },
+    {
+      "name": "RaceGUIDifficultyDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_difficulty_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIDifficultyDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Races/Race GUI Navigation"
+    },
+    {
+      "name": "RaceGUIMPDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_guimp_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIMPDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Races/Race GUI Navigation"
+    },
+    {
+      "name": "RaceGUIStrengthDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_strength_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIStrengthDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Races/Race GUI Navigation"
+    },
+    {
+      "name": "RaceGUIWeaknessDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_weakness_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIWeaknessDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Races/Race GUI Navigation"
     }
   ],
   "variable_elements": [
