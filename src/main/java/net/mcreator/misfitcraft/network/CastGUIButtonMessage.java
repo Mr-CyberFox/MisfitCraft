@@ -79,6 +79,10 @@ public record CastGUIButtonMessage(int buttonID, int x, int y, int z) implements
 
 			KurstSpellProcedure.execute(entity);
 		}
+		if (buttonID == 8) {
+
+			LynelSpellProcedure.execute(entity);
+		}
 	}
 
 	@SubscribeEvent

@@ -731,6 +731,25 @@
         ]
       },
       "path": "~/Spells"
+    },
+    {
+      "name": "LynelSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lynel_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/LynelSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
     }
   ],
   "variable_elements": [
@@ -792,7 +811,8 @@
       "gui.misfitcraft.cast_gui.button_syrica": "Syrica",
       "gui.misfitcraft.cast_gui.button_grega": "Grega",
       "gui.misfitcraft.cast_gui.button_kursla": "Kursla",
-      "gui.misfitcraft.cast_gui.button_kurst": "Kurst"
+      "gui.misfitcraft.cast_gui.button_kurst": "Kurst",
+      "gui.misfitcraft.cast_gui.button_lynel": "Lynel"
     }
   },
   "metadata": {

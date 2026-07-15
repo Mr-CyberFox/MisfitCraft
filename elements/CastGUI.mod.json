@@ -137,6 +137,22 @@
           "y": 71,
           "locked": false
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_lynel",
+          "text": "Lynel",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LynelSpell"
+          },
+          "width": 50,
+          "height": 20,
+          "x": 204,
+          "y": 98,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
