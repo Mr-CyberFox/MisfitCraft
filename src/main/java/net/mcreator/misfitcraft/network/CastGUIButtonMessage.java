@@ -71,6 +71,18 @@ public record CastGUIButtonMessage(int buttonID, int x, int y, int z) implements
 
 			GregaSpellProcedure.execute(entity);
 		}
+		if (buttonID == 6) {
+
+			KurslaSpellProcedure.execute(entity);
+		}
+		if (buttonID == 7) {
+
+			KurstSpellProcedure.execute(entity);
+		}
+		if (buttonID == 8) {
+
+			LynelSpellProcedure.execute(entity);
+		}
 	}
 
 	@SubscribeEvent

@@ -43,9 +43,9 @@
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -67,7 +67,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIpreviousProcedure.java"
         ]
       },
-      "path": "~/GUI/Races/Race GUI Components"
+      "path": "~/GUI/Race GUI Components"
     },
     {
       "name": "RaceGUInext",
@@ -86,7 +86,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUInextProcedure.java"
         ]
       },
-      "path": "~/GUI/Races/Race GUI Components"
+      "path": "~/GUI/Race GUI Components"
     },
     {
       "name": "RaceGUIselect",
@@ -105,7 +105,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIselectProcedure.java"
         ]
       },
-      "path": "~/GUI/Races/Race GUI Components"
+      "path": "~/GUI/Race GUI Components"
     },
     {
       "name": "RaceGUIOpen",
@@ -140,7 +140,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpenProcedure.java"
         ]
       },
-      "path": "~/GUI/Races/Race GUI Components"
+      "path": "~/GUI/Race GUI Components"
     },
     {
       "name": "MagicPowerStatOverlay",
@@ -326,7 +326,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/GUI/Races/Race GUI Components"
+      "path": "~/GUI/Races"
     },
     {
       "name": "SourcePointDeath",
@@ -371,7 +371,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/GUI/Races/Race GUI Navigation"
+      "path": "~/GUI/Races"
     },
     {
       "name": "AharthernDimension",
@@ -431,7 +431,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIDemonProcedure.java"
         ]
       },
-      "path": "~/GUI/Races/Race GUI Navigation"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIHuman",
@@ -451,7 +451,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIHumanProcedure.java"
         ]
       },
-      "path": "~/GUI/Races/Race GUI Navigation"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUISpirit",
@@ -471,7 +471,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUISpiritProcedure.java"
         ]
       },
-      "path": "~/GUI/Races/Race GUI Navigation"
+      "path": "~/GUI/Races"
     },
     {
       "name": "RaceGUIDraconid",
@@ -491,7 +491,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIDraconidProcedure.java"
         ]
       },
-      "path": "~/GUI/Races/Race GUI Navigation"
+      "path": "~/GUI/Races"
     },
     {
       "name": "TeardropBlossom",
@@ -501,14 +501,14 @@
       "registry_name": "teardrop_blossom",
       "metadata": {
         "files": [
-          "src/main/resources/assets/misfitcraft/models/block/teardrop_blossom.json",
           "src/main/resources/data/misfitcraft/loot_table/blocks/teardrop_blossom.json",
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/teardrop_blossom.json",
           "src/main/resources/assets/misfitcraft/models/item/teardrop_blossom.json",
           "src/main/resources/data/misfitcraft/neoforge/biome_modifier/teardrop_blossom_biome_modifier.json",
+          "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json",
           "src/main/java/net/mcreator/misfitcraft/block/TeardropBlossomBlock.java",
-          "src/main/resources/data/misfitcraft/worldgen/placed_feature/teardrop_blossom.json",
-          "src/main/resources/data/misfitcraft/worldgen/configured_feature/teardrop_blossom.json",
-          "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json"
+          "src/main/resources/assets/misfitcraft/models/block/teardrop_blossom.json",
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/teardrop_blossom.json"
         ]
       },
       "path": "~/Biomes and Dimensions"
@@ -693,6 +693,63 @@
         ]
       },
       "path": "~/Spells"
+    },
+    {
+      "name": "KurslaSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kursla_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/KurslaSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "KurstSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kurst_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/KurstSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "LynelSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lynel_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/LynelSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
     }
   ],
   "variable_elements": [
@@ -756,7 +813,10 @@
       "gui.misfitcraft.race_gui.label_magic_power_mp_1000_2000": "Magic Power: 1.000 - 2.000",
       "gui.misfitcraft.race_gui.label_hp_50": "Health: 50",
       "gui.misfitcraft.race_gui.label_strength_high_stats_demon_swor": "Strength: High Stats",
-      "gui.misfitcraft.race_gui.label_demon_sword_affinity": "Demon Sword affinity"
+      "gui.misfitcraft.race_gui.label_demon_sword_affinity": "Demon Sword affinity",
+      "gui.misfitcraft.cast_gui.button_kurst": "Kurst",
+      "gui.misfitcraft.cast_gui.button_kursla": "Kursla",
+      "gui.misfitcraft.cast_gui.button_lynel": "Lynel"
     }
   },
   "metadata": {
@@ -784,8 +844,16 @@
         "children": []
       },
       {
+        "name": "Spells",
+        "children": []
+      },
+      {
         "name": "GUI",
         "children": [
+          {
+            "name": "CastGUI",
+            "children": []
+          },
           {
             "name": "Status Menu",
             "children": []
@@ -794,18 +862,14 @@
             "name": "Races",
             "children": [
               {
-                "name": "Race GUI Components",
+                "name": "Race GUI Navigation",
                 "children": []
               },
               {
-                "name": "Race GUI Navigation",
+                "name": "Race GUI Components",
                 "children": []
               }
             ]
-          },
-          {
-            "name": "CastGUI",
-            "children": []
           }
         ]
       },
@@ -815,10 +879,6 @@
       },
       {
         "name": "Source Points",
-        "children": []
-      },
-      {
-        "name": "Spells",
         "children": []
       }
     ]

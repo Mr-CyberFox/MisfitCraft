@@ -41,5 +41,8 @@
   "gui.misfitcraft.race_gui.label_magic_power_mp_1000_2000": "Magic Power: 1.000 - 2.000",
   "gui.misfitcraft.race_gui.label_hp_50": "Health: 50",
   "gui.misfitcraft.race_gui.label_strength_high_stats_demon_swor": "Strength: High Stats",
-  "gui.misfitcraft.race_gui.label_demon_sword_affinity": "Demon Sword affinity"
+  "gui.misfitcraft.race_gui.label_demon_sword_affinity": "Demon Sword affinity",
+  "gui.misfitcraft.cast_gui.button_kurst": "Kurst",
+  "gui.misfitcraft.cast_gui.button_kursla": "Kursla",
+  "gui.misfitcraft.cast_gui.button_lynel": "Lynel"
 }
