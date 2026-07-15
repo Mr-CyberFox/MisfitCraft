@@ -1,0 +1,12 @@
+{
+  "_fv": 85,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Cast Spell Key",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpenCastGUI"
+    }
+  }
+}

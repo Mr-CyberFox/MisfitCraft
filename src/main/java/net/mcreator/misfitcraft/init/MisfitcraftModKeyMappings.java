@@ -17,6 +17,7 @@ import net.minecraft.client.KeyMapping;
 
 import net.mcreator.misfitcraft.network.OpenStatusMenuMessage;
 import net.mcreator.misfitcraft.network.MagicTestButtonMessage;
+import net.mcreator.misfitcraft.network.CastSpellKeyMessage;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class MisfitcraftModKeyMappings {
@@ -46,11 +47,25 @@ public class MisfitcraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping CAST_SPELL_KEY = new KeyMapping("key.misfitcraft.cast_spell_key", GLFW.GLFW_KEY_R, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new CastSpellKeyMessage(0, 0));
+				CastSpellKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(MAGIC_TEST_BUTTON);
 		event.register(OPEN_STATUS_MENU);
+		event.register(CAST_SPELL_KEY);
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)
@@ -60,6 +75,7 @@ public class MisfitcraftModKeyMappings {
 			if (Minecraft.getInstance().screen == null) {
 				MAGIC_TEST_BUTTON.consumeClick();
 				OPEN_STATUS_MENU.consumeClick();
+				CAST_SPELL_KEY.consumeClick();
 			}
 		}
 	}

@@ -43,9 +43,9 @@
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -512,6 +512,145 @@
         ]
       },
       "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "CastGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cast_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/CastGUIButtonMessage.java",
+          "src/main/java/net/mcreator/misfitcraft/client/gui/CastGUIScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/CastGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI/CastGUI"
+    },
+    {
+      "name": "FlessSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fless_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/FlessSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "CastSpellKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cast_spell_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/CastSpellKeyMessage.java"
+        ]
+      },
+      "path": "~/GUI/CastGUI"
+    },
+    {
+      "name": "OpenCastGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_cast_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/OpenCastGUIProcedure.java"
+        ]
+      },
+      "path": "~/GUI/CastGUI"
+    },
+    {
+      "name": "EntSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ent_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/EntSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "EnchelSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchel_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/EnchelSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
+    },
+    {
+      "name": "EiChaelSpell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ei_chael_spell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/EiChaelSpellProcedure.java"
+        ]
+      },
+      "path": "~/Spells"
     }
   ],
   "variable_elements": [
@@ -564,7 +703,12 @@
       "attribute.misfitcraft.race_navigation": "Race Navigation",
       "item.misfitcraft.aharthern_dimension": "Aharthern Dimension Portal Igniter",
       "biome.misfitcraft.aharthern_forest": "Aharthern Forest",
-      "block.misfitcraft.teardrop_blossom": "Teardrop Blossom"
+      "block.misfitcraft.teardrop_blossom": "Teardrop Blossom",
+      "gui.misfitcraft.cast_gui.button_fless": "Fless",
+      "key.misfitcraft.cast_spell_key": "Cast Spell Key",
+      "gui.misfitcraft.cast_gui.button_ent": "Ent",
+      "gui.misfitcraft.cast_gui.button_enchel": "Enchel",
+      "gui.misfitcraft.cast_gui.button_ei_chael": "Ei Chael"
     }
   },
   "metadata": {
@@ -605,6 +749,10 @@
           {
             "name": "Race GUI Components",
             "children": []
+          },
+          {
+            "name": "CastGUI",
+            "children": []
           }
         ]
       },
@@ -614,6 +762,10 @@
       },
       {
         "name": "Source Points",
+        "children": []
+      },
+      {
+        "name": "Spells",
         "children": []
       }
     ]

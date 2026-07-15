@@ -17,6 +17,7 @@ import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.client.gui.StatusMenuScreen;
 import net.mcreator.misfitcraft.client.gui.RaceGUIScreen;
+import net.mcreator.misfitcraft.client.gui.CastGUIScreen;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class MisfitcraftModScreens {
@@ -24,6 +25,7 @@ public class MisfitcraftModScreens {
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(MisfitcraftModMenus.RACE_GUI.get(), RaceGUIScreen::new);
 		event.register(MisfitcraftModMenus.STATUS_MENU.get(), StatusMenuScreen::new);
+		event.register(MisfitcraftModMenus.CAST_GUI.get(), CastGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

@@ -30,5 +30,10 @@
   "attribute.misfitcraft.race_navigation": "Race Navigation",
   "item.misfitcraft.aharthern_dimension": "Aharthern Dimension Portal Igniter",
   "biome.misfitcraft.aharthern_forest": "Aharthern Forest",
-  "block.misfitcraft.teardrop_blossom": "Teardrop Blossom"
+  "block.misfitcraft.teardrop_blossom": "Teardrop Blossom",
+  "gui.misfitcraft.cast_gui.button_fless": "Fless",
+  "key.misfitcraft.cast_spell_key": "Cast Spell Key",
+  "gui.misfitcraft.cast_gui.button_ent": "Ent",
+  "gui.misfitcraft.cast_gui.button_enchel": "Enchel",
+  "gui.misfitcraft.cast_gui.button_ei_chael": "Ei Chael"
 }

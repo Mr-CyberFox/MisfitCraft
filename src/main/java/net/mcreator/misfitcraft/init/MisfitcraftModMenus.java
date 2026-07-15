@@ -17,6 +17,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.misfitcraft.world.inventory.StatusMenuMenu;
 import net.mcreator.misfitcraft.world.inventory.RaceGUIMenu;
+import net.mcreator.misfitcraft.world.inventory.CastGUIMenu;
 import net.mcreator.misfitcraft.network.MenuStateUpdateMessage;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
@@ -26,6 +27,7 @@ public class MisfitcraftModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, MisfitcraftMod.MODID);
 	public static final DeferredHolder<MenuType<?>, MenuType<RaceGUIMenu>> RACE_GUI = REGISTRY.register("race_gui", () -> IMenuTypeExtension.create(RaceGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<StatusMenuMenu>> STATUS_MENU = REGISTRY.register("status_menu", () -> IMenuTypeExtension.create(StatusMenuMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CastGUIMenu>> CAST_GUI = REGISTRY.register("cast_gui", () -> IMenuTypeExtension.create(CastGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();
