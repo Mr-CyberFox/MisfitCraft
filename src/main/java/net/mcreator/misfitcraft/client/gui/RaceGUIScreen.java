@@ -17,6 +17,9 @@ import net.mcreator.misfitcraft.procedures.*;
 import net.mcreator.misfitcraft.network.RaceGUIButtonMessage;
 import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
 
+import java.util.stream.Collectors;
+import java.util.Arrays;
+
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implements MisfitcraftModScreens.ScreenAccessor {
@@ -56,7 +59,41 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		boolean customTooltipShown = false;
+		if (RaceGUIDemonProcedure.execute(entity))
+			if (mouseX > leftPos + 138 && mouseX < leftPos + 168 && mouseY > topPos + 73 && mouseY < topPos + 101) {
+				String hoverText = RaceGUIDemonLoreProcedure.execute();
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+				customTooltipShown = true;
+			}
+		if (RaceGUIHumanProcedure.execute(entity))
+			if (mouseX > leftPos + 138 && mouseX < leftPos + 168 && mouseY > topPos + 73 && mouseY < topPos + 101) {
+				String hoverText = RaceGUIHumanLoreProcedure.execute();
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+				customTooltipShown = true;
+			}
+		if (RaceGUISpiritProcedure.execute(entity))
+			if (mouseX > leftPos + 138 && mouseX < leftPos + 168 && mouseY > topPos + 73 && mouseY < topPos + 101) {
+				String hoverText = RaceGUISpiritLoreProcedure.execute();
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+				customTooltipShown = true;
+			}
+		if (RaceGUIDraconidProcedure.execute(entity))
+			if (mouseX > leftPos + 138 && mouseX < leftPos + 168 && mouseY > topPos + 73 && mouseY < topPos + 101) {
+				String hoverText = RaceGUIDraconidLoreProcedure.execute();
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+				customTooltipShown = true;
+			}
+		if (!customTooltipShown)
+			this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
@@ -67,16 +104,16 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		guiGraphics.blit(IMAGE_0, this.leftPos + -9, this.topPos + -10, 0, 0, 190, 144, 190, 144);
 		guiGraphics.blit(IMAGE_1, this.leftPos + 3, this.topPos + 17, 0, 0, 168, 3, 168, 3);
 		if (RaceGUIDraconidProcedure.execute(entity)) {
-			guiGraphics.blit(IMAGE_2, this.leftPos + 138, this.topPos + 1, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(IMAGE_2, this.leftPos + 137, this.topPos + 71, 0, 0, 32, 32, 32, 32);
 		}
 		if (RaceGUISpiritProcedure.execute(entity)) {
-			guiGraphics.blit(IMAGE_3, this.leftPos + 138, this.topPos + 1, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(IMAGE_3, this.leftPos + 137, this.topPos + 71, 0, 0, 32, 32, 32, 32);
 		}
 		if (RaceGUIHumanProcedure.execute(entity)) {
-			guiGraphics.blit(IMAGE_4, this.leftPos + 138, this.topPos + 1, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(IMAGE_4, this.leftPos + 137, this.topPos + 71, 0, 0, 32, 32, 32, 32);
 		}
 		if (RaceGUIDemonProcedure.execute(entity)) {
-			guiGraphics.blit(IMAGE_5, this.leftPos + 138, this.topPos + 1, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(IMAGE_5, this.leftPos + 137, this.topPos + 71, 0, 0, 32, 32, 32, 32);
 		}
 		guiGraphics.blit(IMAGE_6, this.leftPos + 3, this.topPos + 36, 0, 0, 168, 3, 168, 3);
 		guiGraphics.blit(IMAGE_7, this.leftPos + 3, this.topPos + 66, 0, 0, 168, 3, 168, 3);
@@ -99,9 +136,9 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		if (RaceGUIHumanProcedure.execute(entity))
 			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_human"), 73, 5, -256, false);
 		if (RaceGUISpiritProcedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), 73, 5, -16711681, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), 74, 5, -16711681, false);
 		if (RaceGUIDraconidProcedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), 70, 5, -65485, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), 67, 5, -65485, false);
 		guiGraphics.drawString(this.font, RaceGUIDifficultyDisplayProcedure.execute(entity), 7, 24, -1, false);
 		guiGraphics.drawString(this.font, RaceGUIHealthDisplayProcedure.execute(entity), 7, 43, -1, false);
 		guiGraphics.drawString(this.font, RaceGUIMPDisplayProcedure.execute(entity), 7, 55, -1, false);
@@ -127,7 +164,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		};
 		this.addRenderableWidget(imagebutton_raceselect);
-		imagebutton_nextbutton = new ImageButton(this.leftPos + 119, this.topPos + 105, 48, 16,
+		imagebutton_nextbutton = new ImageButton(this.leftPos + 119, this.topPos + 103, 48, 16,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/nextbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/nextbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
@@ -142,7 +179,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		};
 		this.addRenderableWidget(imagebutton_nextbutton);
-		imagebutton_backbutton = new ImageButton(this.leftPos + 7, this.topPos + 105, 48, 16,
+		imagebutton_backbutton = new ImageButton(this.leftPos + 6, this.topPos + 103, 48, 16,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/backbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/backbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;

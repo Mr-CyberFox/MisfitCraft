@@ -54,7 +54,7 @@
             "name": "RaceGUInext"
           },
           "x": 246,
-          "y": 165,
+          "y": 163,
           "locked": true
         }
       },
@@ -67,8 +67,8 @@
           "onClick": {
             "name": "RaceGUIprevious"
           },
-          "x": 134,
-          "y": 165,
+          "x": 133,
+          "y": 163,
           "locked": true
         }
       },
@@ -80,8 +80,8 @@
           "displayCondition": {
             "name": "RaceGUIDraconid"
           },
-          "x": 265,
-          "y": 61,
+          "x": 264,
+          "y": 131,
           "locked": true
         }
       },
@@ -93,8 +93,8 @@
           "displayCondition": {
             "name": "RaceGUISpirit"
           },
-          "x": 265,
-          "y": 61,
+          "x": 264,
+          "y": 131,
           "locked": true
         }
       },
@@ -106,8 +106,8 @@
           "displayCondition": {
             "name": "RaceGUIHuman"
           },
-          "x": 265,
-          "y": 61,
+          "x": 264,
+          "y": 131,
           "locked": true
         }
       },
@@ -119,8 +119,8 @@
           "displayCondition": {
             "name": "RaceGUIDemon"
           },
-          "x": 265,
-          "y": 61,
+          "x": 264,
+          "y": 131,
           "locked": true
         }
       },
@@ -179,7 +179,7 @@
           "displayCondition": {
             "name": "RaceGUISpirit"
           },
-          "x": 200,
+          "x": 201,
           "y": 65,
           "locked": true
         }
@@ -199,7 +199,7 @@
           "displayCondition": {
             "name": "RaceGUIDraconid"
           },
-          "x": 197,
+          "x": 194,
           "y": 65,
           "locked": true
         }
@@ -311,6 +311,78 @@
           "hasShadow": false,
           "x": 134,
           "y": 145,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_demonlore",
+          "text": {
+            "fixedValue": "Demons are a warlike race with a long history of infighting, they follow a hierarchical structure where weaker demons would pledge themselves to a more powerful demon, either for protection or because they valued strength.",
+            "name": "RaceGUIDemonLore"
+          },
+          "displayCondition": {
+            "name": "RaceGUIDemon"
+          },
+          "width": 30,
+          "height": 28,
+          "x": 265,
+          "y": 133,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_humanlore",
+          "text": {
+            "fixedValue": "Compared to the other races, humans live relatively short lives. The magic power of humans is also on the weak side, causing them to rely on wits and cunning instead.",
+            "name": "RaceGUIHumanLore"
+          },
+          "displayCondition": {
+            "name": "RaceGUIHuman"
+          },
+          "width": 30,
+          "height": 28,
+          "x": 265,
+          "y": 133,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_spiritlore",
+          "text": {
+            "fixedValue": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born.",
+            "name": "RaceGUISpiritLore"
+          },
+          "displayCondition": {
+            "name": "RaceGUISpirit"
+          },
+          "width": 30,
+          "height": 28,
+          "x": 265,
+          "y": 133,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_draconidlore",
+          "text": {
+            "fixedValue": "Draconids are the descendants of dragons. When dragons consume the sources of humans and demons, those sources amalgamate in the womb of the dragon and reincarnate into a single life.",
+            "name": "RaceGUIDraconidLore"
+          },
+          "displayCondition": {
+            "name": "RaceGUIDraconid"
+          },
+          "width": 30,
+          "height": 28,
+          "x": 265,
+          "y": 133,
           "locked": true
         }
       }
