@@ -44,6 +44,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onDroppedByPlayer": {
+      "name": "EnterAharthernTrigger"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
