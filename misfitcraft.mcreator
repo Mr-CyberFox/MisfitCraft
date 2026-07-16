@@ -545,7 +545,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/FlessSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "CastSpellKey",
@@ -612,7 +612,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/EntSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "EnchelSpell",
@@ -631,7 +631,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/EnchelSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "EiChaelSpell",
@@ -650,7 +650,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/EiChaelSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "SyricaSpell",
@@ -673,7 +673,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/SyricaSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "GregaSpell",
@@ -692,7 +692,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/GregaSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "KurslaSpell",
@@ -711,7 +711,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/KurslaSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "KurstSpell",
@@ -730,7 +730,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/KurstSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "LynelSpell",
@@ -749,7 +749,7 @@
           "src/main/java/net/mcreator/misfitcraft/procedures/LynelSpellProcedure.java"
         ]
       },
-      "path": "~/Spells"
+      "path": "~/Biomes and Dimensions/Spells"
     },
     {
       "name": "RaceGUIHealthDisplay",
@@ -904,6 +904,41 @@
         ]
       },
       "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "RaceGUIOpen2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "race_gui_open_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/RaceGUIOpen2Procedure.java"
+        ]
+      },
+      "path": "~/GUI/Races/Race GUI Components"
     }
   ],
   "variable_elements": [
@@ -977,16 +1012,16 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg"
     ]
@@ -996,11 +1031,12 @@
     "children": [
       {
         "name": "Biomes and Dimensions",
-        "children": []
-      },
-      {
-        "name": "Spells",
-        "children": []
+        "children": [
+          {
+            "name": "Spells",
+            "children": []
+          }
+        ]
       },
       {
         "name": "GUI",

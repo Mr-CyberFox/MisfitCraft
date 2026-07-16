@@ -27,16 +27,14 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	private ImageButton imagebutton_raceselect;
 	private ImageButton imagebutton_nextbutton;
 	private ImageButton imagebutton_backbutton;
-	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("misfitcraft:textures/screens/race_gui.png");
-	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("misfitcraft:textures/screens/racescreen.png");
+	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("misfitcraft:textures/screens/displayscreen.png");
 	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
-	private static final ResourceLocation IMAGE_2 = ResourceLocation.parse("misfitcraft:textures/screens/racescreensprite.png");
-	private static final ResourceLocation IMAGE_3 = ResourceLocation.parse("misfitcraft:textures/screens/draconidsymbol.png");
-	private static final ResourceLocation IMAGE_4 = ResourceLocation.parse("misfitcraft:textures/screens/spiritsymbol.png");
-	private static final ResourceLocation IMAGE_5 = ResourceLocation.parse("misfitcraft:textures/screens/humansymbol.png");
-	private static final ResourceLocation IMAGE_6 = ResourceLocation.parse("misfitcraft:textures/screens/demonsymbol.png");
+	private static final ResourceLocation IMAGE_2 = ResourceLocation.parse("misfitcraft:textures/screens/draconidsymbol.png");
+	private static final ResourceLocation IMAGE_3 = ResourceLocation.parse("misfitcraft:textures/screens/spiritsymbol.png");
+	private static final ResourceLocation IMAGE_4 = ResourceLocation.parse("misfitcraft:textures/screens/humansymbol.png");
+	private static final ResourceLocation IMAGE_5 = ResourceLocation.parse("misfitcraft:textures/screens/demonsymbol.png");
+	private static final ResourceLocation IMAGE_6 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
 	private static final ResourceLocation IMAGE_7 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
-	private static final ResourceLocation IMAGE_8 = ResourceLocation.parse("misfitcraft:textures/screens/guisplit.png");
 
 	public RaceGUIScreen(RaceGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -45,8 +43,8 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 171;
-		this.imageHeight = 127;
+		this.imageWidth = 173;
+		this.imageHeight = 121;
 	}
 
 	@Override
@@ -66,24 +64,22 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(IMAGE_0, this.leftPos + -3, this.topPos + 0, 0, 0, 178, 132, 178, 132);
-		guiGraphics.blit(IMAGE_1, this.leftPos + 2, this.topPos + 20, 0, 0, 168, 3, 168, 3);
-		guiGraphics.blit(IMAGE_2, this.leftPos + 147, this.topPos + -12, 0, 0, 36, 36, 36, 36);
+		guiGraphics.blit(IMAGE_0, this.leftPos + -9, this.topPos + -10, 0, 0, 190, 144, 190, 144);
+		guiGraphics.blit(IMAGE_1, this.leftPos + 3, this.topPos + 17, 0, 0, 168, 3, 168, 3);
 		if (RaceGUIDraconidProcedure.execute(entity)) {
-			guiGraphics.blit(IMAGE_3, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(IMAGE_2, this.leftPos + 138, this.topPos + 1, 0, 0, 32, 32, 32, 32);
 		}
 		if (RaceGUISpiritProcedure.execute(entity)) {
-			guiGraphics.blit(IMAGE_4, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(IMAGE_3, this.leftPos + 138, this.topPos + 1, 0, 0, 32, 32, 32, 32);
 		}
 		if (RaceGUIHumanProcedure.execute(entity)) {
-			guiGraphics.blit(IMAGE_5, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(IMAGE_4, this.leftPos + 138, this.topPos + 1, 0, 0, 32, 32, 32, 32);
 		}
 		if (RaceGUIDemonProcedure.execute(entity)) {
-			guiGraphics.blit(IMAGE_6, this.leftPos + 149, this.topPos + -10, 0, 0, 32, 32, 32, 32);
+			guiGraphics.blit(IMAGE_5, this.leftPos + 138, this.topPos + 1, 0, 0, 32, 32, 32, 32);
 		}
-		guiGraphics.blit(IMAGE_7, this.leftPos + 2, this.topPos + 39, 0, 0, 168, 3, 168, 3);
-		guiGraphics.blit(IMAGE_8, this.leftPos + 2, this.topPos + 69, 0, 0, 168, 3, 168, 3);
+		guiGraphics.blit(IMAGE_6, this.leftPos + 3, this.topPos + 36, 0, 0, 168, 3, 168, 3);
+		guiGraphics.blit(IMAGE_7, this.leftPos + 3, this.topPos + 66, 0, 0, 168, 3, 168, 3);
 		RenderSystem.disableBlend();
 	}
 
@@ -99,24 +95,24 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		if (RaceGUIDemonProcedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_demon"), 61, 8, -52225, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_demon"), 73, 5, -52225, false);
 		if (RaceGUIHumanProcedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_human"), 61, 8, -256, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_human"), 73, 5, -256, false);
 		if (RaceGUISpiritProcedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), 61, 8, -16711681, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_spirit"), 73, 5, -16711681, false);
 		if (RaceGUIDraconidProcedure.execute(entity))
-			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), 54, 8, -65485, false);
-		guiGraphics.drawString(this.font, RaceGUIDifficultyDisplayProcedure.execute(entity), 6, 27, -1, false);
-		guiGraphics.drawString(this.font, RaceGUIHealthDisplayProcedure.execute(entity), 6, 46, -1, false);
-		guiGraphics.drawString(this.font, RaceGUIMPDisplayProcedure.execute(entity), 6, 58, -1, false);
-		guiGraphics.drawString(this.font, RaceGUIStrengthDisplayProcedure.execute(entity), 6, 75, -1, false);
-		guiGraphics.drawString(this.font, RaceGUIWeaknessDisplayProcedure.execute(entity), 6, 88, -1, false);
+			guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.race_gui.label_draconid"), 70, 5, -65485, false);
+		guiGraphics.drawString(this.font, RaceGUIDifficultyDisplayProcedure.execute(entity), 7, 24, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIHealthDisplayProcedure.execute(entity), 7, 43, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIMPDisplayProcedure.execute(entity), 7, 55, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIStrengthDisplayProcedure.execute(entity), 7, 72, -1, false);
+		guiGraphics.drawString(this.font, RaceGUIWeaknessDisplayProcedure.execute(entity), 7, 85, -1, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_raceselect = new ImageButton(this.leftPos + 62, this.topPos + 122, 48, 17,
+		imagebutton_raceselect = new ImageButton(this.leftPos + 66, this.topPos + 105, 41, 31,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/raceselect.png"), ResourceLocation.parse("misfitcraft:textures/screens/raceselecthover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
@@ -131,7 +127,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		};
 		this.addRenderableWidget(imagebutton_raceselect);
-		imagebutton_nextbutton = new ImageButton(this.leftPos + 118, this.topPos + 108, 48, 16,
+		imagebutton_nextbutton = new ImageButton(this.leftPos + 119, this.topPos + 105, 48, 16,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/nextbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/nextbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
@@ -146,7 +142,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		};
 		this.addRenderableWidget(imagebutton_nextbutton);
-		imagebutton_backbutton = new ImageButton(this.leftPos + 6, this.topPos + 108, 48, 16,
+		imagebutton_backbutton = new ImageButton(this.leftPos + 7, this.topPos + 105, 48, 16,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/backbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/backbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;

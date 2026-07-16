@@ -3,20 +3,20 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 171,
-    "height": 127,
+    "width": 173,
+    "height": 121,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
       {
         "type": "image",
         "data": {
-          "image": "racescreen.png",
+          "image": "displayscreen.png",
           "use1Xscale": false,
-          "x": 125,
-          "y": 57,
+          "x": 118,
+          "y": 50,
           "locked": true
         }
       },
@@ -31,16 +31,6 @@
         }
       },
       {
-        "type": "image",
-        "data": {
-          "image": "racescreensprite.png",
-          "use1Xscale": false,
-          "x": 275,
-          "y": 45,
-          "locked": true
-        }
-      },
-      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_raceselect",
@@ -49,8 +39,8 @@
           "onClick": {
             "name": "RaceGUIselect"
           },
-          "x": 190,
-          "y": 179,
+          "x": 193,
+          "y": 165,
           "locked": true
         }
       },
@@ -90,8 +80,8 @@
           "displayCondition": {
             "name": "RaceGUIDraconid"
           },
-          "x": 277,
-          "y": 47,
+          "x": 265,
+          "y": 61,
           "locked": true
         }
       },
@@ -103,8 +93,8 @@
           "displayCondition": {
             "name": "RaceGUISpirit"
           },
-          "x": 277,
-          "y": 47,
+          "x": 265,
+          "y": 61,
           "locked": true
         }
       },
@@ -116,8 +106,8 @@
           "displayCondition": {
             "name": "RaceGUIHuman"
           },
-          "x": 277,
-          "y": 47,
+          "x": 265,
+          "y": 61,
           "locked": true
         }
       },
@@ -129,8 +119,8 @@
           "displayCondition": {
             "name": "RaceGUIDemon"
           },
-          "x": 277,
-          "y": 47,
+          "x": 265,
+          "y": 61,
           "locked": true
         }
       },
@@ -149,7 +139,7 @@
           "displayCondition": {
             "name": "RaceGUIDemon"
           },
-          "x": 189,
+          "x": 200,
           "y": 65,
           "locked": true
         }
@@ -169,7 +159,7 @@
           "displayCondition": {
             "name": "RaceGUIHuman"
           },
-          "x": 189,
+          "x": 200,
           "y": 65,
           "locked": true
         }
@@ -189,7 +179,7 @@
           "displayCondition": {
             "name": "RaceGUISpirit"
           },
-          "x": 189,
+          "x": 200,
           "y": 65,
           "locked": true
         }
@@ -209,7 +199,7 @@
           "displayCondition": {
             "name": "RaceGUIDraconid"
           },
-          "x": 182,
+          "x": 197,
           "y": 65,
           "locked": true
         }
@@ -249,7 +239,7 @@
           "hasShadow": false,
           "x": 134,
           "y": 84,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -267,7 +257,7 @@
           "hasShadow": false,
           "x": 134,
           "y": 103,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -285,7 +275,7 @@
           "hasShadow": false,
           "x": 134,
           "y": 115,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -303,7 +293,7 @@
           "hasShadow": false,
           "x": 134,
           "y": 132,
-          "locked": false
+          "locked": true
         }
       },
       {
@@ -321,7 +311,7 @@
           "hasShadow": false,
           "x": 134,
           "y": 145,
-          "locked": false
+          "locked": true
         }
       }
     ],
