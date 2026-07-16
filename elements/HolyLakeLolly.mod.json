@@ -13,7 +13,7 @@
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "FOOD"
+        "value": "CUSTOM:ItemsCreativeTab"
       }
     ],
     "stackSize": 64,
@@ -44,6 +44,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onDroppedByPlayer": {
+      "name": "EnterAharthernTrigger"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
