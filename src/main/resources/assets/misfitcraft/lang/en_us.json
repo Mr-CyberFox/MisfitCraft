@@ -44,5 +44,6 @@
   "gui.misfitcraft.race_gui.label_demon_sword_affinity": "Demon Sword affinity",
   "gui.misfitcraft.cast_gui.button_kurst": "Kurst",
   "gui.misfitcraft.cast_gui.button_kursla": "Kursla",
-  "gui.misfitcraft.cast_gui.button_lynel": "Lynel"
+  "gui.misfitcraft.cast_gui.button_lynel": "Lynel",
+  "item.misfitcraft.holy_lake_lolly": "Holy Lake Lolly"
 }

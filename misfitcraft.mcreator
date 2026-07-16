@@ -890,6 +890,20 @@
         ]
       },
       "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "HolyLakeLolly",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holy_lake_lolly",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/item/HolyLakeLollyItem.java",
+          "src/main/resources/assets/misfitcraft/models/item/holy_lake_lolly.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
     }
   ],
   "variable_elements": [
@@ -956,7 +970,8 @@
       "gui.misfitcraft.race_gui.label_demon_sword_affinity": "Demon Sword affinity",
       "gui.misfitcraft.cast_gui.button_kurst": "Kurst",
       "gui.misfitcraft.cast_gui.button_kursla": "Kursla",
-      "gui.misfitcraft.cast_gui.button_lynel": "Lynel"
+      "gui.misfitcraft.cast_gui.button_lynel": "Lynel",
+      "item.misfitcraft.holy_lake_lolly": "Holy Lake Lolly"
     }
   },
   "metadata": {

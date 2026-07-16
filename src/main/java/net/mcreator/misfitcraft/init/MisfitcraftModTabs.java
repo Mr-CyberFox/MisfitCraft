@@ -24,6 +24,8 @@ public class MisfitcraftModTabs {
 			tabData.accept(MisfitcraftModItems.AHARTHERN_DIMENSION.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MisfitcraftModBlocks.TEARDROP_BLOSSOM.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(MisfitcraftModItems.HOLY_LAKE_LOLLY.get());
 		}
 	}
 }
