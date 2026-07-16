@@ -1,0 +1,11 @@
+{
+  "_fv": 85,
+  "_type": "tab",
+  "definition": {
+    "name": "MisfitCraft Items",
+    "icon": {
+      "value": "CUSTOM:HolyLakeLolly"
+    },
+    "showSearch": false
+  }
+}

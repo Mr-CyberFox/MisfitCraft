@@ -46,7 +46,7 @@
     },
     "creativeTabs": [
       {
-        "value": "DECORATIONS"
+        "value": "CUSTOM:ItemsCreativeTab"
       }
     ],
     "hardness": 0.0,

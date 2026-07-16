@@ -12,16 +12,13 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.misfitcraft.item.HolyLakeLollyItem;
-import net.mcreator.misfitcraft.item.AharthernDimensionItem;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
 public class MisfitcraftModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(MisfitcraftMod.MODID);
-	public static final DeferredItem<Item> AHARTHERN_DIMENSION;
 	public static final DeferredItem<Item> TEARDROP_BLOSSOM;
 	public static final DeferredItem<Item> HOLY_LAKE_LOLLY;
 	static {
-		AHARTHERN_DIMENSION = REGISTRY.register("aharthern_dimension", AharthernDimensionItem::new);
 		TEARDROP_BLOSSOM = block(MisfitcraftModBlocks.TEARDROP_BLOSSOM);
 		HOLY_LAKE_LOLLY = REGISTRY.register("holy_lake_lolly", HolyLakeLollyItem::new);
 	}
