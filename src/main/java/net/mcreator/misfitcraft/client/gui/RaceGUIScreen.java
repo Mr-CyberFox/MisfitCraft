@@ -164,7 +164,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		};
 		this.addRenderableWidget(imagebutton_raceselect);
-		imagebutton_nextbutton = new ImageButton(this.leftPos + 119, this.topPos + 103, 48, 16,
+		imagebutton_nextbutton = new ImageButton(this.leftPos + 124, this.topPos + 104, 48, 16,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/nextbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/nextbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
@@ -179,7 +179,7 @@ public class RaceGUIScreen extends AbstractContainerScreen<RaceGUIMenu> implemen
 			}
 		};
 		this.addRenderableWidget(imagebutton_nextbutton);
-		imagebutton_backbutton = new ImageButton(this.leftPos + 6, this.topPos + 103, 48, 16,
+		imagebutton_backbutton = new ImageButton(this.leftPos + 1, this.topPos + 104, 48, 16,
 				new WidgetSprites(ResourceLocation.parse("misfitcraft:textures/screens/backbutton.png"), ResourceLocation.parse("misfitcraft:textures/screens/backbuttonhover.png")), e -> {
 					int x = RaceGUIScreen.this.x;
 					int y = RaceGUIScreen.this.y;
