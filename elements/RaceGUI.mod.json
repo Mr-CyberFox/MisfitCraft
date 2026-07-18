@@ -53,9 +53,9 @@
           "onClick": {
             "name": "RaceGUInext"
           },
-          "x": 246,
-          "y": 163,
-          "locked": true
+          "x": 251,
+          "y": 164,
+          "locked": false
         }
       },
       {
@@ -67,9 +67,9 @@
           "onClick": {
             "name": "RaceGUIprevious"
           },
-          "x": 133,
-          "y": 163,
-          "locked": true
+          "x": 128,
+          "y": 164,
+          "locked": false
         }
       },
       {
