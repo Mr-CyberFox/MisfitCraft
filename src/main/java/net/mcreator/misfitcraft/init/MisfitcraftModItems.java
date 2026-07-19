@@ -11,7 +11,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.misfitcraft.item.MushroomGratinItem;
 import net.mcreator.misfitcraft.item.HolyLakeLollyItem;
 import net.mcreator.misfitcraft.MisfitcraftMod;
 
@@ -19,11 +18,9 @@ public class MisfitcraftModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(MisfitcraftMod.MODID);
 	public static final DeferredItem<Item> TEARDROP_BLOSSOM;
 	public static final DeferredItem<Item> HOLY_LAKE_LOLLY;
-	public static final DeferredItem<Item> MUSHROOM_GRATIN;
 	static {
 		TEARDROP_BLOSSOM = block(MisfitcraftModBlocks.TEARDROP_BLOSSOM);
 		HOLY_LAKE_LOLLY = REGISTRY.register("holy_lake_lolly", HolyLakeLollyItem::new);
-		MUSHROOM_GRATIN = REGISTRY.register("mushroom_gratin", MushroomGratinItem::new);
 	}
 
 	// Start of user code block custom items

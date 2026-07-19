@@ -49,7 +49,5 @@
   "gui.misfitcraft.race_gui.tooltip_demonlore": "Demons are a warlike race with a long history of infighting, they follow a hierarchical structure where weaker demons would pledge themselves to a more powerful demon, either for protection or because they valued strength.",
   "gui.misfitcraft.race_gui.tooltip_humanlore": "Compared to the other races, humans live relatively short lives. The magic power of humans is also on the weak side, causing them to rely on wits and cunning instead.",
   "gui.misfitcraft.race_gui.tooltip_draconidlore": "Draconids are the descendants of dragons. When dragons consume the sources of humans and demons, those sources amalgamate in the womb of the dragon and reincarnate into a single life.",
-  "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born.",
-  "item.misfitcraft.mushroom_gratin": "Mushroom Gratin",
-  "biome.misfitcraft.underground_world": "Underground World"
+  "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born."
 }
