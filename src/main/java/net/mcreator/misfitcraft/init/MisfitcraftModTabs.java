@@ -19,6 +19,5 @@ public class MisfitcraftModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.misfitcraft.items_creative_tab")).icon(() -> new ItemStack(MisfitcraftModItems.HOLY_LAKE_LOLLY.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(MisfitcraftModBlocks.TEARDROP_BLOSSOM.get().asItem());
 				tabData.accept(MisfitcraftModItems.HOLY_LAKE_LOLLY.get());
-				tabData.accept(MisfitcraftModItems.MUSHROOM_GRATIN.get());
 			}).build());
 }
