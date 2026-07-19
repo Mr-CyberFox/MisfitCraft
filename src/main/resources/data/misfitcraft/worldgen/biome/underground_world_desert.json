@@ -1,13 +1,13 @@
 {
   "has_precipitation": true,
-  "temperature": 1.4,
+  "temperature": 0.5,
   "downfall": 0.5,
   "effects": {
-    "foliage_color": -10053376,
-    "grass_color": -10053376,
+    "foliage_color": -6724096,
+    "grass_color": -6724096,
     "sky_color": 7972607,
     "fog_color": 12638463,
-    "water_color": -9324860,
+    "water_color": -10270440,
     "water_fog_color": 329011
   },
   "spawners": {
@@ -60,9 +60,7 @@
     ],
     [],
     [],
-    [
-      "misfitcraft:underground_world_tree"
-    ],
+    [],
     [
       "minecraft:freeze_top_layer"
     ]

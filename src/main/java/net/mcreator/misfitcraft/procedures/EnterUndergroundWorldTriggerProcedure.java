@@ -57,9 +57,9 @@ public class EnterUndergroundWorldTriggerProcedure {
 			}
 			{
 				Entity _ent = entity;
-				_ent.teleportTo(x, (y + 88), z);
+				_ent.teleportTo(x, (y + 90), z);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, (y + 88), z, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(x, (y + 90), z, _ent.getYRot(), _ent.getXRot());
 			}
 		}
 	}
