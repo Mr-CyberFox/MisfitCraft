@@ -503,7 +503,7 @@
           "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json"
         ]
       },
-      "path": "~/Biomes and Dimensions"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "CastGUI",
@@ -513,9 +513,9 @@
       "registry_name": "cast_gui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/misfitcraft/network/CastGUIButtonMessage.java",
           "src/main/java/net/mcreator/misfitcraft/client/gui/CastGUIScreen.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/CastGUIMenu.java",
-          "src/main/java/net/mcreator/misfitcraft/network/CastGUIButtonMessage.java"
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/CastGUIMenu.java"
         ]
       },
       "path": "~/GUI/CastGUI"
@@ -895,7 +895,7 @@
           "src/main/resources/assets/misfitcraft/models/item/holy_lake_lolly.json"
         ]
       },
-      "path": "~/Biomes and Dimensions"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "RaceGUIOpen2",
@@ -1037,6 +1037,84 @@
         ]
       },
       "path": "~/GUI/Races/Race GUI Navigation"
+    },
+    {
+      "name": "MushroomGratin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_gratin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/misfitcraft/models/item/mushroom_gratin.json",
+          "src/main/java/net/mcreator/misfitcraft/item/MushroomGratinItem.java"
+        ]
+      },
+      "path": "~/Blocks and Items"
+    },
+    {
+      "name": "UndergroundWorld",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/worldgen/biome/underground_world.json",
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/underground_world_tree.json",
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/underground_world_tree.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "UndergroundWorldDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_world_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/dimension_type/underground_world_dimension.json",
+          "src/main/resources/data/misfitcraft/dimension/underground_world_dimension.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "EnterUndergroundWorldTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enter_underground_world_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/EnterUndergroundWorldTriggerProcedure.java"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
     }
   ],
   "variable_elements": [
@@ -1050,6 +1128,7 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DRIPSTONE_BLOCK",
       "~Blocks.STONE#0",
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
@@ -1108,7 +1187,9 @@
       "gui.misfitcraft.race_gui.tooltip_demonlore": "Demons are a warlike race with a long history of infighting, they follow a hierarchical structure where weaker demons would pledge themselves to a more powerful demon, either for protection or because they valued strength.",
       "gui.misfitcraft.race_gui.tooltip_humanlore": "Compared to the other races, humans live relatively short lives. The magic power of humans is also on the weak side, causing them to rely on wits and cunning instead.",
       "gui.misfitcraft.race_gui.tooltip_draconidlore": "Draconids are the descendants of dragons. When dragons consume the sources of humans and demons, those sources amalgamate in the womb of the dragon and reincarnate into a single life.",
-      "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born."
+      "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born.",
+      "item.misfitcraft.mushroom_gratin": "Mushroom Gratin",
+      "biome.misfitcraft.underground_world": "Underground World"
     }
   },
   "metadata": {
@@ -1171,6 +1252,10 @@
       },
       {
         "name": "Spells",
+        "children": []
+      },
+      {
+        "name": "Blocks and Items",
         "children": []
       }
     ]
