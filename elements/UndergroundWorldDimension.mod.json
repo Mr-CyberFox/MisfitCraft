@@ -5,6 +5,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:UndergroundWorld"
+      },
+      {
+        "value": "CUSTOM:UndergroundWorldDesert"
       }
     ],
     "biomesInDimensionCaves": [],
