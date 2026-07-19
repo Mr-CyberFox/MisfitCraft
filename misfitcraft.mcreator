@@ -503,7 +503,7 @@
           "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json"
         ]
       },
-      "path": "~/Biomes and Dimensions"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "CastGUI",
@@ -895,7 +895,7 @@
           "src/main/resources/assets/misfitcraft/models/item/holy_lake_lolly.json"
         ]
       },
-      "path": "~/Biomes and Dimensions"
+      "path": "~/Blocks and Items"
     },
     {
       "name": "RaceGUIOpen2",
@@ -1037,6 +1037,20 @@
         ]
       },
       "path": "~/GUI/Races/Race GUI Navigation"
+    },
+    {
+      "name": "MushroomGratin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_gratin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/misfitcraft/models/item/mushroom_gratin.json",
+          "src/main/java/net/mcreator/misfitcraft/item/MushroomGratinItem.java"
+        ]
+      },
+      "path": "~/Blocks and Items"
     }
   ],
   "variable_elements": [
@@ -1108,7 +1122,8 @@
       "gui.misfitcraft.race_gui.tooltip_demonlore": "Demons are a warlike race with a long history of infighting, they follow a hierarchical structure where weaker demons would pledge themselves to a more powerful demon, either for protection or because they valued strength.",
       "gui.misfitcraft.race_gui.tooltip_humanlore": "Compared to the other races, humans live relatively short lives. The magic power of humans is also on the weak side, causing them to rely on wits and cunning instead.",
       "gui.misfitcraft.race_gui.tooltip_draconidlore": "Draconids are the descendants of dragons. When dragons consume the sources of humans and demons, those sources amalgamate in the womb of the dragon and reincarnate into a single life.",
-      "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born."
+      "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born.",
+      "item.misfitcraft.mushroom_gratin": "Mushroom Gratin"
     }
   },
   "metadata": {
@@ -1171,6 +1186,10 @@
       },
       {
         "name": "Spells",
+        "children": []
+      },
+      {
+        "name": "Blocks and Items",
         "children": []
       }
     ]
