@@ -78,11 +78,11 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, PlayernameProcedure.execute(entity), 14, 9, -12829636, false);
-		guiGraphics.drawString(this.font, MagicPowerStatOverlayProcedure.execute(entity), 85, 54, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_magic_power"), 86, 45, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_race"), 86, 9, -12829636, false);
-		guiGraphics.drawString(this.font, RaceDisplayProcedure.execute(entity), 86, 18, -12829636, false);
+		guiGraphics.drawString(this.font, PlayernameProcedure.execute(entity), 14, 9, -1, false);
+		guiGraphics.drawString(this.font, MagicPowerStatOverlayProcedure.execute(entity), 85, 54, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_magic_power"), 86, 45, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_race"), 86, 9, -1, false);
+		guiGraphics.drawString(this.font, RaceDisplayProcedure.execute(entity), 86, 18, -1, false);
 	}
 
 	@Override
