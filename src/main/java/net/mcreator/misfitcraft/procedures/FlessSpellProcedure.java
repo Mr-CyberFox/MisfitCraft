@@ -1,14 +1,16 @@
 package net.mcreator.misfitcraft.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
 import net.mcreator.misfitcraft.init.MisfitcraftModAttributes;
+import net.mcreator.misfitcraft.MisfitcraftMod;
 
 public class FlessSpellProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER) ? _livingEntity0.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue() : 0) >= 100) {
@@ -29,5 +31,14 @@ public class FlessSpellProcedure {
 				_player.onUpdateAbilities();
 			}
 		}
+		MisfitcraftMod.queueServerWork(100, () -> {
+			if ((entity instanceof LivingEntity _livingEntity9 && _livingEntity9.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER) ? _livingEntity9.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue() : 0) >= 100) {
+				if (entity instanceof LivingEntity _livingEntity11 && _livingEntity11.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER))
+					_livingEntity11.getAttribute(MisfitcraftModAttributes.MAGIC_POWER)
+							.setBaseValue(((entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER)
+									? _livingEntity10.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue()
+									: 0) - 100));
+			}
+		});
 	}
 }
