@@ -1132,6 +1132,21 @@
         ]
       },
       "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "UndergroundWorldLush",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_world_lush",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/underground_world_lush_tree.json",
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/underground_world_lush_tree.json",
+          "src/main/resources/data/misfitcraft/worldgen/biome/underground_world_lush.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
     }
   ],
   "variable_elements": [
@@ -1207,22 +1222,23 @@
       "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born.",
       "item.misfitcraft.mushroom_gratin": "Mushroom Gratin",
       "biome.misfitcraft.underground_world": "Underground World",
-      "biome.misfitcraft.underground_world_desert": "Underground World Desert"
+      "biome.misfitcraft.underground_world_desert": "Underground World Desert",
+      "biome.misfitcraft.underground_world_lush": "Underground World Lush"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
-      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg"
     ]

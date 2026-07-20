@@ -2,26 +2,26 @@
   "_fv": 85,
   "_type": "biome",
   "definition": {
-    "name": "Underground World Desert",
+    "name": "Underground World Lush",
     "groundBlock": {
-      "value": "Blocks.DRIPSTONE_BLOCK"
+      "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
-      "value": "Blocks.DRIPSTONE_BLOCK"
+      "value": "Blocks.DIRT#0"
     },
     "underwaterBlock": {
-      "value": ""
+      "value": "Blocks.GRAVEL"
     },
     "grassColor": {
-      "value": -6724096,
+      "value": -13395712,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -6724096,
+      "value": -13395712,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -10270440,
+      "value": -11888420,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -48,30 +48,30 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -1.0,
-      "max": 0.75
-    },
-    "genHumidity": {
-      "min": -1.0,
-      "max": 0.75
-    },
-    "genContinentalness": {
-      "min": 0.05,
+      "min": -0.75,
       "max": 1.0
     },
+    "genHumidity": {
+      "min": -0.75,
+      "max": 1.0
+    },
+    "genContinentalness": {
+      "min": -1.0,
+      "max": -0.05
+    },
     "genErosion": {
-      "min": 0.0,
-      "max": 0.5
+      "min": -0.5,
+      "max": 0.0
     },
     "genWeirdness": {
-      "min": -1.0,
-      "max": 0.75
+      "min": -0.75,
+      "max": 1.0
     },
     "genDepth": {
       "min": 0.2,
       "max": 0.9
     },
-    "treesPerChunk": 0,
+    "treesPerChunk": 1,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
@@ -91,7 +91,7 @@
       "Caves",
       "Ores",
       "FrozenTopLayer",
-      "Dripstone"
+      "LushCavesDecoration"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,
