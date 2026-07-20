@@ -1147,6 +1147,33 @@
         ]
       },
       "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "LeaveUndergroundWorld",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_underground_world",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/LeaveUndergroundWorldProcedure.java"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
     }
   ],
   "variable_elements": [
