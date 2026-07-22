@@ -26,7 +26,7 @@ public class MisfitcraftModItems {
 		TEARDROP_BLOSSOM = block(MisfitcraftModBlocks.TEARDROP_BLOSSOM);
 		HOLY_LAKE_LOLLY = REGISTRY.register("holy_lake_lolly", HolyLakeLollyItem::new);
 		MUSHROOM_GRATIN = REGISTRY.register("mushroom_gratin", MushroomGratinItem::new);
-		TITI_SPAWN_EGG = REGISTRY.register("titi_spawn_egg", () -> new DeferredSpawnEggItem(MisfitcraftModEntities.TITI, -1, -1, new Item.Properties()));
+		TITI_SPAWN_EGG = REGISTRY.register("titi_spawn_egg", () -> new DeferredSpawnEggItem(MisfitcraftModEntities.TITI, -16724941, -16737895, new Item.Properties()));
 	}
 
 	// Start of user code block custom items
