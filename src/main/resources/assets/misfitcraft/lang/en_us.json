@@ -56,5 +56,6 @@
   "biome.misfitcraft.underground_world_lush": "Underground World Lush",
   "item.misfitcraft.titi_spawn_egg": "Titi Spawn Egg",
   "entity.misfitcraft.titi": "Titi",
-  "gui.misfitcraft.source_points_overlay.label_source_points": "Source Points"
+  "gui.misfitcraft.source_points_overlay.label_source_points": "Source Points",
+  "gui.misfitcraft.cast_gui.button_eage": "Eage"
 }
