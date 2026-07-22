@@ -1037,6 +1037,207 @@
         ]
       },
       "path": "~/GUI/Races/Race GUI Navigation"
+    },
+    {
+      "name": "LeaveAharthernTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_aharthern_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/LeaveAharthernTriggerProcedure.java"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "UndergroundWorldDesert",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_world_desert",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/worldgen/biome/underground_world_desert.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "UndergroundWorldLush",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_world_lush",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/worldgen/biome/underground_world_lush.json",
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/underground_world_lush_tree.json",
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/underground_world_lush_tree.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "SourcePointsStatOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "source_points_stat_overlay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/SourcePointsStatOverlayProcedure.java"
+        ]
+      },
+      "path": "~/Source Points"
+    },
+    {
+      "name": "UndergroundWorld",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_world",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/worldgen/biome/underground_world.json",
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/underground_world_tree.json",
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/underground_world_tree.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "SourcePointsOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "source_points_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/screens/SourcePointsOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Source Points"
+    },
+    {
+      "name": "Titi",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titi",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/misfitcraft/models/item/titi_spawn_egg.json",
+          "src/main/resources/data/misfitcraft/neoforge/biome_modifier/titi_biome_modifier.json",
+          "src/main/java/net/mcreator/misfitcraft/entity/TitiEntity.java",
+          "src/main/java/net/mcreator/misfitcraft/client/renderer/TitiRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "EnterUndergroundWorldTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enter_underground_world_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/EnterUndergroundWorldTriggerProcedure.java"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "LeaveUndergroundWorldTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_underground_world_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/LeaveUndergroundWorldTriggerProcedure.java"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "MushroomGratin",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_gratin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/item/MushroomGratinItem.java",
+          "src/main/resources/assets/misfitcraft/models/item/mushroom_gratin.json"
+        ]
+      },
+      "path": "~/Blocks and Items"
+    },
+    {
+      "name": "UndergroundWorldDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "underground_world_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/dimension_type/underground_world_dimension.json",
+          "src/main/resources/data/misfitcraft/dimension/underground_world_dimension.json"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
     }
   ],
   "variable_elements": [
@@ -1050,6 +1251,7 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.DRIPSTONE_BLOCK",
       "~Blocks.STONE#0",
       "~Blocks.DIRT#0",
       "~Blocks.GRASS"
@@ -1108,24 +1310,25 @@
       "gui.misfitcraft.race_gui.tooltip_demonlore": "Demons are a warlike race with a long history of infighting, they follow a hierarchical structure where weaker demons would pledge themselves to a more powerful demon, either for protection or because they valued strength.",
       "gui.misfitcraft.race_gui.tooltip_humanlore": "Compared to the other races, humans live relatively short lives. The magic power of humans is also on the weak side, causing them to rely on wits and cunning instead.",
       "gui.misfitcraft.race_gui.tooltip_draconidlore": "Draconids are the descendants of dragons. When dragons consume the sources of humans and demons, those sources amalgamate in the womb of the dragon and reincarnate into a single life.",
-      "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born."
+      "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born.",
+      "gui.misfitcraft.cast_gui.button_eage": "Eage"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
+      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java"
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
@@ -1133,6 +1336,18 @@
     "children": [
       {
         "name": "Biomes and Dimensions",
+        "children": []
+      },
+      {
+        "name": "Blocks and Items",
+        "children": []
+      },
+      {
+        "name": "Spells",
+        "children": []
+      },
+      {
+        "name": "Mobs",
         "children": []
       },
       {
@@ -1167,10 +1382,6 @@
       },
       {
         "name": "Source Points",
-        "children": []
-      },
-      {
-        "name": "Spells",
         "children": []
       }
     ]

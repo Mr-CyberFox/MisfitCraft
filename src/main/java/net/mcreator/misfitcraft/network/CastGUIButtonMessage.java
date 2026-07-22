@@ -49,7 +49,7 @@ public record CastGUIButtonMessage(int buttonID, int x, int y, int z) implements
 			return;
 		if (buttonID == 0) {
 
-			FlessSpellProcedure.execute(entity);
+			FlessSpellProcedure.execute(world, entity);
 		}
 		if (buttonID == 1) {
 

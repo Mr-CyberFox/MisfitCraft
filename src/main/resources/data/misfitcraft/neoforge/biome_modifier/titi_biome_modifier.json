@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "misfitcraft:aharthern_forest",
+  "spawners": {
+    "type": "misfitcraft:titi",
+    "weight": 20,
+    "minCount": 3,
+    "maxCount": 3
+  }
+}
