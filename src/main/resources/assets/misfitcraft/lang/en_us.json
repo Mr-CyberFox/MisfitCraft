@@ -53,5 +53,8 @@
   "item.misfitcraft.mushroom_gratin": "Mushroom Gratin",
   "biome.misfitcraft.underground_world": "Underground World",
   "biome.misfitcraft.underground_world_desert": "Underground World Desert",
-  "biome.misfitcraft.underground_world_lush": "Underground World Lush"
+  "biome.misfitcraft.underground_world_lush": "Underground World Lush",
+  "item.misfitcraft.titi_spawn_egg": "Titi Spawn Egg",
+  "entity.misfitcraft.titi": "Titi",
+  "gui.misfitcraft.source_points_overlay.label_source_points": "Source Points"
 }

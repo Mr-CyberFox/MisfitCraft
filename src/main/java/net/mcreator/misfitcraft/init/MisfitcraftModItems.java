@@ -6,6 +6,7 @@ package net.mcreator.misfitcraft.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -20,10 +21,12 @@ public class MisfitcraftModItems {
 	public static final DeferredItem<Item> TEARDROP_BLOSSOM;
 	public static final DeferredItem<Item> HOLY_LAKE_LOLLY;
 	public static final DeferredItem<Item> MUSHROOM_GRATIN;
+	public static final DeferredItem<Item> TITI_SPAWN_EGG;
 	static {
 		TEARDROP_BLOSSOM = block(MisfitcraftModBlocks.TEARDROP_BLOSSOM);
 		HOLY_LAKE_LOLLY = REGISTRY.register("holy_lake_lolly", HolyLakeLollyItem::new);
 		MUSHROOM_GRATIN = REGISTRY.register("mushroom_gratin", MushroomGratinItem::new);
+		TITI_SPAWN_EGG = REGISTRY.register("titi_spawn_egg", () -> new DeferredSpawnEggItem(MisfitcraftModEntities.TITI, -1, -1, new Item.Properties()));
 	}
 
 	// Start of user code block custom items

@@ -1174,6 +1174,55 @@
         ]
       },
       "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "Titi",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titi",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/misfitcraft/neoforge/biome_modifier/titi_biome_modifier.json",
+          "src/main/java/net/mcreator/misfitcraft/entity/TitiEntity.java",
+          "src/main/resources/assets/misfitcraft/models/item/titi_spawn_egg.json",
+          "src/main/java/net/mcreator/misfitcraft/client/renderer/TitiRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "SourcePointsStatOverlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "source_points_stat_overlay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/SourcePointsStatOverlayProcedure.java"
+        ]
+      },
+      "path": "~/Source Points"
+    },
+    {
+      "name": "SourcePointsOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "source_points_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/screens/SourcePointsOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Source Points"
     }
   ],
   "variable_elements": [
@@ -1250,7 +1299,10 @@
       "item.misfitcraft.mushroom_gratin": "Mushroom Gratin",
       "biome.misfitcraft.underground_world": "Underground World",
       "biome.misfitcraft.underground_world_desert": "Underground World Desert",
-      "biome.misfitcraft.underground_world_lush": "Underground World Lush"
+      "biome.misfitcraft.underground_world_lush": "Underground World Lush",
+      "item.misfitcraft.titi_spawn_egg": "Titi Spawn Egg",
+      "entity.misfitcraft.titi": "Titi",
+      "gui.misfitcraft.source_points_overlay.label_source_points": "Source Points"
     }
   },
   "metadata": {
@@ -1262,7 +1314,10 @@
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModEntities.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModEntityRenderers.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModModels.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
@@ -1317,6 +1372,10 @@
       },
       {
         "name": "Blocks and Items",
+        "children": []
+      },
+      {
+        "name": "Mobs",
         "children": []
       }
     ]
