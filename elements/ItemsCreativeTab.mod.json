@@ -2,9 +2,9 @@
   "_fv": 85,
   "_type": "tab",
   "definition": {
-    "name": "MisfitCraft Items",
+    "name": "MisfitCraft",
     "icon": {
-      "value": "CUSTOM:HolyLakeLolly"
+      "value": "CUSTOM:MushroomGratin"
     },
     "showSearch": false
   }
