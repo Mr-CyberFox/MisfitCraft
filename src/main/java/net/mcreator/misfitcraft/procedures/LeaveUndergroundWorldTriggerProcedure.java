@@ -25,7 +25,7 @@ import net.minecraft.core.BlockPos;
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
-public class LeaveUndergroundWorldProcedure {
+public class LeaveUndergroundWorldTriggerProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 		if (event.getHand() != InteractionHand.MAIN_HAND)

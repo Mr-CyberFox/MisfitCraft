@@ -1149,33 +1149,6 @@
       "path": "~/Biomes and Dimensions"
     },
     {
-      "name": "LeaveUndergroundWorld",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "leave_underground_world",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/procedures/LeaveUndergroundWorldProcedure.java"
-        ]
-      },
-      "path": "~/Biomes and Dimensions"
-    },
-    {
       "name": "Titi",
       "type": "livingentity",
       "compiles": true,
@@ -1223,6 +1196,52 @@
         ]
       },
       "path": "~/Source Points"
+    },
+    {
+      "name": "LeaveAharthernTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_aharthern_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/LeaveAharthernTriggerProcedure.java"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "LeaveUndergroundWorldTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_underground_world_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/LeaveUndergroundWorldTriggerProcedure.java"
+        ]
+      },
+      "path": "~/Biomes and Dimensions"
     }
   ],
   "variable_elements": [
