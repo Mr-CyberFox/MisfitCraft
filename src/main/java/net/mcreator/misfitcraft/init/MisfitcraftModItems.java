@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.misfitcraft.item.RecordingCrystalItem;
 import net.mcreator.misfitcraft.item.MushroomGratinItem;
 import net.mcreator.misfitcraft.item.HolyLakeLollyItem;
 import net.mcreator.misfitcraft.MisfitcraftMod;
@@ -22,11 +23,13 @@ public class MisfitcraftModItems {
 	public static final DeferredItem<Item> HOLY_LAKE_LOLLY;
 	public static final DeferredItem<Item> MUSHROOM_GRATIN;
 	public static final DeferredItem<Item> TITI_SPAWN_EGG;
+	public static final DeferredItem<Item> RECORDING_CRYSTAL;
 	static {
 		TEARDROP_BLOSSOM = block(MisfitcraftModBlocks.TEARDROP_BLOSSOM);
 		HOLY_LAKE_LOLLY = REGISTRY.register("holy_lake_lolly", HolyLakeLollyItem::new);
 		MUSHROOM_GRATIN = REGISTRY.register("mushroom_gratin", MushroomGratinItem::new);
 		TITI_SPAWN_EGG = REGISTRY.register("titi_spawn_egg", () -> new DeferredSpawnEggItem(MisfitcraftModEntities.TITI, -16724941, -16737895, new Item.Properties()));
+		RECORDING_CRYSTAL = REGISTRY.register("recording_crystal", RecordingCrystalItem::new);
 	}
 
 	// Start of user code block custom items

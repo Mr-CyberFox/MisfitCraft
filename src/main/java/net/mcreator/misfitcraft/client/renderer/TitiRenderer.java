@@ -5,13 +5,20 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.misfitcraft.entity.TitiEntity;
-import net.mcreator.misfitcraft.client.model.ModelTiti;
+import net.mcreator.misfitcraft.client.model.ModelTitiModel;
 
-public class TitiRenderer extends MobRenderer<TitiEntity, ModelTiti<TitiEntity>> {
-	private final ResourceLocation entityTexture = ResourceLocation.parse("misfitcraft:textures/entities/titi_texture.png");
+import com.mojang.blaze3d.vertex.PoseStack;
+
+public class TitiRenderer extends MobRenderer<TitiEntity, ModelTitiModel<TitiEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("misfitcraft:textures/entities/tititexture.png");
 
 	public TitiRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelTiti<TitiEntity>(context.bakeLayer(ModelTiti.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelTitiModel<TitiEntity>(context.bakeLayer(ModelTitiModel.LAYER_LOCATION)), 0.2f);
+	}
+
+	@Override
+	protected void scale(TitiEntity entity, PoseStack poseStack, float f) {
+		poseStack.scale(0.4f, 0.4f, 0.4f);
 	}
 
 	@Override

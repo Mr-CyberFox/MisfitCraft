@@ -43,9 +43,9 @@
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -381,9 +381,9 @@
       "registry_name": "aharthern_dimension",
       "metadata": {
         "files": [
-          "src/main/resources/data/misfitcraft/dimension/aharthern_dimension.json",
+          "src/main/resources/data/misfitcraft/dimension_type/aharthern_dimension.json",
           "src/main/java/net/mcreator/misfitcraft/world/dimension/AharthernDimensionDimension.java",
-          "src/main/resources/data/misfitcraft/dimension_type/aharthern_dimension.json"
+          "src/main/resources/data/misfitcraft/dimension/aharthern_dimension.json"
         ]
       },
       "path": "~/Biomes and Dimensions"
@@ -396,10 +396,10 @@
       "registry_name": "aharthern_forest",
       "metadata": {
         "files": [
+          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
+          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
           "src/main/resources/data/misfitcraft/worldgen/placed_feature/aharthern_forest_tree.json",
           "src/main/resources/data/misfitcraft/worldgen/configured_feature/aharthern_forest_tree.json",
-          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
-          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
           "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestLeaveDecorator.java"
         ]
       },
@@ -493,14 +493,14 @@
       "registry_name": "teardrop_blossom",
       "metadata": {
         "files": [
-          "src/main/resources/assets/misfitcraft/models/block/teardrop_blossom.json",
           "src/main/resources/data/misfitcraft/loot_table/blocks/teardrop_blossom.json",
+          "src/main/resources/data/misfitcraft/worldgen/placed_feature/teardrop_blossom.json",
           "src/main/resources/assets/misfitcraft/models/item/teardrop_blossom.json",
           "src/main/resources/data/misfitcraft/neoforge/biome_modifier/teardrop_blossom_biome_modifier.json",
+          "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json",
           "src/main/java/net/mcreator/misfitcraft/block/TeardropBlossomBlock.java",
-          "src/main/resources/data/misfitcraft/worldgen/placed_feature/teardrop_blossom.json",
-          "src/main/resources/data/misfitcraft/worldgen/configured_feature/teardrop_blossom.json",
-          "src/main/resources/assets/misfitcraft/blockstates/teardrop_blossom.json"
+          "src/main/resources/assets/misfitcraft/models/block/teardrop_blossom.json",
+          "src/main/resources/data/misfitcraft/worldgen/configured_feature/teardrop_blossom.json"
         ]
       },
       "path": "~/Blocks and Items"
@@ -1242,6 +1242,20 @@
         ]
       },
       "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "RecordingCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recording_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/misfitcraft/models/item/recording_crystal.json",
+          "src/main/java/net/mcreator/misfitcraft/item/RecordingCrystalItem.java"
+        ]
+      },
+      "path": "~/Blocks and Items"
     }
   ],
   "variable_elements": [
@@ -1322,7 +1336,8 @@
       "item.misfitcraft.titi_spawn_egg": "Titi Spawn Egg",
       "entity.misfitcraft.titi": "Titi",
       "gui.misfitcraft.source_points_overlay.label_source_points": "Source Points",
-      "gui.misfitcraft.cast_gui.button_eage": "Eage"
+      "gui.misfitcraft.cast_gui.button_eage": "Eage",
+      "item.misfitcraft.recording_crystal": "Recording Crystal"
     }
   },
   "metadata": {

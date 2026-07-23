@@ -47,7 +47,7 @@ public class TitiEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.4, 20) {
+		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.3, 20) {
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = TitiEntity.this.getRandom();
