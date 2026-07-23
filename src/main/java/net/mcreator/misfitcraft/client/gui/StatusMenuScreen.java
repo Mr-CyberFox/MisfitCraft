@@ -10,10 +10,10 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.misfitcraft.world.inventory.StatusMenuMenu;
+import net.mcreator.misfitcraft.procedures.StatusMenuMPMaxDisplayProcedure;
 import net.mcreator.misfitcraft.procedures.RaceDisplayProcedure;
 import net.mcreator.misfitcraft.procedures.PlayernameProcedure;
 import net.mcreator.misfitcraft.procedures.PlayermodelProcedure;
-import net.mcreator.misfitcraft.procedures.MagicPowerStatOverlayProcedure;
 import net.mcreator.misfitcraft.init.MisfitcraftModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -24,7 +24,6 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("misfitcraft:textures/screens/statusmenudisplay.png");
-	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("misfitcraft:textures/screens/charactermodelpodest.png");
 
 	public StatusMenuScreen(StatusMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -47,15 +46,9 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		if (PlayermodelProcedure.execute(entity) instanceof LivingEntity livingEntity) {
-			MisfitcraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 103, this.topPos + 92, 35, 0f, 0, livingEntity);
+			MisfitcraftModScreens.renderEntityInInventoryFollowsAngle(guiGraphics, this.leftPos + 34, this.topPos + 103, 35, 0f, 0, livingEntity);
 		}
-		boolean customTooltipShown = false;
-		if (mouseX > leftPos + 14 && mouseX < leftPos + 77 && mouseY > topPos + 99 && mouseY < topPos + 117) {
-			guiGraphics.renderTooltip(font, Component.translatable("gui.misfitcraft.status_menu.tooltip_next_stage"), mouseX, mouseY);
-			customTooltipShown = true;
-		}
-		if (!customTooltipShown)
-			this.renderTooltip(guiGraphics, mouseX, mouseY);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
@@ -64,7 +57,6 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(IMAGE_0, this.leftPos + -6, this.topPos + -9, 0, 0, 221, 153, 221, 153);
-		guiGraphics.blit(IMAGE_1, this.leftPos + 57, this.topPos + -18, 0, 0, 95, 130, 95, 130);
 		RenderSystem.disableBlend();
 	}
 
@@ -79,10 +71,10 @@ public class StatusMenuScreen extends AbstractContainerScreen<StatusMenuMenu> im
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, PlayernameProcedure.execute(entity), 75, 99, -1, false);
-		guiGraphics.drawString(this.font, MagicPowerStatOverlayProcedure.execute(entity), 12, 18, -1, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_magic_power"), 12, 9, -1, false);
-		guiGraphics.drawString(this.font, RaceDisplayProcedure.execute(entity), 147, 99, -1, false);
+		guiGraphics.drawString(this.font, PlayernameProcedure.execute(entity), 8, 11, -1, false);
+		guiGraphics.drawString(this.font, StatusMenuMPMaxDisplayProcedure.execute(entity), 144, 107, -1, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.misfitcraft.status_menu.label_magic_power"), 136, 99, -1, false);
+		guiGraphics.drawString(this.font, RaceDisplayProcedure.execute(entity), 104, 11, -1, false);
 	}
 
 	@Override

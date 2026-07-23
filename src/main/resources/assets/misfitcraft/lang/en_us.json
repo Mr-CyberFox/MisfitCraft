@@ -1,6 +1,5 @@
 {
   "attribute.misfitcraft.magic_power": "Magic Power",
-  "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
   "gui.misfitcraft.magic_power_overlay.label_100100": "100/100",
   "key.misfitcraft.open_magic_display": "Open Magic Display",
   "gui.misfitcraft.race_gui.label_strength_high_stats": "Strength: High Stats",
@@ -50,5 +49,11 @@
   "gui.misfitcraft.race_gui.tooltip_humanlore": "Compared to the other races, humans live relatively short lives. The magic power of humans is also on the weak side, causing them to rely on wits and cunning instead.",
   "gui.misfitcraft.race_gui.tooltip_draconidlore": "Draconids are the descendants of dragons. When dragons consume the sources of humans and demons, those sources amalgamate in the womb of the dragon and reincarnate into a single life.",
   "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born.",
-  "gui.misfitcraft.cast_gui.button_eage": "Eage"
+  "gui.misfitcraft.cast_gui.button_eage": "Eage",
+  "biome.misfitcraft.underground_world": "Underground World",
+  "biome.misfitcraft.underground_world_lush": "Underground World Lush",
+  "item.misfitcraft.titi_spawn_egg": "Titi Spawn Egg",
+  "biome.misfitcraft.underground_world_desert": "Underground World Desert",
+  "item.misfitcraft.mushroom_gratin": "Mushroom Gratin",
+  "entity.misfitcraft.titi": "Titi"
 }

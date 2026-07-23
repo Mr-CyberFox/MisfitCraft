@@ -1,6 +1,28 @@
 package net.mcreator.misfitcraft.procedures;
 
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.network.protocol.game.ClientboundUpdateMobEffectPacket;
+import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
+import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
+import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.core.BlockPos;
+
+import javax.annotation.Nullable;
 
 @EventBusSubscriber
 public class LeaveUndergroundWorldTriggerProcedure {
@@ -18,7 +40,7 @@ public class LeaveUndergroundWorldTriggerProcedure {
 	private static void execute(@Nullable Event event, double y, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
-		if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("misfitcraft:deleted_mod_element")) == (entity.level().dimension())) {
+		if (ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("misfitcraft:underground_world_dimension")) == (entity.level().dimension())) {
 			if (blockstate.getBlock() == Blocks.BEDROCK) {
 				if (y >= 123) {
 					if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {

@@ -24,7 +24,7 @@ public class MisfitcraftModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<TitiEntity>> TITI = register("titi",
 			EntityType.Builder.<TitiEntity>of(TitiEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.4f, 0.8f));
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

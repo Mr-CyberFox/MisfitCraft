@@ -12,19 +12,6 @@
       "path": "~/Magic Power System"
     },
     {
-      "name": "MagicPowerOverlay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_power_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/screens/MagicPowerOverlayOverlay.java"
-        ]
-      },
-      "path": "~/Magic Power System"
-    },
-    {
       "name": "SourcePoints",
       "type": "attribute",
       "compiles": true,
@@ -1041,7 +1028,7 @@
     {
       "name": "LeaveAharthernTrigger",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "leave_aharthern_trigger",
       "metadata": {
@@ -1088,7 +1075,7 @@
     {
       "name": "SourcePointsStatOverlay",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "source_points_stat_overlay",
       "metadata": {
@@ -1123,7 +1110,7 @@
     {
       "name": "SourcePointsOverlay",
       "type": "overlay",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "source_points_overlay",
       "metadata": {
@@ -1136,7 +1123,7 @@
     {
       "name": "Titi",
       "type": "livingentity",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "titi",
       "metadata": {
@@ -1152,7 +1139,7 @@
     {
       "name": "EnterUndergroundWorldTrigger",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "enter_underground_world_trigger",
       "metadata": {
@@ -1187,7 +1174,7 @@
     {
       "name": "LeaveUndergroundWorldTrigger",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "leave_underground_world_trigger",
       "metadata": {
@@ -1214,7 +1201,7 @@
     {
       "name": "MushroomGratin",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_gratin",
       "metadata": {
@@ -1238,6 +1225,53 @@
         ]
       },
       "path": "~/Biomes and Dimensions"
+    },
+    {
+      "name": "StatusMenuMPMaxDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "status_menu_mp_max_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/StatusMenuMPMaxDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "POVOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pov_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/screens/POVOverlayOverlay.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RecordingCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recording_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/misfitcraft/models/item/recording_crystal.json",
+          "src/main/java/net/mcreator/misfitcraft/item/RecordingCrystalItem.java"
+        ]
+      },
+      "path": "~/Blocks and Items"
     }
   ],
   "variable_elements": [
@@ -1261,7 +1295,6 @@
   "language_map": {
     "en_us": {
       "attribute.misfitcraft.magic_power": "Magic Power",
-      "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
       "gui.misfitcraft.magic_power_overlay.label_100100": "100/100",
       "key.misfitcraft.open_magic_display": "Open Magic Display",
       "gui.misfitcraft.race_gui.label_strength_high_stats": "Strength: High Stats",
@@ -1311,27 +1344,30 @@
       "gui.misfitcraft.race_gui.tooltip_humanlore": "Compared to the other races, humans live relatively short lives. The magic power of humans is also on the weak side, causing them to rely on wits and cunning instead.",
       "gui.misfitcraft.race_gui.tooltip_draconidlore": "Draconids are the descendants of dragons. When dragons consume the sources of humans and demons, those sources amalgamate in the womb of the dragon and reincarnate into a single life.",
       "gui.misfitcraft.race_gui.tooltip_spiritlore": "Spirits are the living embodiments of legends, folklore, rumors, desires, fears, and aspirations. When these beliefs become widespread, a spirit based on them is born.",
-      "gui.misfitcraft.cast_gui.button_eage": "Eage"
+      "gui.misfitcraft.cast_gui.button_eage": "Eage",
+      "biome.misfitcraft.underground_world": "Underground World",
+      "biome.misfitcraft.underground_world_lush": "Underground World Lush",
+      "item.misfitcraft.titi_spawn_egg": "Titi Spawn Egg",
+      "biome.misfitcraft.underground_world_desert": "Underground World Desert",
+      "item.misfitcraft.mushroom_gratin": "Mushroom Gratin",
+      "entity.misfitcraft.titi": "Titi"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModEntityRenderers.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModEntities.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModModels.java"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {

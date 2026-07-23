@@ -2,7 +2,7 @@
   "_fv": 85,
   "_type": "overlay",
   "definition": {
-    "priority": "HIGHEST",
+    "priority": "NORMAL",
     "components": [
       {
         "type": "label",
@@ -37,7 +37,44 @@
           "hasShadow": false,
           "anchorPoint": "TOP_LEFT",
           "x": 6,
-          "y": 26,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_source_points",
+          "text": {
+            "fixedValue": "Source Points"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 6,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_source_points_stat_overlay",
+          "text": {
+            "fixedValue": "",
+            "name": "SourcePointsStatOverlay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 6,
+          "y": 44,
           "locked": false
         }
       }
