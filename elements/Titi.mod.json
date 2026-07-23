@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Titi",
     "mobLabel": "",
-    "mobModelName": "ModelTitiModel",
-    "mobModelTexture": "tititexture.png",
+    "mobModelName": "ModelTitiModel1",
+    "mobModelTexture": "tititexture1.png",
     "transparentModelCondition": {
       "fixedValue": false
     },

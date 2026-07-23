@@ -8,12 +8,12 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.misfitcraft.client.model.ModelTitiModel;
+import net.mcreator.misfitcraft.client.model.ModelTitiModel1;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class MisfitcraftModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(ModelTitiModel.LAYER_LOCATION, ModelTitiModel::createBodyLayer);
+		event.registerLayerDefinition(ModelTitiModel1.LAYER_LOCATION, ModelTitiModel1::createBodyLayer);
 	}
 }
