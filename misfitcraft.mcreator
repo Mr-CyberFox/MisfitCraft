@@ -43,9 +43,9 @@
       "registry_name": "race_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java",
+          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java",
           "src/main/java/net/mcreator/misfitcraft/network/RaceGUIButtonMessage.java",
-          "src/main/java/net/mcreator/misfitcraft/world/inventory/RaceGUIMenu.java"
+          "src/main/java/net/mcreator/misfitcraft/client/gui/RaceGUIScreen.java"
         ]
       },
       "path": "~/GUI/Races"
@@ -381,9 +381,9 @@
       "registry_name": "aharthern_dimension",
       "metadata": {
         "files": [
-          "src/main/resources/data/misfitcraft/dimension/aharthern_dimension.json",
+          "src/main/resources/data/misfitcraft/dimension_type/aharthern_dimension.json",
           "src/main/java/net/mcreator/misfitcraft/world/dimension/AharthernDimensionDimension.java",
-          "src/main/resources/data/misfitcraft/dimension_type/aharthern_dimension.json"
+          "src/main/resources/data/misfitcraft/dimension/aharthern_dimension.json"
         ]
       },
       "path": "~/Biomes and Dimensions"
@@ -396,10 +396,10 @@
       "registry_name": "aharthern_forest",
       "metadata": {
         "files": [
+          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
+          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
           "src/main/resources/data/misfitcraft/worldgen/placed_feature/aharthern_forest_tree.json",
           "src/main/resources/data/misfitcraft/worldgen/configured_feature/aharthern_forest_tree.json",
-          "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestTrunkDecorator.java",
-          "src/main/resources/data/misfitcraft/worldgen/biome/aharthern_forest.json",
           "src/main/java/net/mcreator/misfitcraft/world/features/treedecorators/AharthernForestLeaveDecorator.java"
         ]
       },
