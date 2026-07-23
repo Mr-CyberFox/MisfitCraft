@@ -37,11 +37,11 @@
           "parameters": {
             "temperature": [
               -1,
-              0.75
+              0.85
             ],
             "humidity": [
               -1,
-              0.75
+              0.85
             ],
             "continentalness": [
               0.005,
@@ -49,7 +49,7 @@
             ],
             "weirdness": [
               -1,
-              0.75
+              0.85
             ],
             "erosion": [
               0,
@@ -63,19 +63,19 @@
           "biome": "misfitcraft:underground_world_lush",
           "parameters": {
             "temperature": [
-              -0.75,
+              -0.85,
               1
             ],
             "humidity": [
-              -0.75,
+              -0.85,
               1
             ],
             "continentalness": [
-              -1,
-              -0.005
+              0.005,
+              1
             ],
             "weirdness": [
-              -0.75,
+              -0.85,
               1
             ],
             "erosion": [

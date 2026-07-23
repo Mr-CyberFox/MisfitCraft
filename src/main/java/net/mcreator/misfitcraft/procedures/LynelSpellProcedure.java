@@ -3,8 +3,6 @@ package net.mcreator.misfitcraft.procedures;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.misfitcraft.init.MisfitcraftModAttributes;
 
@@ -12,15 +10,20 @@ public class LynelSpellProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livingEntity0 && _livingEntity0.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER) ? _livingEntity0.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue() : 0) >= 300) {
-			if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER))
-				_livingEntity2.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).setBaseValue(
-						((entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER) ? _livingEntity1.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue() : 0)
-								- 300));
+		if (entity.isInvisible()) {
 			if (entity instanceof Player _player)
 				_player.closeContainer();
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 1200, 0, false, false));
+			entity.setInvisible(false);
+		} else {
+			if ((entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER) ? _livingEntity3.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue() : 0) >= 300) {
+				if (entity instanceof LivingEntity _livingEntity5 && _livingEntity5.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER))
+					_livingEntity5.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).setBaseValue(
+							((entity instanceof LivingEntity _livingEntity4 && _livingEntity4.getAttributes().hasAttribute(MisfitcraftModAttributes.MAGIC_POWER) ? _livingEntity4.getAttribute(MisfitcraftModAttributes.MAGIC_POWER).getBaseValue() : 0)
+									- 300));
+				if (entity instanceof Player _player)
+					_player.closeContainer();
+				entity.setInvisible(true);
+			}
 		}
 	}
 }
