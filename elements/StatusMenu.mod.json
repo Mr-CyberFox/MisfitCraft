@@ -19,8 +19,8 @@
           "scale": 35,
           "rotationX": 0,
           "followMouseMovement": false,
-          "x": 202,
-          "y": 125,
+          "x": 133,
+          "y": 136,
           "locked": false
         }
       },
@@ -37,8 +37,8 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 184,
-          "y": 152,
+          "x": 117,
+          "y": 64,
           "locked": false
         }
       },
@@ -48,15 +48,15 @@
           "name": "label_proc_magic_power_stat_overlay",
           "text": {
             "fixedValue": "",
-            "name": "MagicPowerStatOverlay"
+            "name": "StatusMenuMPMaxDisplay"
           },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 121,
-          "y": 71,
+          "x": 253,
+          "y": 160,
           "locked": false
         }
       },
@@ -72,39 +72,7 @@
             "falpha": 0.0
           },
           "hasShadow": false,
-          "x": 121,
-          "y": 62,
-          "locked": false
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_next_stage",
-          "text": {
-            "fixedValue": "EP until next Stage"
-          },
-          "width": 63,
-          "height": 18,
-          "x": 123,
-          "y": 152,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_race_display",
-          "text": {
-            "fixedValue": "",
-            "name": "RaceDisplay"
-          },
-          "color": {
-            "value": -1,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 256,
+          "x": 245,
           "y": 152,
           "locked": false
         }
@@ -120,20 +88,28 @@
         }
       },
       {
-        "type": "image",
+        "type": "label",
         "data": {
-          "image": "charactermodelpodest.png",
-          "use1Xscale": false,
-          "x": 166,
-          "y": 35,
+          "name": "label_proc_race_display",
+          "text": {
+            "fixedValue": "",
+            "name": "RaceDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 213,
+          "y": 64,
           "locked": false
         }
       }
     ],
     "gridSettings": {
-      "sx": 18,
-      "sy": 18,
-      "ox": 7,
+      "sx": 16,
+      "sy": 16,
+      "ox": 25,
       "oy": 15,
       "snapOnGrid": true
     }

@@ -13,11 +13,12 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.misfitcraft.procedures.SourcePointsStatOverlayProcedure;
 import net.mcreator.misfitcraft.procedures.MagicPowerStatOverlayProcedure;
 
 @EventBusSubscriber(Dist.CLIENT)
-public class MagicPowerOverlayOverlay {
-	@SubscribeEvent(priority = EventPriority.HIGHEST)
+public class POVOverlayOverlay {
+	@SubscribeEvent(priority = EventPriority.NORMAL)
 	public static void eventHandler(RenderGuiEvent.Pre event) {
 		int w = event.getGuiGraphics().guiWidth();
 		int h = event.getGuiGraphics().guiHeight();
@@ -33,10 +34,14 @@ public class MagicPowerOverlayOverlay {
 			z = entity.getZ();
 		}
 		if (true) {
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.misfitcraft.magic_power_overlay.label_magic_power"), 6, 8, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.misfitcraft.pov_overlay.label_magic_power"), 6, 8, -1, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					MagicPowerStatOverlayProcedure.execute(entity), 6, 26, -1, false);
+					MagicPowerStatOverlayProcedure.execute(entity), 6, 17, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.misfitcraft.pov_overlay.label_source_points"), 6, 35, -1, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					SourcePointsStatOverlayProcedure.execute(entity), 6, 44, -1, false);
 		}
 	}
 }

@@ -12,19 +12,6 @@
       "path": "~/Magic Power System"
     },
     {
-      "name": "MagicPowerOverlay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magic_power_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/screens/MagicPowerOverlayOverlay.java"
-        ]
-      },
-      "path": "~/Magic Power System"
-    },
-    {
       "name": "SourcePoints",
       "type": "attribute",
       "compiles": true,
@@ -1185,19 +1172,6 @@
       "path": "~/Source Points"
     },
     {
-      "name": "SourcePointsOverlay",
-      "type": "overlay",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "source_points_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/misfitcraft/client/screens/SourcePointsOverlayOverlay.java"
-        ]
-      },
-      "path": "~/Source Points"
-    },
-    {
       "name": "LeaveAharthernTrigger",
       "type": "procedure",
       "compiles": true,
@@ -1256,6 +1230,39 @@
         ]
       },
       "path": "~/Blocks and Items"
+    },
+    {
+      "name": "StatusMenuMPMaxDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "status_menu_mp_max_display",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/procedures/StatusMenuMPMaxDisplayProcedure.java"
+        ]
+      },
+      "path": "~/GUI/Status Menu"
+    },
+    {
+      "name": "POVOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pov_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/misfitcraft/client/screens/POVOverlayOverlay.java"
+        ]
+      },
+      "path": "~/GUI"
     }
   ],
   "variable_elements": [
@@ -1279,7 +1286,6 @@
   "language_map": {
     "en_us": {
       "attribute.misfitcraft.magic_power": "Magic Power",
-      "gui.misfitcraft.magic_power_overlay.label_magic_power": "Magic Power",
       "gui.misfitcraft.magic_power_overlay.label_100100": "100/100",
       "key.misfitcraft.open_magic_display": "Open Magic Display",
       "gui.misfitcraft.race_gui.label_strength_high_stats": "Strength: High Stats",
@@ -1335,27 +1341,28 @@
       "biome.misfitcraft.underground_world_lush": "Underground World Lush",
       "item.misfitcraft.titi_spawn_egg": "Titi Spawn Egg",
       "entity.misfitcraft.titi": "Titi",
-      "gui.misfitcraft.source_points_overlay.label_source_points": "Source Points",
       "gui.misfitcraft.cast_gui.button_eage": "Eage",
-      "item.misfitcraft.recording_crystal": "Recording Crystal"
+      "item.misfitcraft.recording_crystal": "Recording Crystal",
+      "gui.misfitcraft.pov_overlay.label_magic_power": "Magic Power",
+      "gui.misfitcraft.pov_overlay.label_source_points": "Source Points"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModAttributes.java",
-      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModScreens.java",
+      "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModMenus.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModKeyMappings.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModBlocks.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModItems.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModEntities.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModEntityRenderers.java",
+      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModTabs.java",
       "src/main/java/net/mcreator/misfitcraft/init/MisfitcraftModModels.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/misfitcraft/network/MisfitcraftModVariables.java",
       "src/main/java/net/mcreator/misfitcraft/MisfitcraftMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/accesstransformer.cfg"
     ]
